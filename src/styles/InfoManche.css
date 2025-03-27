@@ -1,0 +1,50 @@
+.info-manche {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--spacing-lg);
+  background-color: var(--surface-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.manche-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.manche-emoji {
+  font-size: 2rem;
+}
+
+.manche-header h2 {
+  font-size: 1.5rem;
+  color: var(--accent-color);
+}
+
+.manche-details {
+  color: var(--text-secondary);
+}
+
+.points-info {
+  margin-top: var(--spacing-sm);
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  .info-manche {
+    padding: var(--spacing-md);
+  }
+
+  .manche-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .manche-emoji {
+    font-size: 1.5rem;
+  }
+}
+

@@ -1,0 +1,702 @@
+/* Variables globales */
+:root {
+  --primary: #6c5ce7;
+  --primary-dark: #5541d7;
+  --secondary: #fd79a8;
+  --accent: #00cec9;
+  --background: #f9f9f9;
+  --card-bg: #ffffff;
+  --text: #2d3436;
+  --text-light: #636e72;
+  --border: #dfe6e9;
+  --success: #00b894;
+  --warning: #fdcb6e;
+  --danger: #d63031;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --radius: 12px;
+  --transition: all 0.3s ease;
+}
+
+/* Reset et styles de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  outline: none;
+}
+
+/* Layout principal */
+.jeu {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  & .jeu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--border);
+
+    & h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin: 0;
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    & .accueil-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: var(--primary);
+      color: white;
+      transition: var(--transition);
+
+      &:hover {
+        background-color: var(--primary-dark);
+        transform: scale(1.05);
+      }
+    }
+
+    & .logo {
+      color: var(--primary);
+    }
+  }
+
+  & .jeu-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem 0;
+
+    & .chrono-container {
+      width: 100%;
+      margin-bottom: 1.5rem;
+      padding: 0 0.5rem;
+
+      & .chrono {
+        background-color: var(--border);
+        border-radius: var(--radius);
+        height: 36px;
+        position: relative;
+        overflow: hidden;
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        & span {
+          position: absolute;
+          width: 100%;
+          text-align: center;
+          font-size: 1rem;
+          font-weight: 600;
+          line-height: 36px;
+          z-index: 2;
+          color: var(--text);
+          text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+        }
+
+        & .chrono-progress {
+          height: 100%;
+          background: linear-gradient(
+            90deg,
+            var(--success) 0%,
+            var(--warning) 70%,
+            var(--danger) 100%
+          );
+          transition: width 1s linear;
+          position: absolute;
+          left: 0;
+          top: 0;
+          z-index: 1;
+          border-radius: var(--radius);
+        }
+
+        &.time-warning .chrono-progress {
+          background-color: var(--warning);
+        }
+
+        &.time-critical .chrono-progress {
+          background-color: var(--danger);
+          animation: blink 0.8s infinite;
+        }
+      }
+
+      & .chrono-controls {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 0.8rem;
+        flex-wrap: wrap;
+
+        & .chrono-button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.5rem;
+          padding: 0.5rem 1rem;
+          border-radius: var(--radius);
+          font-weight: 600;
+          font-size: 0.9rem;
+          transition: var(--transition);
+          box-shadow: var(--shadow);
+
+          &.start {
+            background-color: var(--success);
+            color: white;
+
+            &:hover:not(:disabled) {
+              background-color: #00a383;
+              transform: translateY(-2px);
+            }
+          }
+
+          &.stop {
+            background-color: var(--warning);
+            color: #333;
+
+            &:hover {
+              background-color: #f0b94d;
+              transform: translateY(-2px);
+            }
+          }
+
+          &.reset {
+            background-color: var(--text-light);
+            color: white;
+
+            &:hover {
+              background-color: #4d5b60;
+              transform: translateY(-2px);
+            }
+          }
+
+          &:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+          }
+        }
+      }
+    }
+
+    & .player-controls-container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 2rem;
+      width: 100%;
+    }
+
+    & .player-controls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.8rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+      width: 100%;
+      z-index: 5;
+    }
+
+    & .control-button {
+      background-color: var(--card-bg);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: var(--transition);
+      box-shadow: var(--shadow);
+      color: var(--text);
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+      }
+
+      &:active {
+        transform: translateY(0);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      &.rewind,
+      &.forward,
+      &.mute {
+        width: 48px;
+        height: 48px;
+      }
+
+      &.play-pause {
+        width: 64px;
+        height: 64px;
+        background-color: var(--primary);
+        color: white;
+        z-index: 2;
+
+        &:hover {
+          background-color: var(--primary-dark);
+        }
+      }
+
+      &.next {
+        width: 56px;
+        height: 56px;
+        background-color: var(--secondary);
+        color: white;
+
+        &:hover {
+          background-color: #e84393;
+        }
+      }
+
+      &.rewind,
+      &.forward {
+        background-color: var(--accent);
+        color: white;
+
+        &:hover {
+          background-color: #00b2b0;
+        }
+      }
+    }
+
+    & .guess-mode {
+      background-color: var(--card-bg);
+      border-radius: var(--radius);
+      padding: 2rem;
+      box-shadow: var(--shadow);
+      max-width: 800px;
+      margin: 0 auto;
+      width: 100%;
+      transition: var(--transition);
+
+      & .hidden-answer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 120px;
+        font-size: 2.5rem;
+        color: var(--text-light);
+        background-color: rgba(0, 0, 0, 0.03);
+        border-radius: var(--radius);
+        margin-bottom: 1.5rem;
+      }
+
+      & .action-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1.5rem;
+        flex-wrap: wrap;
+
+        & .answer-toggle,
+        & .lyrics-toggle {
+          padding: 0.75rem 1.5rem;
+          border-radius: var(--radius);
+          font-weight: 600;
+          transition: var(--transition);
+          min-width: 160px;
+        }
+
+        & .answer-toggle {
+          background-color: var(--primary);
+          color: white;
+
+          &:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+          }
+        }
+
+        & .lyrics-toggle {
+          background-color: var(--accent);
+          color: white;
+
+          &:hover {
+            background-color: #00b2b0;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+          }
+        }
+      }
+
+      & .normal-audio-player {
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--border);
+
+        & h4 {
+          font-size: 1.1rem;
+          margin-bottom: 1rem;
+          color: var(--primary);
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+
+          &::before {
+            content: "🔊";
+          }
+        }
+
+        & .normal-audio-controls {
+          width: 100%;
+          height: 40px;
+          border-radius: var(--radius);
+          background-color: var(--background);
+          box-shadow: var(--shadow);
+        }
+      }
+    }
+
+    & .no-songs-message {
+      text-align: center;
+      padding: 3rem;
+      background-color: var(--card-bg);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      max-width: 600px;
+      margin: 0 auto;
+
+      & p {
+        margin-bottom: 1rem;
+        color: var(--text-light);
+
+        &:first-child {
+          font-size: 1.2rem;
+          font-weight: 600;
+          color: var(--text);
+        }
+      }
+    }
+  }
+
+  & .effets-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: -1rem 0 1.5rem;
+    padding: 0 1rem;
+
+    & .effet-badge {
+      background-color: var(--secondary);
+      color: white;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      animation: pulse-badge 2s infinite alternate;
+
+      &:nth-child(2) {
+        background-color: var(--primary);
+        animation-delay: 0.5s;
+      }
+
+      &:nth-child(3) {
+        background-color: var(--accent);
+        animation-delay: 1s;
+      }
+
+      &:nth-child(4) {
+        background-color: var(--warning);
+        color: #333;
+        animation-delay: 1.5s;
+      }
+    }
+  }
+
+  & .jeu-footer {
+    margin-top: auto;
+    padding: 2rem 0;
+    border-top: 2px solid var(--border);
+
+    & .round-navigation {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+
+      & .round-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: var(--card-bg);
+        box-shadow: var(--shadow);
+        transition: var(--transition);
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(
+            135deg,
+            rgba(108, 92, 231, 0.2) 0%,
+            rgba(253, 121, 168, 0.2) 100%
+          );
+          opacity: 0;
+          transition: var(--transition);
+        }
+
+        &:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+
+          &::before {
+            opacity: 1;
+          }
+        }
+
+        &.active {
+          background-color: var(--primary);
+          color: white;
+          transform: scale(1.1);
+
+          &::before {
+            opacity: 0;
+          }
+        }
+
+        & .round-number {
+          font-weight: bold;
+          font-size: 1.2rem;
+          margin-bottom: 0.2rem;
+          z-index: 1;
+        }
+
+        & .round-emoji {
+          font-size: 1.8rem;
+          z-index: 1;
+        }
+      }
+    }
+
+    & .songs-played-info {
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--text-light);
+      margin-top: 1.5rem;
+
+      & p {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
+
+/* Animations */
+@keyframes pulse-badge {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Media Queries pour la responsivité */
+@media (max-width: 768px) {
+  .jeu .jeu-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .jeu .jeu-content .guess-mode {
+    padding: 1.5rem;
+  }
+
+  .jeu .jeu-content .guess-mode .hidden-answer {
+    height: 100px;
+    font-size: 2rem;
+  }
+
+  .jeu .jeu-content .player-controls .control-button {
+    &.rewind,
+    &.forward,
+    &.mute {
+      width: 40px;
+      height: 40px;
+    }
+
+    &.play-pause {
+      width: 56px;
+      height: 56px;
+    }
+
+    &.next {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  .jeu .jeu-footer .round-navigation .round-button {
+    width: 60px;
+    height: 60px;
+  }
+
+  .jeu .jeu-content .chrono-container .chrono-controls .chrono-button span {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .jeu {
+    padding: 0 0.5rem;
+  }
+
+  .jeu .jeu-header h1 {
+    font-size: 1.3rem;
+  }
+
+  .jeu .jeu-content .player-controls {
+    gap: 0.5rem;
+  }
+
+  .jeu .jeu-content .player-controls .control-button {
+    &.rewind,
+    &.forward,
+    &.mute {
+      width: 36px;
+      height: 36px;
+    }
+
+    &.play-pause {
+      width: 50px;
+      height: 50px;
+    }
+
+    &.next {
+      width: 44px;
+      height: 44px;
+    }
+  }
+
+  .jeu .jeu-content .guess-mode .action-buttons {
+    flex-direction: column;
+    gap: 0.8rem;
+
+    & .answer-toggle,
+    & .lyrics-toggle {
+      width: 100%;
+      padding: 0.6rem 1rem;
+    }
+  }
+
+  .jeu .jeu-footer .round-navigation .round-button {
+    width: 50px;
+    height: 50px;
+
+    & .round-emoji {
+      font-size: 1.5rem;
+    }
+
+    & .round-number {
+      font-size: 1rem;
+    }
+  }
+
+  .jeu .jeu-content .chrono-container .chrono span {
+    font-size: 0.9rem;
+  }
+
+  .jeu .jeu-content .guess-mode .hidden-answer {
+    height: 80px;
+    font-size: 1.8rem;
+  }
+
+  .jeu .effets-info {
+    margin: -0.5rem 0 1rem;
+
+    & .effet-badge {
+      font-size: 0.7rem;
+      padding: 0.2rem 0.6rem;
+    }
+  }
+
+  .jeu .jeu-content .player-controls-container {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .jeu .jeu-content .player-controls-container {
+    flex-direction: column;
+  }
+
+  .jeu .jeu-content .player-controls {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Styles pour le mode sombre (si nécessaire) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1a1a2e;
+    --card-bg: #16213e;
+    --text: #e2e2e2;
+    --text-light: #a7a7a7;
+    --border: #2a2a4a;
+  }
+
+  .jeu .jeu-content .chrono-container .chrono {
+    background-color: #2a2a4a;
+
+    & span {
+      color: var(--text);
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .jeu .jeu-content .guess-mode .hidden-answer {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+
+  .jeu .jeu-content .normal-audio-player .normal-audio-controls {
+    background-color: var(--card-bg);
+  }
+}

@@ -1,0 +1,125 @@
+.home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-lg);
+  background: linear-gradient(135deg, var(--background-color), #2d2d2d);
+}
+
+.home-container {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-xl);
+}
+
+.home-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.logo {
+  color: var(--accent-color);
+}
+
+.home-header h1 {
+  font-size: 3rem;
+  text-align: center;
+  background: linear-gradient(90deg, var(--accent-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: var(--spacing-md);
+}
+
+.intro {
+  text-align: center;
+  max-width: 600px;
+  margin-bottom: var(--spacing-lg);
+}
+
+.intro p {
+  margin-bottom: var(--spacing-md);
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+}
+
+.rounds-preview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-lg);
+  width: 100%;
+  margin-bottom: var(--spacing-xl);
+}
+
+.round-card {
+  background-color: var(--surface-color);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.round-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.round-card h3 {
+  color: var(--accent-color);
+  margin-bottom: var(--spacing-sm);
+}
+
+.round-card p {
+  margin-bottom: var(--spacing-md);
+  color: var(--text-secondary);
+}
+
+.emoji {
+  font-size: 2rem;
+  margin-top: var(--spacing-sm);
+}
+
+.start-button {
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: var(--spacing-md) var(--spacing-xl);
+  border-radius: var(--border-radius);
+  border: none;
+  transition: background-color var(--transition-speed), transform var(--transition-speed);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+}
+
+.start-button:hover {
+  background-color: #7c4dff;
+  transform: scale(1.05);
+}
+
+.start-button:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+  .home-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .rounds-preview {
+    grid-template-columns: 1fr;
+  }
+}
+

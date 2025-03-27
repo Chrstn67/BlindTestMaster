@@ -1,0 +1,50 @@
+.round-info {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--spacing-lg);
+  background-color: var(--surface-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.round-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.round-emoji {
+  font-size: 2rem;
+}
+
+.round-header h2 {
+  font-size: 1.5rem;
+  color: var(--accent-color);
+}
+
+.round-details {
+  color: var(--text-secondary);
+}
+
+.points-info {
+  margin-top: var(--spacing-sm);
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  .round-info {
+    padding: var(--spacing-md);
+  }
+
+  .round-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .round-emoji {
+    font-size: 1.5rem;
+  }
+}
+

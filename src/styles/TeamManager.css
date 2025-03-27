@@ -1,0 +1,822 @@
+/* Conteneur principal */
+.team-manager-container {
+  position: relative;
+  z-index: 100;
+}
+
+/* Bouton pour ouvrir la modale */
+.team-manager-button {
+  align-items: center;
+  background-color: #6c5ce7;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  color: white;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  font-weight: 600;
+  gap: 8px;
+  padding: 12px 20px;
+  position: fixed;
+  right: 20px;
+  top: 80px;
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+.team-manager-button:hover {
+  background-color: #5b4bc4;
+  transform: translateY(-2px);
+}
+
+/* Bouton flottant pour le classement */
+.leaderboard-floating-button {
+  align-items: center;
+  background-color: #00b894;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  color: white;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  font-weight: 600;
+  gap: 8px;
+  padding: 12px 20px;
+  position: fixed;
+  right: 20px;
+  top: 140px;
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+.leaderboard-floating-button:hover {
+  background-color: #00a382;
+  transform: translateY(-2px);
+}
+
+/* Classement flottant */
+.floating-leaderboard {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  max-height: 70vh;
+  overflow: hidden;
+  position: fixed;
+  right: 20px;
+  top: 190px;
+  width: 300px;
+  z-index: 100;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.floating-leaderboard-header {
+  align-items: center;
+  background-color: #00b894;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+}
+
+.floating-leaderboard-header h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.close-leaderboard {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.floating-leaderboard-content {
+  max-height: calc(70vh - 50px);
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.floating-leaderboard-item {
+  align-items: center;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 8px;
+  padding: 10px 12px;
+}
+
+.floating-leaderboard-item.first-place {
+  background-color: #fff9e6;
+  border: 1px solid #ffeeba;
+}
+
+.floating-leaderboard-item.second-place {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+}
+
+.floating-leaderboard-item.third-place {
+  background-color: #fff5f0;
+  border: 1px solid #ffe5d9;
+}
+
+.leaderboard-position {
+  align-items: center;
+  display: flex;
+  font-weight: 600;
+  justify-content: center;
+  min-width: 24px;
+}
+
+.gold-trophy {
+  color: #f1c40f;
+}
+
+.silver-medal {
+  color: #95a5a6;
+}
+
+.bronze-medal {
+  color: #e67e22;
+}
+
+.leaderboard-team-color {
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+}
+
+.leaderboard-team-name {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: linear-gradient(0deg, #f700ff 0%, #00fff2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.leaderboard-team-score {
+  font-size: 16px;
+  font-weight: bold;
+  background: linear-gradient(to bottom, #f700ff 0%, #00fff2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.floating-leaderboard-empty {
+  align-items: center;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.floating-leaderboard-empty p {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Overlay de la modale */
+.team-modal-overlay {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Modale */
+.team-modal {
+  animation: modalFadeIn 0.3s ease;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh;
+  max-width: 90%;
+  overflow: hidden;
+  position: relative;
+  width: 600px;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Bouton de fermeture */
+.close-modal {
+  background: transparent;
+  border: none;
+  color: #555;
+  cursor: pointer;
+  padding: 8px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  transition: all 0.2s;
+  z-index: 10;
+}
+
+.close-modal:hover {
+  color: #000;
+  transform: rotate(90deg);
+}
+
+/* Navigation par onglets */
+.modal-tabs {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+  display: flex;
+  padding: 0 10px;
+}
+
+.tab-button {
+  align-items: center;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  color: #666;
+  cursor: pointer;
+  display: flex;
+  flex: 1;
+  font-size: 16px;
+  font-weight: 600;
+  gap: 8px;
+  justify-content: center;
+  padding: 16px 10px;
+  transition: all 0.2s;
+}
+
+.tab-button:hover {
+  color: #333;
+}
+
+.tab-button.active {
+  border-bottom-color: #6c5ce7;
+  color: #6c5ce7;
+}
+
+/* Contenu des onglets */
+.teams-tab,
+.scores-tab {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.teams-tab h2,
+.scores-tab h2 {
+  color: #333;
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Formulaire d'ajout d'équipe */
+.add-team-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.add-team-form input {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  flex: 1;
+  font-size: 16px;
+  padding: 12px 16px;
+  transition: border-color 0.2s;
+}
+
+.add-team-form input:focus {
+  border-color: #6c5ce7;
+  outline: none;
+}
+
+.add-team-button {
+  align-items: center;
+  background-color: #6c5ce7;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  font-size: 15px;
+  font-weight: 600;
+  gap: 6px;
+  padding: 12px 16px;
+  transition: all 0.2s;
+}
+
+.add-team-button:hover {
+  background-color: #5b4bc4;
+  transform: translateY(-2px);
+}
+
+.add-team-button:disabled {
+  background-color: #a29bda;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Grille d'équipes */
+.teams-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  max-height: 60vh;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.team-card {
+  border: 2px solid;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.team-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+.team-card-header {
+  color: white;
+  padding: 12px 16px;
+  text-align: center;
+}
+
+.team-card-header h3 {
+  font-size: 18px;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.team-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+}
+
+.team-score {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  color: #323658;
+}
+
+.team-card-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.team-action-button {
+  align-items: center;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  gap: 6px;
+  justify-content: center;
+  padding: 8px 12px;
+  transition: all 0.2s;
+}
+
+.team-action-button.score-button {
+  background-color: #f1f0fe;
+  border-color: #d8d5f9;
+  color: #6c5ce7;
+}
+
+.team-action-button.score-button:hover {
+  background-color: #e5e3fd;
+}
+
+.team-action-button.delete-button {
+  background-color: #fff0f0;
+  border-color: #ffd5d5;
+  color: #e74c3c;
+}
+
+.team-action-button.delete-button:hover {
+  background-color: #ffe5e5;
+}
+
+/* Message quand il n'y a pas d'équipes */
+.no-teams {
+  align-items: center;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 200px;
+  padding: 30px;
+  text-align: center;
+}
+
+.no-teams p {
+  color: #666;
+  margin: 5px 0;
+}
+
+.no-teams p:first-child {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Détail du score d'une équipe */
+.team-score-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.back-button {
+  align-items: center;
+  align-self: flex-start;
+  background-color: transparent;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  display: flex;
+  font-size: 15px;
+  gap: 4px;
+  margin-bottom: 10px;
+  padding: 5px;
+  transition: all 0.2s;
+}
+
+.back-button:hover {
+  color: #333;
+  transform: translateX(-3px);
+}
+
+.team-score-header {
+  border-radius: 12px;
+  color: white;
+  padding: 16px;
+  text-align: center;
+}
+
+.team-score-header h2 {
+  color: white;
+  font-size: 24px;
+  margin: 0;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.current-score-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0 20px;
+  position: relative;
+}
+
+.current-score-value {
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 1;
+  position: relative;
+  color: #323658;
+}
+
+.score-animation {
+  animation: scorePopup 1s ease-out;
+  color: #6c5ce7;
+  font-size: 30px;
+  font-weight: bold;
+  left: 105%;
+  position: absolute;
+  top: 20px;
+}
+
+.score-animation.negative {
+  color: #e74c3c;
+}
+
+@keyframes scorePopup {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(0.5);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(-20px) scale(1.2);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(-25px) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.8);
+  }
+}
+
+.current-score-label {
+  color: #666;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.point-buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.point-buttons-container h3 {
+  color: #333;
+  font-size: 18px;
+  margin: 0;
+  text-align: center;
+}
+
+.point-buttons-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.point-button {
+  background-color: #f8f9fa;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 16px 0;
+  transition: all 0.2s;
+}
+
+.point-button:hover {
+  transform: translateY(-3px);
+}
+
+.point-button:active {
+  transform: translateY(0);
+}
+
+.point-button.negative {
+  color: #e74c3c;
+}
+
+/* Classement des équipes */
+.scores-leaderboard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.leaderboard {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 60vh;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.leaderboard-item {
+  align-items: center;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  gap: 12px;
+  padding: 12px 16px;
+  transition: all 0.2s;
+}
+
+.leaderboard-item:hover {
+  background-color: #f1f3f5;
+  transform: translateX(5px);
+}
+
+.leaderboard-item.first-place {
+  background-color: #fff9e6;
+  border: 1px solid #ffeeba;
+}
+
+.leaderboard-item.second-place {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+}
+
+.leaderboard-item.third-place {
+  background-color: #fff5f0;
+  border: 1px solid #ffe5d9;
+}
+
+.leaderboard-rank {
+  align-items: center;
+  color: #666;
+  display: flex;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  min-width: 30px;
+}
+
+.first-place .leaderboard-rank {
+  color: #f1c40f;
+}
+
+.second-place .leaderboard-rank {
+  color: #95a5a6;
+}
+
+.third-place .leaderboard-rank {
+  color: #e67e22;
+}
+
+.leaderboard-color {
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+}
+
+.leaderboard-name {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.leaderboard-score {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.leaderboard-arrow {
+  color: #aaa;
+}
+
+.leaderboard-item:hover .leaderboard-arrow {
+  color: #666;
+  transform: translateX(3px);
+}
+
+/* Scrollbar personnalisée */
+.teams-grid::-webkit-scrollbar,
+.leaderboard::-webkit-scrollbar,
+.floating-leaderboard-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.teams-grid::-webkit-scrollbar-track,
+.leaderboard::-webkit-scrollbar-track,
+.floating-leaderboard-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.teams-grid::-webkit-scrollbar-thumb,
+.leaderboard::-webkit-scrollbar-thumb,
+.floating-leaderboard-content::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.teams-grid::-webkit-scrollbar-thumb:hover,
+.leaderboard::-webkit-scrollbar-thumb:hover,
+.floating-leaderboard-content::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .team-manager-button {
+    bottom: 20px;
+    right: 20px;
+    top: auto;
+  }
+
+  .leaderboard-floating-button {
+    bottom: 80px;
+    right: 20px;
+    top: auto;
+  }
+
+  .floating-leaderboard {
+    bottom: 140px;
+    right: 20px;
+    top: auto;
+    width: 280px;
+  }
+
+  .team-modal {
+    height: 90vh;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .teams-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    max-height: 50vh;
+  }
+
+  .current-score-value {
+    font-size: 60px;
+  }
+
+  .point-buttons-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .leaderboard {
+    max-height: 50vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-manager-button span,
+  .leaderboard-floating-button span {
+    display: none;
+  }
+
+  .team-manager-button,
+  .leaderboard-floating-button {
+    border-radius: 50%;
+    padding: 12px;
+  }
+
+  .floating-leaderboard {
+    width: 250px;
+  }
+
+  .add-team-form {
+    flex-direction: column;
+  }
+
+  .teams-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .point-buttons-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .point-button {
+    font-size: 18px;
+    padding: 12px 0;
+  }
+
+  .leaderboard-item {
+    padding: 10px;
+  }
+
+  .leaderboard-name {
+    max-width: 120px;
+  }
+}

@@ -1,0 +1,57 @@
+.affichage-chanson {
+  width: 100%;
+  text-align: center;
+}
+
+.chanson-titre {
+  font-size: 1.8rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--accent-color);
+}
+
+.chanson-artiste {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-lg);
+}
+
+.paroles-container {
+  margin-top: var(--spacing-lg);
+  padding: var(--spacing-lg);
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: var(--border-radius);
+  max-height: 200px;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.paroles-container h4 {
+  margin-bottom: var(--spacing-md);
+  color: var(--secondary-color);
+}
+
+.paroles {
+  text-align: left;
+  white-space: pre-line;
+  color: var(--text-secondary);
+}
+
+.paroles-line {
+  color: #000;
+  display: block;
+  margin-bottom: var(--spacing-xs);
+}
+
+@media (max-width: 768px) {
+  .chanson-titre {
+    font-size: 1.5rem;
+  }
+
+  .chanson-artiste {
+    font-size: 1rem;
+  }
+
+  .paroles-container {
+    padding: var(--spacing-md);
+  }
+}
