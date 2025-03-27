@@ -23,7 +23,7 @@ import AudioEffectsController from "./AudioEffectsController";
 import { manches, chansons } from "../data/data";
 import "../styles/Jeu.css";
 
-const MAX_SONGS_PER_ROUND = 15;
+const MAX_SONGS_PER_ROUND = 20;
 
 const Jeu = () => {
   const [mancheActuelle, setMancheActuelle] = useState(1);
