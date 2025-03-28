@@ -1,0 +1,454 @@
+/* Bouton pour ouvrir la modale */
+.regles-button {
+  align-items: center;
+  background-color: #00b894;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  color: white;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  font-weight: 600;
+  gap: 8px;
+  padding: 12px 20px;
+  position: fixed;
+  right: 20px;
+  top: 80px;
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+.regles-button:hover {
+  background-color: #00a382;
+  transform: translateY(-2px);
+}
+
+/* Overlay de la modale */
+.regles-overlay {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Modale */
+.regles-modal {
+  animation: modalFadeIn 0.3s ease;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh;
+  max-width: 90%;
+  overflow: hidden;
+  position: relative;
+  width: 800px;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Bouton de fermeture */
+.regles-close {
+  background: transparent;
+  border: none;
+  color: #555;
+  cursor: pointer;
+  padding: 8px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  transition: all 0.2s;
+  z-index: 10;
+}
+
+.regles-close:hover {
+  color: #000;
+  transform: rotate(90deg);
+}
+
+/* En-tête de la modale */
+.regles-header {
+  background: linear-gradient(135deg, #6c5ce7, #00b894);
+  color: white;
+  padding: 25px 30px;
+  text-align: center;
+}
+
+.regles-header h2 {
+  font-size: 28px;
+  margin: 0 0 5px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.regles-header p {
+  font-size: 16px;
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* Navigation par onglets */
+.regles-tabs {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.regles-tab {
+  align-items: center;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  color: #666;
+  cursor: pointer;
+  display: flex;
+  flex: 1;
+  font-size: 15px;
+  font-weight: 600;
+  gap: 8px;
+  justify-content: center;
+  min-width: 140px;
+  padding: 16px 10px;
+  transition: all 0.2s;
+}
+
+.regles-tab:hover {
+  background-color: #f1f3f5;
+  color: #333;
+}
+
+.regles-tab.active {
+  border-bottom-color: #6c5ce7;
+  color: #6c5ce7;
+}
+
+/* Contenu des règles */
+.regles-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px 30px;
+}
+
+.regles-section {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.regles-section h3 {
+  border-bottom: 2px solid #f1f3f5;
+  color: #333;
+  font-size: 22px;
+  margin: 0 0 20px;
+  padding-bottom: 10px;
+}
+
+.regles-section h4 {
+  color: #444;
+  font-size: 18px;
+  margin: 20px 0 10px;
+}
+
+.regles-section p {
+  color: #555;
+  line-height: 1.6;
+  margin: 0 0 15px;
+}
+
+.regles-section ul {
+  margin: 10px 0;
+  padding-left: 25px;
+}
+
+.regles-section li {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+/* Cartes pour les manches */
+.manche-card {
+  background-color: #f8f9fa;
+  border-left: 4px solid #6c5ce7;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+.manche-header {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.manche-number {
+  align-items: center;
+  background-color: #6c5ce7;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: 30px;
+  justify-content: center;
+  width: 30px;
+}
+
+.manche-emoji {
+  font-size: 20px;
+}
+
+.manche-card h4 {
+  color: #333;
+  font-size: 18px;
+  margin: 0;
+}
+
+.manche-card p {
+  color: #555;
+  margin: 0;
+}
+
+/* Styles pour les points dans les cartes de manche */
+.points-info {
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-top: 10px;
+  padding: 8px 10px;
+}
+
+/* Cartes pour les points */
+.points-card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+.points-card h4 {
+  color: #333;
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+
+.points-card ul {
+  margin: 0;
+}
+
+.points-note {
+  background-color: #fff8e1;
+  border-left: 4px solid #ffc107;
+  border-radius: 4px;
+  font-style: italic;
+  margin-top: 20px;
+  padding: 10px 15px;
+}
+
+/* Avertissement pour le temps */
+.time-warning {
+  background-color: #e8f5e9;
+  border-left: 4px solid #4caf50;
+  border-radius: 4px;
+  margin-top: 20px;
+  padding: 10px 15px;
+}
+
+/* Pied de page de la modale */
+.regles-footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+  padding: 15px 30px;
+  text-align: center;
+}
+
+.regles-footer p {
+  color: #555;
+  font-style: italic;
+  margin: 0 0 15px;
+}
+
+.regles-close-button {
+  background-color: #6c5ce7;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 25px;
+  transition: all 0.2s;
+}
+
+.regles-close-button:hover {
+  background-color: #5b4bc4;
+  transform: translateY(-2px);
+}
+
+/* Scrollbar personnalisée */
+.regles-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.regles-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.regles-content::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.regles-content::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+/* Ajouter ces styles pour la règle du micro-buzzer */
+.buzzer-rule {
+  background-color: #f0f8ff;
+  border-left: 4px solid #0984e3;
+  border-radius: 8px;
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+  padding: 15px;
+}
+
+.buzzer-icon {
+  align-items: center;
+  background-color: #0984e3;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  min-width: 40px;
+  width: 40px;
+}
+
+.buzzer-content {
+  flex: 1;
+}
+
+.buzzer-content h3 {
+  border-bottom: none;
+  color: #0984e3;
+  font-size: 18px;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.buzzer-content p {
+  margin: 0;
+}
+
+.points-card.malus {
+  background-color: #fff0f0;
+  border-left: 4px solid #e74c3c;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .regles-button {
+    bottom: 140px;
+    right: 20px;
+    top: auto;
+  }
+
+  .regles-modal {
+    height: 90vh;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .regles-header {
+    padding: 20px;
+  }
+
+  .regles-header h2 {
+    font-size: 24px;
+  }
+
+  .regles-tabs {
+    overflow-x: auto;
+  }
+
+  .regles-tab {
+    min-width: 120px;
+    padding: 12px 8px;
+  }
+
+  .regles-content {
+    padding: 15px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .regles-button span {
+    display: none;
+  }
+
+  .regles-button {
+    border-radius: 50%;
+    padding: 12px;
+  }
+
+  .regles-tab {
+    font-size: 13px;
+    min-width: 100px;
+    padding: 10px 5px;
+  }
+
+  .regles-tab span {
+    display: none;
+  }
+
+  .regles-content {
+    padding: 10px 15px;
+  }
+
+  .regles-section h3 {
+    font-size: 20px;
+  }
+
+  .regles-section h4 {
+    font-size: 16px;
+  }
+
+  .buzzer-rule {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .buzzer-icon {
+    align-self: center;
+  }
+}

@@ -25,13 +25,13 @@ const Accueil = () => {
         <section className="manches-preview">
           <div className="manche-card">
             <h3>Manche 1</h3>
-            <p>BlindTest Classique</p>
+            <p>Easy BlindTest</p>
             <span className="emoji">🎵</span>
           </div>
 
           <div className="manche-card">
             <h3>Manche 2</h3>
-            <p>TestBlind</p>
+            <p>dnilBtseT</p>
             <span className="emoji">🎙️</span>
           </div>
 

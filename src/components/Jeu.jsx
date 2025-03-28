@@ -22,6 +22,7 @@ import TeamManager from "./TeamManager";
 import AudioEffectsController from "./AudioEffectsController";
 import { manches, chansons } from "../data/data";
 import "../styles/Jeu.css";
+import ReglesDuJeu from "./Regles";
 
 const MAX_SONGS_PER_ROUND = 20;
 
@@ -1214,6 +1215,9 @@ const Jeu = () => {
         onRemoveTeam={supprimerEquipe}
         onAddPoints={ajouterPoints}
       />
+
+      {/* Ajouter le composant ReglesDuJeu */}
+      <ReglesDuJeu />
 
       <InfoManche manche={donneesMancheActuelle} />
       {mancheActuelle === 3 && (
