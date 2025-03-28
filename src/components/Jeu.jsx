@@ -70,6 +70,7 @@ const Jeu = () => {
     tempsEcoule: 0,
     actif: false,
     termine: false,
+    dernierTemps: Date.now(), // Ajout d'un timestamp pour calculer le temps écoulé
   });
 
   const audioRef = useRef(null);
@@ -343,6 +344,9 @@ const Jeu = () => {
         }
         stopModifiedAudio();
         setIsPlaying(false);
+
+        // Arrêter le chronomètre quand on met en pause
+        arreterChrono();
       } else {
         console.log("Démarrage de la lecture modifiée");
 
@@ -369,6 +373,9 @@ const Jeu = () => {
                   setIsPlaying(true);
                   if (!chronoActif && !chronoTermine) {
                     demarrerChrono();
+                  } else if (!chronoTermine) {
+                    // Reprendre le chronomètre s'il était en pause
+                    reprendreChrono();
                   }
                 }
               }
@@ -392,6 +399,9 @@ const Jeu = () => {
               setIsPlaying(true);
               if (!chronoActif && !chronoTermine) {
                 demarrerChrono();
+              } else if (!chronoTermine) {
+                // Reprendre le chronomètre s'il était en pause
+                reprendreChrono();
               }
             }
           }
@@ -406,6 +416,9 @@ const Jeu = () => {
             setIsPlaying(true);
             if (!chronoActif && !chronoTermine) {
               demarrerChrono();
+            } else if (!chronoTermine) {
+              // Reprendre le chronomètre s'il était en pause
+              reprendreChrono();
             }
           }
         }
@@ -416,6 +429,9 @@ const Jeu = () => {
       if (isPlaying) {
         audioRef.current.pause();
         setIsPlaying(false);
+
+        // Arrêter le chronomètre quand on met en pause
+        arreterChrono();
       } else {
         audioRef.current
           .play()
@@ -423,6 +439,9 @@ const Jeu = () => {
             setIsPlaying(true);
             if (!chronoActif && !chronoTermine) {
               demarrerChrono();
+            } else if (!chronoTermine) {
+              // Reprendre le chronomètre s'il était en pause
+              reprendreChrono();
             }
           })
           .catch((error) => {
@@ -455,6 +474,7 @@ const Jeu = () => {
       ...prev,
       actif: true,
       termine: false,
+      dernierTemps: Date.now(),
     }));
 
     timerRef.current = setInterval(() => {
@@ -480,6 +500,7 @@ const Jeu = () => {
             tempsEcoule: 25,
             actif: false,
             termine: true,
+            dernierTemps: prev.dernierTemps,
           };
         }
 
@@ -496,6 +517,7 @@ const Jeu = () => {
         return {
           ...prev,
           tempsEcoule: newTime,
+          dernierTemps: Date.now(),
         };
       });
     }, 1000);
@@ -510,7 +532,68 @@ const Jeu = () => {
     setChronoEtats((prev) => ({
       ...prev,
       actif: false,
+      dernierTemps: Date.now(),
     }));
+  };
+
+  // Nouvelle fonction pour reprendre le chronomètre
+  const reprendreChrono = () => {
+    // Arrêter le chronomètre précédent s'il est actif
+    if (timerRef.current) {
+      clearInterval(timerRef.current);
+    }
+
+    // Mettre à jour l'état du chronomètre
+    setChronoEtats((prev) => ({
+      ...prev,
+      actif: true,
+      dernierTemps: Date.now(),
+    }));
+
+    timerRef.current = setInterval(() => {
+      setChronoEtats((prev) => {
+        const newTime = prev.tempsEcoule + 1;
+
+        if (newTime >= 25) {
+          // Arrêter le chronomètre s'il atteint 25 secondes
+          clearInterval(timerRef.current);
+          timerRef.current = null;
+
+          // Mettre en pause l'audio si on atteint 25 secondes
+          if (isPlaying) {
+            if (mancheActuelle === 2 || mancheActuelle === 3) {
+              stopModifiedAudio();
+            } else if (audioRef.current) {
+              audioRef.current.pause();
+            }
+            setIsPlaying(false);
+          }
+
+          return {
+            tempsEcoule: 25,
+            actif: false,
+            termine: true,
+            dernierTemps: prev.dernierTemps,
+          };
+        }
+
+        // Mettre en pause l'audio si on atteint 20 secondes
+        if (newTime === 20 && isPlaying) {
+          if (mancheActuelle === 2 || mancheActuelle === 3) {
+            stopModifiedAudio();
+          } else if (audioRef.current) {
+            audioRef.current.pause();
+          }
+          setIsPlaying(false);
+        }
+
+        return {
+          ...prev,
+          tempsEcoule: newTime,
+          dernierTemps: Date.now(),
+        };
+      });
+    }, 1000);
   };
 
   const reinitialiserChrono = () => {
@@ -523,6 +606,7 @@ const Jeu = () => {
       tempsEcoule: 0,
       actif: false,
       termine: false,
+      dernierTemps: Date.now(),
     });
   };
 
