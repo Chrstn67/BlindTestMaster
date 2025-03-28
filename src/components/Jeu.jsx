@@ -24,7 +24,7 @@ import { manches, chansons } from "../data/data";
 import "../styles/Jeu.css";
 import ReglesDuJeu from "./Regles";
 
-const MAX_SONGS_PER_ROUND = 20;
+const MAX_SONGS_PER_ROUND = 30;
 
 const Jeu = () => {
   const [mancheActuelle, setMancheActuelle] = useState(1);

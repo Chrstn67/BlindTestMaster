@@ -10,8 +10,8 @@ const AffichageChanson = ({
 
   return (
     <div className="affichage-chanson">
-      {afficherTitre && <h3 className="chanson-titre">{chanson.titre}</h3>}
       {afficherArtiste && <p className="chanson-artiste">{chanson.artiste}</p>}
+      {afficherTitre && <h3 className="chanson-titre">{chanson.titre}</h3>}
 
       {afficherParoles && (
         <div className="paroles-container">

@@ -3,16 +3,18 @@
   text-align: center;
 }
 
-.chanson-titre {
+.chanson-artiste {
   font-size: 1.8rem;
   margin-bottom: var(--spacing-sm);
   color: var(--accent-color);
+  font-weight: 700;
 }
 
-.chanson-artiste {
+.chanson-titre {
   font-size: 1.2rem;
   color: var(--text-secondary);
   margin-bottom: var(--spacing-lg);
+  font-weight: 500;
 }
 
 .paroles-container {
