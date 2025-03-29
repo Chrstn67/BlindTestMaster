@@ -24,7 +24,7 @@ import { manches, chansons } from "../data/data";
 import "../styles/Jeu.css";
 import ReglesDuJeu from "./Regles";
 
-const MAX_SONGS_PER_ROUND = 30;
+const MAX_SONGS_PER_ROUND = 20;
 
 const Jeu = () => {
   const [mancheActuelle, setMancheActuelle] = useState(1);
@@ -48,11 +48,11 @@ const Jeu = () => {
   const [lastPlayedSongId, setLastPlayedSongId] = useState(null);
   const [audioEffectsExpanded, setAudioEffectsExpanded] = useState(false);
   const [audioEffectsParams, setAudioEffectsParams] = useState({
-    distortion: 10000,
-    pitchShift: 0.6,
-    wahFrequency: 2,
-    wahDepth: 0.6,
-    growlAmount: 0.05,
+    distortion: 5000, // Réduit de 10000 à 5000
+    pitchShift: 0.6, // Inchangé pour garder l'effet voix grave
+    wahFrequency: 1, // Réduit de 2 à 1
+    wahDepth: 0.3, // Réduit de 0.6 à 0.3
+    growlAmount: 0.03, // Réduit de 0.05 à 0.03
   });
 
   const colors = [
@@ -223,7 +223,7 @@ const Jeu = () => {
           const filterNode = audioContextRef.current.createBiquadFilter();
           filterNode.type = "bandpass";
           filterNode.frequency.value = 1000;
-          filterNode.Q.value = 3; // Réduit de 5 à 3 pour un effet moins prononcé
+          filterNode.Q.value = 2; // Réduit de 3 à 2 pour un effet moins prononcé
 
           // Oscillateur pour moduler le filtre wah-wah
           const oscillator = audioContextRef.current.createOscillator();
@@ -231,7 +231,7 @@ const Jeu = () => {
           oscillator.frequency.value = wahFrequency;
 
           const oscillatorGain = audioContextRef.current.createGain();
-          oscillatorGain.gain.value = wahDepth * 800; // Réduit de 1500 à 800
+          oscillatorGain.gain.value = wahDepth * 500; // Réduit de 800 à 500
 
           oscillator.connect(oscillatorGain);
           oscillatorGain.connect(filterNode.frequency);
@@ -872,11 +872,12 @@ const Jeu = () => {
     const curve = new Float32Array(samples);
     const deg = Math.PI / 180;
 
+    // Réduire l'intensité de la distorsion en divisant par un facteur plus grand
     for (let i = 0; i < samples; ++i) {
       const x = (i * 2) / samples - 1;
       curve[i] =
-        ((3 + amount / 500) * x * 20 * deg) /
-        (Math.PI + (amount / 500) * Math.abs(x));
+        ((3 + amount / 1000) * x * 20 * deg) /
+        (Math.PI + (amount / 1000) * Math.abs(x));
     }
 
     return curve;
@@ -907,7 +908,7 @@ const Jeu = () => {
 
       if (sourceNodeRef.current.oscillatorGain) {
         // Réduire l'amplification du wah-wah de 1500 à 800
-        sourceNodeRef.current.oscillatorGain.gain.value = wahDepth * 800;
+        sourceNodeRef.current.oscillatorGain.gain.value = wahDepth * 500;
       }
 
       // Stocker les autres paramètres pour référence
@@ -969,13 +970,13 @@ const Jeu = () => {
       const pitchShiftedData = new Float32Array(channelData.length);
 
       for (let i = 0; i < channelData.length; i++) {
-        // Effet wah-wah (filtre passe-bande modulé) - moins extrême
+        // Effet wah-wah (filtre passe-bande modulé) - plus léger
         const wahModulation =
           Math.sin(
             (i / originalBuffer.sampleRate) * wahFrequency * Math.PI * 2
           ) *
           wahDepth *
-          0.8; // Réduit de 1.5 à 0.8
+          0.5;
         const sample = channelData[i] * (1 + wahModulation);
 
         // Appliquer un pitch shifting beaucoup plus prononcé
@@ -1007,41 +1008,41 @@ const Jeu = () => {
         // Utiliser le signal modifié en hauteur comme base
         let sample = pitchShiftedData[i] || 0;
 
-        // Distorsion extrême (waveshaping) - plus extrême
-        sample = Math.tanh(sample * (distortion / 800)) * 0.7;
+        // Distorsion moins extrême
+        sample = Math.tanh(sample * (distortion / 2000)) * 0.9;
 
-        // Ajouter un effet de "grognement" aléatoire plus prononcé
-        if (Math.random() < growlAmount) {
-          const growlIntensity = growlAmount * 3; // Intensifier l'effet encore plus
+        // Ajouter un effet de "grognement" aléatoire moins prononcé
+        if (Math.random() < growlAmount * 0.7) {
+          const growlIntensity = growlAmount * 1.5; // Réduire l'intensité
           sample +=
-            (Math.random() * 0.6 - 0.3) *
+            (Math.random() * 0.4 - 0.2) *
             Math.sin((i / originalBuffer.sampleRate) * 40 * Math.PI * 2) *
             growlIntensity;
 
-          // Ajouter des craquements aléatoires pour un effet plus extrême
-          if (Math.random() < growlAmount * 0.7) {
-            sample *= 1 + Math.random() * 0.5;
+          // Réduire les craquements aléatoires
+          if (Math.random() < growlAmount * 0.4) {
+            sample *= 1 + Math.random() * 0.3;
           }
 
-          // Ajouter des silences aléatoires pour un effet de "glitch"
-          if (Math.random() < growlAmount * 0.3) {
+          // Réduire les silences aléatoires
+          if (Math.random() < growlAmount * 0.1) {
             sample = 0;
           }
         }
 
-        // Ajouter un effet de modulation de fréquence pour rendre le son encore plus méconnaissable
+        // Ajouter un effet de modulation de fréquence moins intense
         if (distortion > 20000) {
-          const modulationDepth = (distortion - 20000) / 20000; // Plus la distorsion est élevée, plus la modulation est forte
+          const modulationDepth = (distortion - 20000) / 40000; // Réduire la modulation
           sample +=
             sample *
-            Math.sin((i / originalBuffer.sampleRate) * 120 * Math.PI * 2) *
+            Math.sin((i / originalBuffer.sampleRate) * 80 * Math.PI * 2) *
             modulationDepth;
 
-          // Ajouter un effet de "bit crushing" pour un son plus dégradé
-          if (distortion > 50000) {
+          // Réduire l'effet de "bit crushing"
+          if (distortion > 60000) {
             const bitDepth = Math.max(
-              2,
-              Math.floor(16 - (distortion - 50000) / 10000)
+              4,
+              Math.floor(16 - (distortion - 60000) / 15000)
             );
             const step = 2.0 / Math.pow(2, bitDepth);
             sample = Math.round(sample / step) * step;
@@ -1049,7 +1050,7 @@ const Jeu = () => {
         }
 
         // Limiter pour éviter l'écrêtage
-        sample = Math.max(-0.99, Math.min(0.99, sample));
+        sample = Math.max(-0.95, Math.min(0.95, sample));
 
         // Stocker le résultat
         monstreData[i] = sample;

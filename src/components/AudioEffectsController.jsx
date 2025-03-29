@@ -3,11 +3,16 @@
 import { useState } from "react";
 import {
   Sliders,
-  AudioWaveformIcon as Waveform,
+  AudioWaveform,
   Volume2,
   Zap,
   HelpCircle,
   Shuffle,
+  RotateCcw,
+  ChevronUp,
+  ChevronDown,
+  Skull,
+  Baby,
 } from "lucide-react";
 import "../styles/AudioEffectsController.css";
 
@@ -18,7 +23,7 @@ const AudioEffectsController = ({
   currentEffects,
 }) => {
   const [distortion, setDistortion] = useState(
-    currentEffects.distortion || 10000
+    currentEffects.distortion || 5000
   );
   const [pitchShift, setPitchShift] = useState(
     currentEffects.pitchShift || 0.6
@@ -28,7 +33,7 @@ const AudioEffectsController = ({
   );
   const [wahDepth, setWahDepth] = useState(currentEffects.wahDepth || 0.3);
   const [growlAmount, setGrowlAmount] = useState(
-    currentEffects.growlAmount || 0.05
+    currentEffects.growlAmount || 0.03
   );
   const [showTooltip, setShowTooltip] = useState(null);
 
@@ -94,11 +99,11 @@ const AudioEffectsController = ({
 
   const resetToDefaults = () => {
     const defaults = {
-      distortion: 10000,
+      distortion: 5000,
       pitchShift: 0.6,
       wahFrequency: 1,
       wahDepth: 0.3,
-      growlAmount: 0.05,
+      growlAmount: 0.03,
     };
 
     setDistortion(defaults.distortion);
@@ -112,14 +117,14 @@ const AudioEffectsController = ({
 
   const applyRandomEffects = () => {
     const randomEffects = {
-      distortion: Math.floor(Math.random() * 80000) + 10000,
+      distortion: Math.floor(Math.random() * 40000) + 5000,
       pitchShift:
         Math.random() > 0.5
           ? Math.random() * 2.5 + 1.5
           : Math.random() * 0.3 + 0.05,
-      wahFrequency: Math.random() * 5 + 0.5, // Réduit de 15 à 5 pour moins de wah-wah
-      wahDepth: Math.random() * 0.5 + 0.1, // Réduit de 0.9 à 0.5 pour moins de wah-wah
-      growlAmount: Math.random() * 0.5,
+      wahFrequency: Math.random() * 3 + 0.5,
+      wahDepth: Math.random() * 0.3 + 0.1,
+      growlAmount: Math.random() * 0.3,
     };
 
     setDistortion(randomEffects.distortion);
@@ -133,11 +138,11 @@ const AudioEffectsController = ({
 
   const applyExtremeEffects = () => {
     const extremeEffects = {
-      distortion: 90000,
+      distortion: 60000,
       pitchShift: Math.random() > 0.5 ? 3.5 : 0.05,
-      wahFrequency: 8, // Réduit de 20 à 8
-      wahDepth: 0.5, // Réduit de 0.9 à 0.5
-      growlAmount: 0.8,
+      wahFrequency: 5,
+      wahDepth: 0.4,
+      growlAmount: 0.5,
     };
 
     setDistortion(extremeEffects.distortion);
@@ -147,6 +152,26 @@ const AudioEffectsController = ({
     setGrowlAmount(extremeEffects.growlAmount);
 
     onEffectsChange(extremeEffects);
+  };
+
+  const applyDeepVoice = () => {
+    const deepVoice = {
+      ...currentEffects,
+      pitchShift: 0.2,
+    };
+
+    setPitchShift(deepVoice.pitchShift);
+    onEffectsChange(deepVoice);
+  };
+
+  const applyChipmunkVoice = () => {
+    const chipmunkVoice = {
+      ...currentEffects,
+      pitchShift: 3.5,
+    };
+
+    setPitchShift(chipmunkVoice.pitchShift);
+    onEffectsChange(chipmunkVoice);
   };
 
   const tooltips = {
@@ -167,11 +192,27 @@ const AudioEffectsController = ({
       <div className="effects-header" onClick={toggleExpanded}>
         <Sliders size={16} />
         <h3>Effets Audio</h3>
-        <span className="toggle-icon">{isExpanded ? "▼" : "▲"}</span>
+        <span className="toggle-icon">
+          {isExpanded ? <ChevronDown size={14} /> : <ChevronUp size={14} />}
+        </span>
       </div>
 
       {isExpanded && (
         <div className="effects-content">
+          <div className="voice-presets">
+            <button className="voice-preset deep" onClick={applyDeepVoice}>
+              <Skull size={14} />
+              <span>Monstre</span>
+            </button>
+            <button
+              className="voice-preset chipmunk"
+              onClick={applyChipmunkVoice}
+            >
+              <Baby size={14} />
+              <span>Chipmunk</span>
+            </button>
+          </div>
+
           <div className="effect-group">
             <label className="effect-label">
               <Zap size={14} />
@@ -192,7 +233,7 @@ const AudioEffectsController = ({
             <input
               type="range"
               min="1000"
-              max="100000"
+              max="70000"
               step="1000"
               value={distortion}
               onChange={handleDistortionChange}
@@ -230,7 +271,7 @@ const AudioEffectsController = ({
 
           <div className="effect-group">
             <label className="effect-label">
-              <Waveform size={14} />
+              <AudioWaveform size={14} />
               <span>Wah-Freq</span>
               <span className="help-container">
                 <HelpCircle
@@ -248,7 +289,7 @@ const AudioEffectsController = ({
             <input
               type="range"
               min="0.5"
-              max="10"
+              max="5"
               step="0.1"
               value={wahFrequency}
               onChange={handleWahFrequencyChange}
@@ -258,7 +299,7 @@ const AudioEffectsController = ({
 
           <div className="effect-group">
             <label className="effect-label">
-              <Waveform size={14} />
+              <AudioWaveform size={14} />
               <span>Wah-Prof</span>
               <span className="help-container">
                 <HelpCircle
@@ -275,9 +316,9 @@ const AudioEffectsController = ({
             </label>
             <input
               type="range"
-              min="0"
-              max="0.6"
-              step="0.05"
+              min="0.1"
+              max="0.5"
+              step="0.01"
               value={wahDepth}
               onChange={handleWahDepthChange}
               className="effect-slider"
@@ -317,13 +358,14 @@ const AudioEffectsController = ({
           <div className="effects-buttons">
             <button className="random-button" onClick={applyRandomEffects}>
               <Shuffle size={14} />
-              Effets aléatoires
+              Aléatoire
             </button>
             <button className="extreme-button" onClick={applyExtremeEffects}>
               <Zap size={14} />
-              Mode Extrême
+              Extrême
             </button>
             <button className="reset-button" onClick={resetToDefaults}>
+              <RotateCcw size={14} />
               Réinitialiser
             </button>
           </div>

@@ -1,3 +1,16 @@
+:root {
+  --card-bg: #ffffff;
+  --radius: 8px;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --transition: all 0.2s ease;
+  --accent: #6c5ce7;
+  --secondary: #e84393;
+  --danger: #e74c3c;
+  --text-light: #718096;
+  --primary: #6c5ce7;
+  --border: #e2e8f0;
+}
+
 .audio-effects-controller {
   background-color: var(--card-bg);
   border-radius: var(--radius);
@@ -10,230 +23,290 @@
   right: 1rem;
   top: 0;
   z-index: 10;
+}
 
-  &.collapsed {
-    width: auto;
-    max-height: 40px;
-  }
+.audio-effects-controller.collapsed {
+  width: auto;
+  max-height: 40px;
+}
 
-  & .effects-header {
-    display: flex;
-    align-items: center;
-    padding: 0.6rem 0.8rem;
-    background-color: var(--accent);
-    color: white;
-    cursor: pointer;
-    gap: 0.4rem;
+.audio-effects-controller .effects-header {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 0.8rem;
+  background-color: var(--accent);
+  color: white;
+  cursor: pointer;
+  gap: 0.4rem;
+}
 
-    & h3 {
-      margin: 0;
-      font-size: 0.9rem;
-      font-weight: 600;
-    }
+.audio-effects-controller .effects-header h3 {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
 
-    & .toggle-icon {
-      font-size: 0.7rem;
-      margin-left: 0.3rem;
-    }
-  }
+.audio-effects-controller .effects-header .toggle-icon {
+  font-size: 0.7rem;
+  margin-left: auto;
+}
 
-  & .effects-content {
-    padding: 0.8rem;
-    max-height: 300px;
-    overflow-y: auto;
+.audio-effects-controller .effects-content {
+  padding: 0.8rem;
+  max-height: 300px;
+  overflow-y: auto;
+}
 
-    & .effect-group {
-      margin-bottom: 0.8rem;
-      position: relative;
+.audio-effects-controller .effects-content .effect-group {
+  margin-bottom: 0.8rem;
+  position: relative;
+}
 
-      & .effect-label {
-        display: flex;
-        align-items: center;
-        gap: 0.3rem;
-        margin-bottom: 0.3rem;
-        font-weight: 500;
-        font-size: 0.8rem;
+.audio-effects-controller .effects-content .effect-group .effect-label {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
 
-        & .help-icon {
-          color: var(--text-light);
-          cursor: help;
-          transition: color 0.2s;
+.audio-effects-controller
+  .effects-content
+  .effect-group
+  .effect-label
+  .help-icon {
+  color: var(--text-light);
+  cursor: help;
+  transition: color 0.2s;
+}
 
-          &:hover {
-            color: var(--primary);
-          }
-        }
+.audio-effects-controller
+  .effects-content
+  .effect-group
+  .effect-label
+  .help-icon:hover {
+  color: var(--primary);
+}
 
-        & .tooltip {
-          position: absolute;
-          top: -5px;
-          left: 0;
-          transform: translateY(-100%);
-          background-color: rgba(0, 0, 0, 0.8);
-          color: white;
-          padding: 0.5rem;
-          border-radius: var(--radius);
-          font-size: 0.75rem;
-          width: 250px;
-          z-index: 100;
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-          line-height: 1.4;
-        }
+.audio-effects-controller
+  .effects-content
+  .effect-group
+  .effect-label
+  .tooltip {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  transform: translateY(-100%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 0.5rem;
+  border-radius: var(--radius);
+  font-size: 0.75rem;
+  width: 250px;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  line-height: 1.4;
+}
 
-        .help-container {
-          display: flex;
-          align-items: center;
-          gap: 0.2rem;
-          margin-left: auto;
-        }
+.audio-effects-controller
+  .effects-content
+  .effect-group
+  .effect-label
+  .help-container {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  margin-left: auto;
+}
 
-        .effect-name {
-          font-size: 0.7rem;
-          color: var(--text-light);
-        }
+.audio-effects-controller
+  .effects-content
+  .effect-group
+  .effect-label
+  .effect-name {
+  font-size: 0.7rem;
+  color: var(--text-light);
+}
 
-        .effect-value {
-          margin-left: 0.3rem;
-          font-weight: 600;
-          color: var(--primary);
-          background-color: rgba(108, 92, 231, 0.1);
-          padding: 0.1rem 0.3rem;
-          border-radius: 4px;
-          font-size: 0.7rem;
-        }
-      }
+.audio-effects-controller
+  .effects-content
+  .effect-group
+  .effect-label
+  .effect-value {
+  margin-left: 0.3rem;
+  font-weight: 600;
+  color: var(--primary);
+  background-color: rgba(108, 92, 231, 0.1);
+  padding: 0.1rem 0.3rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+}
 
-      & .effect-slider {
-        width: 100%;
-        height: 6px;
-        -webkit-appearance: none;
-        appearance: none;
-        background: var(--border);
-        border-radius: 3px;
-        outline: none;
+.audio-effects-controller .effects-content .effect-group .effect-slider {
+  width: 100%;
+  height: 6px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: var(--border);
+  border-radius: 3px;
+  outline: none;
+}
 
-        &::-webkit-slider-thumb {
-          -webkit-appearance: none;
-          appearance: none;
-          width: 14px;
-          height: 14px;
-          border-radius: 50%;
-          background: var(--accent);
-          cursor: pointer;
-          transition: var(--transition);
+.audio-effects-controller
+  .effects-content
+  .effect-group
+  .effect-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  cursor: pointer;
+  transition: var(--transition);
+}
 
-          &:hover {
-            background: #00b2b0;
-            transform: scale(1.1);
-          }
-        }
+.audio-effects-controller
+  .effects-content
+  .effect-group
+  .effect-slider::-webkit-slider-thumb:hover {
+  background: #00b2b0;
+  transform: scale(1.1);
+}
 
-        &::-moz-range-thumb {
-          width: 14px;
-          height: 14px;
-          border-radius: 50%;
-          background: var(--accent);
-          cursor: pointer;
-          transition: var(--transition);
-          border: none;
+.audio-effects-controller
+  .effects-content
+  .effect-group
+  .effect-slider::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  cursor: pointer;
+  transition: var(--transition);
+  border: none;
+}
 
-          &:hover {
-            background: #00b2b0;
-            transform: scale(1.1);
-          }
-        }
-      }
-    }
+.audio-effects-controller
+  .effects-content
+  .effect-group
+  .effect-slider::-moz-range-thumb:hover {
+  background: #00b2b0;
+  transform: scale(1.1);
+}
 
-    & .voice-presets {
-      display: flex;
-      gap: 0.5rem;
-      margin-bottom: 1rem;
+.audio-effects-controller .effects-content .voice-presets {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
 
-      & .voice-preset {
-        flex: 1;
-        padding: 0.5rem;
-        border-radius: var(--radius);
-        font-weight: 600;
-        font-size: 0.8rem;
-        transition: var(--transition);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.3rem;
-        color: white;
+.audio-effects-controller .effects-content .voice-presets .voice-preset {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: 0.8rem;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
 
-        &.deep {
-          background-color: #3498db;
-          &:hover {
-            background-color: #2980b9;
-            transform: translateY(-2px);
-          }
-        }
+.audio-effects-controller .effects-content .voice-presets .voice-preset.deep {
+  background-color: #3498db;
+}
 
-        &.chipmunk {
-          background-color: #e74c3c;
-          &:hover {
-            background-color: #c0392b;
-            transform: translateY(-2px);
-          }
-        }
-      }
-    }
+.audio-effects-controller
+  .effects-content
+  .voice-presets
+  .voice-preset.deep:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
 
-    & .effects-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-top: 1rem;
+.audio-effects-controller
+  .effects-content
+  .voice-presets
+  .voice-preset.chipmunk {
+  background-color: #e74c3c;
+}
 
-      & .reset-button,
-      & .random-button,
-      & .extreme-button {
-        flex: 1;
-        padding: 0.4rem;
-        border-radius: var(--radius);
-        font-weight: 600;
-        font-size: 0.8rem;
-        transition: var(--transition);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.3rem;
-        min-width: 80px;
-      }
+.audio-effects-controller
+  .effects-content
+  .voice-presets
+  .voice-preset.chipmunk:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+}
 
-      & .reset-button {
-        background-color: var(--text-light);
-        color: white;
+.audio-effects-controller .effects-content .effects-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
 
-        &:hover {
-          background-color: var(--primary);
-          transform: translateY(-2px);
-        }
-      }
+.audio-effects-controller .effects-content .effects-buttons .reset-button,
+.audio-effects-controller .effects-content .effects-buttons .random-button,
+.audio-effects-controller .effects-content .effects-buttons .extreme-button {
+  flex: 1;
+  padding: 0.4rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: 0.8rem;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  min-width: 80px;
+  border: none;
+  cursor: pointer;
+}
 
-      & .random-button {
-        background-color: var(--secondary);
-        color: white;
+.audio-effects-controller .effects-content .effects-buttons .reset-button {
+  background-color: var(--text-light);
+  color: white;
+}
 
-        &:hover {
-          background-color: #e84393;
-          transform: translateY(-2px);
-        }
-      }
+.audio-effects-controller
+  .effects-content
+  .effects-buttons
+  .reset-button:hover {
+  background-color: var(--primary);
+  transform: translateY(-2px);
+}
 
-      & .extreme-button {
-        background-color: var(--danger);
-        color: white;
+.audio-effects-controller .effects-content .effects-buttons .random-button {
+  background-color: var(--secondary);
+  color: white;
+}
 
-        &:hover {
-          background-color: #ff0033;
-          transform: translateY(-2px);
-        }
-      }
-    }
-  }
+.audio-effects-controller
+  .effects-content
+  .effects-buttons
+  .random-button:hover {
+  background-color: #e84393;
+  transform: translateY(-2px);
+}
+
+.audio-effects-controller .effects-content .effects-buttons .extreme-button {
+  background-color: var(--danger);
+  color: white;
+}
+
+.audio-effects-controller
+  .effects-content
+  .effects-buttons
+  .extreme-button:hover {
+  background-color: #ff0033;
+  transform: translateY(-2px);
 }
 
 @media (max-width: 992px) {
@@ -259,14 +332,22 @@
 
   .audio-effects-controller .effects-content .effect-group .effect-label {
     font-size: 0.75rem;
+  }
 
-    & .effect-value {
-      font-size: 0.7rem;
-    }
+  .audio-effects-controller
+    .effects-content
+    .effect-group
+    .effect-label
+    .effect-value {
+    font-size: 0.7rem;
+  }
 
-    & .tooltip {
-      width: 200px;
-      font-size: 0.7rem;
-    }
+  .audio-effects-controller
+    .effects-content
+    .effect-group
+    .effect-label
+    .tooltip {
+    width: 200px;
+    font-size: 0.7rem;
   }
 }

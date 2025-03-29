@@ -6,22 +6,19 @@ import {
   Trash2,
   Trophy,
   X,
-  Users,
-  Award,
-  ChevronRight,
-  ChevronLeft,
   Medal,
+  ChevronDown,
+  ChevronUp,
 } from "lucide-react";
 import "../styles/TeamManager.css";
 
 const TeamManager = ({ teams = [], onAddTeam, onRemoveTeam, onAddPoints }) => {
   const [newTeamName, setNewTeamName] = useState("");
   const [showModal, setShowModal] = useState(false);
-  const [selectedTeam, setSelectedTeam] = useState(null);
-  const [modalTab, setModalTab] = useState("teams"); // "teams" ou "scores"
-  const [animateScore, setAnimateScore] = useState(null);
+  const [animateScore, setAnimateScore] = useState({});
   const [teamScores, setTeamScores] = useState({});
   const [showLeaderboard, setShowLeaderboard] = useState(false);
+  const [expandedTeam, setExpandedTeam] = useState(null);
 
   const colors = [
     "#6c5ce7", // Violet
@@ -43,16 +40,6 @@ const TeamManager = ({ teams = [], onAddTeam, onRemoveTeam, onAddPoints }) => {
     setTeamScores(newScores);
   }, [teams]);
 
-  // Mettre à jour l'équipe sélectionnée si elle existe dans les équipes
-  useEffect(() => {
-    if (selectedTeam) {
-      const updatedTeam = teams.find((team) => team.id === selectedTeam.id);
-      if (updatedTeam) {
-        setSelectedTeam(updatedTeam);
-      }
-    }
-  }, [teams, selectedTeam]);
-
   const handleAddTeam = () => {
     if (newTeamName.trim() === "") return;
 
@@ -69,8 +56,6 @@ const TeamManager = ({ teams = [], onAddTeam, onRemoveTeam, onAddPoints }) => {
 
     // Réinitialiser le champ de saisie
     setNewTeamName("");
-
-    console.log("Équipe ajoutée:", newTeam);
   };
 
   const handleKeyPress = (e) => {
@@ -79,20 +64,21 @@ const TeamManager = ({ teams = [], onAddTeam, onRemoveTeam, onAddPoints }) => {
     }
   };
 
-  const openModal = (tab, team = null) => {
-    setModalTab(tab);
-    setSelectedTeam(team);
+  const openModal = () => {
     setShowModal(true);
   };
 
   const closeModal = () => {
     setShowModal(false);
-    setSelectedTeam(null);
-    setAnimateScore(null);
+    setExpandedTeam(null);
   };
 
   const toggleLeaderboard = () => {
     setShowLeaderboard(!showLeaderboard);
+  };
+
+  const toggleTeamExpand = (teamId) => {
+    setExpandedTeam(expandedTeam === teamId ? null : teamId);
   };
 
   const handleAddPoints = (teamId, points) => {
@@ -106,11 +92,15 @@ const TeamManager = ({ teams = [], onAddTeam, onRemoveTeam, onAddPoints }) => {
     onAddPoints(teamId, points);
 
     // Animer l'ajout de points
-    setAnimateScore(points);
+    setAnimateScore((prev) => ({ ...prev, [teamId]: points }));
 
     // Réinitialiser l'animation après un délai
     setTimeout(() => {
-      setAnimateScore(null);
+      setAnimateScore((prev) => {
+        const newState = { ...prev };
+        delete newState[teamId];
+        return newState;
+      });
     }, 1000);
   };
 
@@ -126,10 +116,7 @@ const TeamManager = ({ teams = [], onAddTeam, onRemoveTeam, onAddPoints }) => {
 
   return (
     <div className="team-manager-container">
-      <button
-        className="team-manager-button"
-        onClick={() => openModal("teams")}
-      >
+      <button className="team-manager-button" onClick={openModal}>
         <Trophy size={20} />
         <span>Équipes & Scores</span>
       </button>
@@ -198,7 +185,7 @@ const TeamManager = ({ teams = [], onAddTeam, onRemoveTeam, onAddPoints }) => {
         </div>
       )}
 
-      {/* Modale pour la gestion des équipes et des scores */}
+      {/* Modale unifiée pour la gestion des équipes et des scores */}
       {showModal && (
         <div className="team-modal-overlay" onClick={closeModal}>
           <div className="team-modal" onClick={(e) => e.stopPropagation()}>
@@ -206,223 +193,152 @@ const TeamManager = ({ teams = [], onAddTeam, onRemoveTeam, onAddPoints }) => {
               <X size={24} />
             </button>
 
-            {/* Navigation entre les onglets */}
-            <div className="modal-tabs">
-              <button
-                className={`tab-button ${modalTab === "teams" ? "active" : ""}`}
-                onClick={() => setModalTab("teams")}
-              >
-                <Users size={18} />
-                <span>Équipes</span>
-              </button>
-              <button
-                className={`tab-button ${
-                  modalTab === "scores" ? "active" : ""
-                }`}
-                onClick={() => setModalTab("scores")}
-              >
-                <Award size={18} />
-                <span>Scores</span>
-              </button>
+            <div className="modal-header">
+              <h2>Gestion des Équipes & Scores</h2>
             </div>
 
-            {/* Contenu de l'onglet Équipes */}
-            {modalTab === "teams" && (
-              <div className="teams-tab">
-                <h2>Gestion des Équipes</h2>
+            <div className="unified-team-tab">
+              <div className="add-team-form">
+                <input
+                  type="text"
+                  value={newTeamName}
+                  onChange={(e) => setNewTeamName(e.target.value)}
+                  onKeyDown={handleKeyPress}
+                  placeholder="Nom de l'équipe"
+                  maxLength={20}
+                />
+                <button
+                  className="add-team-button"
+                  onClick={handleAddTeam}
+                  disabled={newTeamName.trim() === ""}
+                >
+                  <Plus size={16} />
+                  Ajouter une équipe
+                </button>
+              </div>
 
-                <div className="add-team-form">
-                  <input
-                    type="text"
-                    value={newTeamName}
-                    onChange={(e) => setNewTeamName(e.target.value)}
-                    onKeyDown={handleKeyPress}
-                    placeholder="Nom de l'équipe"
-                    maxLength={20}
-                  />
-                  <button
-                    className="add-team-button"
-                    onClick={handleAddTeam}
-                    disabled={newTeamName.trim() === ""}
-                  >
-                    <Plus size={16} />
-                    Ajouter
-                  </button>
-                </div>
-
-                {teams.length > 0 ? (
-                  <div className="teams-grid">
-                    {teams.map((team) => (
+              {teams.length > 0 ? (
+                <div className="teams-list">
+                  {sortedTeams.map((team, index) => (
+                    <div
+                      key={team.id}
+                      className={`team-item ${
+                        expandedTeam === team.id ? "expanded" : ""
+                      } ${
+                        index === 0
+                          ? "first-place"
+                          : index === 1
+                          ? "second-place"
+                          : index === 2
+                          ? "third-place"
+                          : ""
+                      }`}
+                    >
                       <div
-                        key={team.id}
-                        className="team-card"
-                        style={{
-                          borderColor: team.color,
-                          backgroundColor: `${team.color}10`, // Couleur avec faible opacité
-                        }}
+                        className="team-item-header"
+                        onClick={() => toggleTeamExpand(team.id)}
                       >
-                        <div
-                          className="team-card-header"
-                          style={{ backgroundColor: team.color }}
-                        >
-                          <h3>{team.name}</h3>
+                        <div className="team-rank">
+                          {index === 0 && (
+                            <Trophy size={16} className="gold-trophy" />
+                          )}
+                          {index === 1 && (
+                            <Medal size={16} className="silver-medal" />
+                          )}
+                          {index === 2 && (
+                            <Medal size={16} className="bronze-medal" />
+                          )}
+                          {index > 2 && (
+                            <span className="rank-number">#{index + 1}</span>
+                          )}
                         </div>
-                        <div className="team-card-content">
-                          <div className="team-score">
+
+                        <div
+                          className="team-color"
+                          style={{ backgroundColor: team.color }}
+                        ></div>
+
+                        <div className="team-name">{team.name}</div>
+
+                        <div className="team-score-display">
+                          <span className="score-value">
                             {getCurrentScore(team.id)}
-                          </div>
-                          <div className="team-card-actions">
-                            <button
-                              className="team-action-button score-button"
-                              onClick={() => {
-                                setSelectedTeam(team);
-                                setModalTab("scores");
-                              }}
+                          </span>
+                          {animateScore[team.id] && (
+                            <span
+                              className={`score-animation ${
+                                animateScore[team.id] < 0
+                                  ? "negative"
+                                  : "positive"
+                              }`}
                             >
-                              <Award size={16} />
-                              <span>Scores</span>
-                              <ChevronRight size={14} />
-                            </button>
+                              {animateScore[team.id] > 0
+                                ? `+${animateScore[team.id]}`
+                                : animateScore[team.id]}
+                            </span>
+                          )}
+                        </div>
+
+                        <button className="expand-toggle">
+                          {expandedTeam === team.id ? (
+                            <ChevronUp size={18} />
+                          ) : (
+                            <ChevronDown size={18} />
+                          )}
+                        </button>
+                      </div>
+
+                      {expandedTeam === team.id && (
+                        <div className="team-actions">
+                          <div className="team-actions-inner">
+                            <div className="point-buttons">
+                              <h4>Ajouter des points</h4>
+                              <div className="point-buttons-grid">
+                                {[1, 3, 4, -1].map((point) => (
+                                  <button
+                                    key={point}
+                                    className={`point-button ${
+                                      point < 0 ? "negative" : ""
+                                    }`}
+                                    style={{
+                                      backgroundColor:
+                                        point < 0
+                                          ? "#ffeeee"
+                                          : `${team.color}20`,
+                                      borderColor:
+                                        point < 0 ? "#e74c3c" : team.color,
+                                      color: point < 0 ? "#e74c3c" : undefined,
+                                    }}
+                                    onClick={() =>
+                                      handleAddPoints(team.id, point)
+                                    }
+                                  >
+                                    {point > 0 ? `+${point}` : point}
+                                  </button>
+                                ))}
+                              </div>
+                            </div>
+
                             <button
-                              className="team-action-button delete-button"
+                              className="delete-team-button"
                               onClick={() => onRemoveTeam(team.id)}
                             >
                               <Trash2 size={16} />
-                              <span>Supprimer</span>
+                              <span>Supprimer l'équipe</span>
                             </button>
                           </div>
                         </div>
-                      </div>
-                    ))}
-                  </div>
-                ) : (
-                  <div className="no-teams">
-                    <p>Aucune équipe ajoutée</p>
-                    <p>Créez des équipes pour commencer à jouer!</p>
-                  </div>
-                )}
-              </div>
-            )}
-
-            {/* Contenu de l'onglet Scores */}
-            {modalTab === "scores" && (
-              <div className="scores-tab">
-                {selectedTeam ? (
-                  <div className="team-score-detail">
-                    <button
-                      className="back-button"
-                      onClick={() => setModalTab("teams")}
-                    >
-                      <ChevronLeft size={16} />
-                      <span>Retour</span>
-                    </button>
-
-                    <div
-                      className="team-score-header"
-                      style={{ backgroundColor: selectedTeam.color }}
-                    >
-                      <h2>{selectedTeam.name}</h2>
+                      )}
                     </div>
-
-                    <div className="current-score-container">
-                      <div className="current-score-value">
-                        {getCurrentScore(selectedTeam.id)}
-                        {animateScore && (
-                          <span className="score-animation">
-                            {animateScore > 0
-                              ? `+${animateScore}`
-                              : animateScore}
-                          </span>
-                        )}
-                      </div>
-                      <div className="current-score-label">points</div>
-                    </div>
-
-                    <div className="point-buttons-container">
-                      <h3>Ajouter des points</h3>
-                      <div className="point-buttons-grid">
-                        {[1, 3, 4, -1].map((point) => (
-                          <button
-                            key={point}
-                            className={`point-button ${
-                              point < 0 ? "negative" : ""
-                            }`}
-                            style={{
-                              backgroundColor:
-                                point < 0
-                                  ? "#ffeeee"
-                                  : `${selectedTeam.color}20`,
-                              borderColor:
-                                point < 0 ? "#e74c3c" : selectedTeam.color,
-                              color: point < 0 ? "#e74c3c" : undefined,
-                            }}
-                            onClick={() =>
-                              handleAddPoints(selectedTeam.id, point)
-                            }
-                          >
-                            {point > 0 ? `+${point}` : point}
-                          </button>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                ) : (
-                  <div className="scores-leaderboard">
-                    <h2>Classement des Équipes</h2>
-
-                    {sortedTeams.length > 0 ? (
-                      <div className="leaderboard">
-                        {sortedTeams.map((team, index) => (
-                          <div
-                            key={team.id}
-                            className={`leaderboard-item ${
-                              index === 0
-                                ? "first-place"
-                                : index === 1
-                                ? "second-place"
-                                : index === 2
-                                ? "third-place"
-                                : ""
-                            }`}
-                            onClick={() => setSelectedTeam(team)}
-                          >
-                            <div className="leaderboard-rank">
-                              {index === 0 && (
-                                <Trophy size={18} className="gold-trophy" />
-                              )}
-                              {index === 1 && (
-                                <Medal size={18} className="silver-medal" />
-                              )}
-                              {index === 2 && (
-                                <Medal size={18} className="bronze-medal" />
-                              )}
-                              {index > 2 && <span>#{index + 1}</span>}
-                            </div>
-                            <div
-                              className="leaderboard-color"
-                              style={{ backgroundColor: team.color }}
-                            ></div>
-                            <div className="leaderboard-name">{team.name}</div>
-                            <div className="leaderboard-score">
-                              {getCurrentScore(team.id)}
-                            </div>
-                            <ChevronRight
-                              size={16}
-                              className="leaderboard-arrow"
-                            />
-                          </div>
-                        ))}
-                      </div>
-                    ) : (
-                      <div className="no-teams">
-                        <p>Aucune équipe ajoutée</p>
-                        <p>Créez des équipes pour voir le classement!</p>
-                      </div>
-                    )}
-                  </div>
-                )}
-              </div>
-            )}
+                  ))}
+                </div>
+              ) : (
+                <div className="no-teams">
+                  <p>Aucune équipe ajoutée</p>
+                  <p>Créez des équipes pour commencer à jouer!</p>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       )}
