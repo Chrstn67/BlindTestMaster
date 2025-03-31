@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import {
   Sliders,
   AudioWaveform,
@@ -13,6 +13,8 @@ import {
   ChevronDown,
   Skull,
   Baby,
+  Clock,
+  ClockIcon as ClockOff,
 } from "lucide-react";
 import "../styles/AudioEffectsController.css";
 
@@ -21,6 +23,8 @@ const AudioEffectsController = ({
   isExpanded,
   toggleExpanded,
   currentEffects,
+  isPlaying,
+  mancheActuelle,
 }) => {
   const [distortion, setDistortion] = useState(
     currentEffects.distortion || 5000
@@ -36,8 +40,85 @@ const AudioEffectsController = ({
     currentEffects.growlAmount || 0.03
   );
   const [showTooltip, setShowTooltip] = useState(null);
+  const [autoChangeEnabled, setAutoChangeEnabled] = useState(true);
+  const [nextChangeCountdown, setNextChangeCountdown] = useState(5);
+
+  const timerRef = useRef(null);
+  const isFirstRender = useRef(true);
+  const userInteractionTimeoutRef = useRef(null);
+  const isUserInteractingRef = useRef(false);
+
+  // Effet pour gérer le changement automatique des effets toutes les 5 secondes
+  useEffect(() => {
+    // Ne s'applique que pour la manche 3 et quand la lecture est active
+    if (mancheActuelle !== 3 || !isPlaying || !autoChangeEnabled) {
+      clearInterval(timerRef.current);
+      timerRef.current = null;
+      return;
+    }
+
+    // Si l'utilisateur est en train d'interagir avec les contrôles, on ne change pas automatiquement
+    if (isUserInteractingRef.current) return;
+
+    // Démarrer le timer pour changer les effets toutes les 5 secondes
+    if (!timerRef.current) {
+      setNextChangeCountdown(5);
+
+      timerRef.current = setInterval(() => {
+        setNextChangeCountdown((prev) => {
+          if (prev <= 1) {
+            // Si l'utilisateur n'est pas en train d'interagir, on change les effets
+            if (!isUserInteractingRef.current) {
+              applyRandomEffects();
+            }
+            return 5;
+          }
+          return prev - 1;
+        });
+      }, 1000);
+    }
+
+    return () => {
+      clearInterval(timerRef.current);
+      timerRef.current = null;
+    };
+  }, [
+    mancheActuelle,
+    isPlaying,
+    autoChangeEnabled,
+    isUserInteractingRef.current,
+  ]);
+
+  // Effet pour mettre à jour les états locaux quand les effets externes changent
+  useEffect(() => {
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
+
+    setDistortion(currentEffects.distortion);
+    setPitchShift(currentEffects.pitchShift);
+    setWahFrequency(currentEffects.wahFrequency);
+    setWahDepth(currentEffects.wahDepth);
+    setGrowlAmount(currentEffects.growlAmount);
+  }, [currentEffects]);
+
+  const markUserInteraction = () => {
+    isUserInteractingRef.current = true;
+
+    // Réinitialiser le timeout précédent
+    if (userInteractionTimeoutRef.current) {
+      clearTimeout(userInteractionTimeoutRef.current);
+    }
+
+    // Définir un nouveau timeout pour réinitialiser l'état d'interaction après 10 secondes
+    userInteractionTimeoutRef.current = setTimeout(() => {
+      isUserInteractingRef.current = false;
+    }, 10000);
+  };
 
   const handleDistortionChange = (e) => {
+    markUserInteraction();
     const value = Number.parseInt(e.target.value);
     setDistortion(value);
     onEffectsChange({
@@ -50,6 +131,7 @@ const AudioEffectsController = ({
   };
 
   const handlePitchShiftChange = (e) => {
+    markUserInteraction();
     const value = Number.parseFloat(e.target.value);
     setPitchShift(value);
     onEffectsChange({
@@ -62,6 +144,7 @@ const AudioEffectsController = ({
   };
 
   const handleWahFrequencyChange = (e) => {
+    markUserInteraction();
     const value = Number.parseFloat(e.target.value);
     setWahFrequency(value);
     onEffectsChange({
@@ -74,6 +157,7 @@ const AudioEffectsController = ({
   };
 
   const handleWahDepthChange = (e) => {
+    markUserInteraction();
     const value = Number.parseFloat(e.target.value);
     setWahDepth(value);
     onEffectsChange({
@@ -86,6 +170,7 @@ const AudioEffectsController = ({
   };
 
   const handleGrowlAmountChange = (e) => {
+    markUserInteraction();
     const value = Number.parseFloat(e.target.value);
     setGrowlAmount(value);
     onEffectsChange({
@@ -98,6 +183,7 @@ const AudioEffectsController = ({
   };
 
   const resetToDefaults = () => {
+    markUserInteraction();
     const defaults = {
       distortion: 5000,
       pitchShift: 0.6,
@@ -137,6 +223,7 @@ const AudioEffectsController = ({
   };
 
   const applyExtremeEffects = () => {
+    markUserInteraction();
     const extremeEffects = {
       distortion: 60000,
       pitchShift: Math.random() > 0.5 ? 3.5 : 0.05,
@@ -155,6 +242,7 @@ const AudioEffectsController = ({
   };
 
   const applyDeepVoice = () => {
+    markUserInteraction();
     const deepVoice = {
       ...currentEffects,
       pitchShift: 0.2,
@@ -165,6 +253,7 @@ const AudioEffectsController = ({
   };
 
   const applyChipmunkVoice = () => {
+    markUserInteraction();
     const chipmunkVoice = {
       ...currentEffects,
       pitchShift: 3.5,
@@ -172,6 +261,10 @@ const AudioEffectsController = ({
 
     setPitchShift(chipmunkVoice.pitchShift);
     onEffectsChange(chipmunkVoice);
+  };
+
+  const toggleAutoChange = () => {
+    setAutoChangeEnabled(!autoChangeEnabled);
   };
 
   const tooltips = {
@@ -192,6 +285,11 @@ const AudioEffectsController = ({
       <div className="effects-header" onClick={toggleExpanded}>
         <Sliders size={16} />
         <h3>Effets Audio</h3>
+        {mancheActuelle === 3 && isPlaying && autoChangeEnabled && (
+          <div className="auto-change-indicator">
+            <span className="countdown">{nextChangeCountdown}s</span>
+          </div>
+        )}
         <span className="toggle-icon">
           {isExpanded ? <ChevronDown size={14} /> : <ChevronUp size={14} />}
         </span>
@@ -199,6 +297,39 @@ const AudioEffectsController = ({
 
       {isExpanded && (
         <div className="effects-content">
+          {mancheActuelle === 3 && (
+            <div className="auto-change-toggle">
+              <button
+                className={`auto-change-button ${
+                  autoChangeEnabled ? "active" : ""
+                }`}
+                onClick={toggleAutoChange}
+                title={
+                  autoChangeEnabled
+                    ? "Désactiver le changement automatique"
+                    : "Activer le changement automatique"
+                }
+              >
+                {autoChangeEnabled ? (
+                  <>
+                    <Clock size={14} />
+                    <span>Auto (ON)</span>
+                  </>
+                ) : (
+                  <>
+                    <ClockOff size={14} />
+                    <span>Auto (OFF)</span>
+                  </>
+                )}
+              </button>
+              <div className="auto-change-info">
+                {autoChangeEnabled
+                  ? "Les effets changent automatiquement toutes les 5 secondes"
+                  : "Changement automatique désactivé"}
+              </div>
+            </div>
+          )}
+
           <div className="voice-presets">
             <button className="voice-preset deep" onClick={applyDeepVoice}>
               <Skull size={14} />

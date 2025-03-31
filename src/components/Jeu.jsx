@@ -23,6 +23,7 @@ import AudioEffectsController from "./AudioEffectsController";
 import { manches, chansons } from "../data/data";
 import "../styles/Jeu.css";
 import ReglesDuJeu from "./Regles";
+import ListeChansons from "./ListeChansons";
 
 const MAX_SONGS_PER_ROUND = 20;
 
@@ -1220,6 +1221,14 @@ const Jeu = () => {
       {/* Ajouter le composant ReglesDuJeu */}
       <ReglesDuJeu />
 
+      {/* Ajouter le composant ListeChansons */}
+      <ListeChansons
+        chansons={chansons}
+        chansonsJouees={chansonsJouees}
+        chansonsJoueesParManche={chansonsJoueesParManche}
+        mancheActuelle={mancheActuelle}
+      />
+
       <InfoManche manche={donneesMancheActuelle} />
       {mancheActuelle === 3 && (
         <div className="effets-info">
@@ -1337,6 +1346,8 @@ const Jeu = () => {
                   isExpanded={audioEffectsExpanded}
                   toggleExpanded={toggleAudioEffectsExpanded}
                   currentEffects={audioEffectsParams}
+                  isPlaying={isPlaying}
+                  mancheActuelle={mancheActuelle}
                 />
               )}
             </div>

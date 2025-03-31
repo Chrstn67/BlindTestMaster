@@ -9,6 +9,8 @@
   --text-light: #718096;
   --primary: #6c5ce7;
   --border: #e2e8f0;
+  --success: #00b894;
+  --warning: #fdcb6e;
 }
 
 .audio-effects-controller {
@@ -51,10 +53,80 @@
   margin-left: auto;
 }
 
+.audio-effects-controller .effects-header .auto-change-indicator {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 8px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  padding: 2px 8px;
+}
+
+.audio-effects-controller .effects-header .auto-change-indicator .countdown {
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: white;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+
 .audio-effects-controller .effects-content {
   padding: 0.8rem;
   max-height: 300px;
   overflow-y: auto;
+}
+
+.audio-effects-controller .auto-change-toggle {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  background-color: rgba(108, 92, 231, 0.1);
+  border-radius: var(--radius);
+  padding: 0.5rem;
+  border: 1px dashed var(--accent);
+}
+
+.audio-effects-controller .auto-change-toggle .auto-change-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: 0.8rem;
+  background-color: var(--text-light);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.audio-effects-controller .auto-change-toggle .auto-change-button.active {
+  background-color: var(--success);
+}
+
+.audio-effects-controller .auto-change-toggle .auto-change-button:hover {
+  transform: translateY(-2px);
+}
+
+.audio-effects-controller .auto-change-toggle .auto-change-info {
+  font-size: 0.7rem;
+  color: var(--text-light);
+  text-align: center;
+  margin-top: 0.5rem;
 }
 
 .audio-effects-controller .effects-content .effect-group {

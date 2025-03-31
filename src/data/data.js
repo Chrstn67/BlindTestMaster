@@ -153,8 +153,8 @@ export const chansons = [
   },
   {
     id: 16,
-    titre: "Zoe Wees",
-    artiste: "Don't Give Up",
+    titre: "Don't Give Up",
+    artiste: "Zoe Wees",
     audioUrl: "./audio/ZoeWees-DontGive-Up.mp3",
     paroles:
       "Don't give up, no, no, don't give up, no, no\nDon't give up, no, no\nDo you ever feel like the teardrops just won't dry? (They just won't dry, they just won't dry)\nSmiling in a crowd when all you wanna do is cry (you wanna cry, you wanna cry)\nDo you ever feel, do you ever feel alone? (Alone, alone, alone, alone)\nDo you ever feel like there's just nowhere to go? (Nowhere to go, nowhere to go)\nWhen the world turns upside down, and you're falling to the ground\nAnd the oceans in the sky got you feeling low\nWhen the world turns upside down, and you're falling to the ground\nAnd the oceans in the sky, don't give up, no, no\nDon't give up, no, no, don't give up, no, no\nDon't give up, no, no\nDon't you give up, no, no, no\nDancing with the sun, but there's thunder in your mind (thunder in your mind, thunder in your mind)\nYou're gon' be okay, I know it's hard, but you'll survive (yeah, you'll survive, yeah, you'll survive)\nDo you ever feel, do you ever feel alone? (Alone, alone, alone, alone)\nWhen the world turns upside down, and you're falling to the ground\nAnd the oceans in the sky got you feeling low\nWhen the world turns upside down, and you're falling to the ground\nAnd the oceans in the sky, don't give up, no, no\nDon't give up, no, no, don't give up, no, no\nDon't give up, no, no\nDon't you give up, no, no, no\nKeep running through the clouds, you're gonna make it out\nYou're gonna make it out, you'll keep flying\nWhen the world turns upside down, and you're falling to the ground\nAnd the oceans in the sky, don't give up, no, no\nDon't give up, no, no, don't give up, no, no\nDon't give up, no, no\nDon't you give up, no, no, no",
@@ -553,180 +553,239 @@ export const chansons = [
     paroles:
       "Drink from me, drink from me\nThat I shoot across the sky\nSymphony\nThat I shoot across the sky\nWe're on a...\nDrink from me, drink from me\nThat I shoot across the sky\nSymphony\n(So high, so high)\nThat I shoot across the sky\n\nOh, angel sent from up above\nYou know you make my world light up\nWhen I was down, when I was hurt\nYou came to lift me up\nLife is a drink, and love's a drug\nOh, now I think I must be miles up\nWhen I was a river, dried up\nYou came to rain a flood\n\nYou said drink from me, drink from me\nWhen I was so thirsty\nPoured on a symphony\nNow I just can't get enough\nPut your wings on me, wings on me\nWhen I was so heavy\nPoured on a symphony\nWhen I'm low, low, low, low\n\nI, oh, I, oh, I\nGot me feeling drunk and high\nSo high, so high\nOh, I, oh, I, oh, I\nNow I'm feeling drunk and high\nSo high, so high\nWoo!\n\nOh, angel sent from up above\nI feel it coursing through my blood\nLife is a drink, your love's about\nTo make the stars come out\n\nPut your wings on me, wings on me\nWhen I was so heavy\nPoured on a symphony\nWhen I'm low, low, low, low\n\nI, oh, I, oh, I\nGot me feeling drunk and high\nSo high, so high\nOh I, oh, I, oh, I\nNow I'm feeling drunk and high\nSo high, so high\n\nI, oh, I, oh, I\nLa la la la la la la\nSo high, so high\nI, oh, I, oh, I\nI'm feeling drunk and high\nSo high, so high\n\nThat I shoot across the sky\nThat I shoot across the...\nThat I shoot across the sky\nWatch me shoot across the..\nThat I shoot across the sky\nThat I shoot across the...\nThat I shoot across the sky\nThat I shoot across the",
   },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
+  {
+    id: 66,
+    titre: "Le Lac",
+    artiste: "Julien Doré",
+    audioUrl: "./audio/Le-lac.mp3",
+    paroles:
+      "La Madone au Nord\nEt le lac se dessine\nCourageux et fort\nOù rien ne respire\n\nCorps contre corps\nCiel contre cils\nLa forêt se tord\nL'horizon soupire\n\nT'aimer sur les bords du lac\nTon cœur sur mon corps qui respire\nPourvu que les hommes nous regardent\nAmoureux de l'ombre et du pire\n\nT'aimer sur les bords du lac\nTon cœur sur mon corps qui respire\nPourvu que les hommes nous regardent\nAmoureux de l'ombre et du pire\n\nJe reviendrai fort\nSurprendre la cime\nLa rivière et l'or\nFont prendre racine\n\nJ'ai trompé la mort\nLa pente est facile\nSerre-moi encore\nQue mes anges vacillent\n\nT'aimer sur les bords du lac\nTon cœur sur mon corps qui respire\nPourvu que les hommes nous regardent\nAmoureux de l'ombre et du pire\n\nSi demain tu regrettes\nLe miroir écorché\nQue le lac te reflète\nPromets-moi d'oublier\n\nSi demain tu regrettes\nLe miroir écorché\nQue le lac te reflète\nPromets-moi d'oublier\n\nT'aimer sur les bords du lac\nTon cœur sur mon corps qui respire\nPourvu que les hommes nous regardent\nAmoureux de l'ombre et du pire\n\nT'aimer sur les bords du lac\nTon cœur sur mon corps qui respire\nPourvu que les hommes nous regardent\nAmoureux de l'ombre et du pire",
+  },
+  {
+    id: 67,
+    titre: "Diamonds",
+    artiste: "Rihanna",
+    audioUrl: "./audio/Rihanna-Diamonds.mp3",
+    paroles:
+      "Shine bright like a diamond\nShine bright like a diamond\n\nFind light in the beautiful sea\nI choose to be happy\nYou and I, you and I\nWe're like diamonds in the sky\n\nYou're a shooting star I see\nA vision of ecstasy\nWhen you hold me, I'm alive\nWe're like diamonds in the sky\n\nI knew that we'd become one right away\nOh, right away\nAt first sight I felt the energy of sun rays\nI saw the life inside your eyes\n\nSo shine bright tonight, you and I\nWe're beautiful like diamonds in the sky\nEye to eye, so alive\nWe're beautiful like diamonds in the sky\n\nShine bright like a diamond\nShine bright like a diamond\nShine bright like a diamond\nWe're beautiful like diamonds in the sky\n\nShine bright like a diamond\nShine bright like a diamond\nShine bright like a diamond\nWe're beautiful like diamonds in the sky\n\nPalms rise to the universe\nAs we moonshine and molly\nFeel the warmth, we'll never die\nWe're like diamonds in the sky\n\nYou're a shooting star I see\nA vision of ecstasy\nWhen you hold me, I'm alive\nWe're like diamonds in the sky\n\nAt first sight I felt the energy of sun rays\nI saw the life inside your eyes\n\nSo shine bright tonight, you and I\nWe're beautiful like diamonds in the sky\nEye to eye, so alive\nWe're beautiful like diamonds in the sky\n\nShine bright like a diamond\nShine bright like a diamond\nShine bright like a diamond\nWe're beautiful like diamonds in the sky\n\nShine bright like a diamond\nShine bright like a diamond\nShine bright like a diamond\nWe're beautiful like diamonds in the sky\n\nShine bright like a diamond\nShine bright like a diamond\nShine bright like a diamond\nSo shine bright tonight, you and I\nWe're beautiful like diamonds in the sky\nEye to eye, so alive\nWe're beautiful like diamonds in the sky\n\nShine bright like a diamond\nShine bright like a diamond\nShine bright like a diamond\nOh, yeah \nShine bright like a diamond \nShine bright like a diamond \nShine bright like a diamond \nShine bright like a diamond",
+  },
+  {
+    id: 68,
+    titre: "Whatever",
+    artiste: "Kygo X Ava Max",
+    audioUrl: "./audio/Kygo-Ava Max_Whatever.mp3",
+    paroles:
+      "There's a space in my heart\nWhen it all comes crashing down\nAnytime I hear your name out in public\nThere's a place that I go\nEvery time that you're in town\nIt's just me and the knots in my stomach\n\nAnd it's true\nIt wasn't easy\nGetting over you\nBut that's just what I had to do\n\nWhatever, whatever\nWe were never good together\nI'll be here and you stay there\nTruth is I never cared\nWhatever, whatever\nTwo years, that ain't forever\nI'll be here and you stay there\nWon't see me cry no tears\n\nWhatever, whatever\nWon't see me cry no tears\nWhatever, whatever\nWon't see me cry no tears\nWhatever, whatever\nWon't see me cry no tears\nWhatever, whatever\nWon't see me cry no tears\n\nNever mind, never mind\nFeels like you were never mine\nGo lose myself\nIn the arms of a stranger\nAnd yeah, it sucks\nSometimes in love\nYou try your best but it doesn't work out\nAnd it don't matter either way, oh yeah\n\nWhatever, whatever\nWe were never good together\nI'll be here and you stay there\nTruth is I never cared\nWhatever, whatever\nTwo years, that ain't forever\nI'll be here and you stay there\nWon't see me cry no tears\n\nWon't see me cry no tears\nWhatever, whatever\nWon't see me cry no tears\nWhatever, whatever\nWon't see me cry no tears\nWhatever, whatever\nWon't see me cry no tears\n\nWhatever, whatever\nWe were never good together\nI'll be here and you stay there\nTruth is I never cared\nWhatever, whatever\nTwo years, that ain't forever\nI'll be here and you stay there\nWon't see me cry no tears",
+  },
+  {
+    id: 69,
+    titre: "Scared To Be Lonely",
+    artiste: "Martin Garrix X Dua Lipa",
+    audioUrl: "./audio/Garrix_Scared-To-Be-Only.mp3",
+    paroles:
+      "It was great at the very start\nHands on each other\nCouldn't stand to be far apart\nCloser the better\n\nNow we're picking fights\nAnd slamming doors\nMagnifying all our flaws\nAnd I wonder why\nWonder what for\nWhy we keep coming back for more\n\nIs it just our bodies?\nAre we both losing our minds?\nIs the only reason you're holding me tonight\n'Cause we're scared to be lonely?\nDo we need somebody\nJust to feel like we're alright?\nIs the only reason you're holding me tonight\n'Cause we're scared to be lonely?\n\nToo much time, losing track of us\nWhere was the real?\nUndefined, spiraling out of touch\nForgot how it feels\n\nAll the messed up fights\nAnd slamming doors\nMagnifying all our flaws\nAnd I wonder why\nWonder what for\nIt's like we keep coming back for more\n\nIs it just our bodies?\nAre we both losing our minds?\nIs the only reason you're holding me tonight\n'Cause we're scared to be lonely?\nDo we need somebody\nJust to feel like we're alright?\nIs the only reason you're holding me tonight\n'Cause we're scared to be lonely?\n\nScared to be lonely\n\nEven when we know it's wrong\nBeen somebody better for us all along\nTell me, how can we keep holding on?\nHolding on tonight\n'Cause we're scared to be lonely\nEven when we know it's wrong\nBeen somebody better for us all along\nTell me, how can we keep holding on?\nHolding on tonight\n'Cause we're scared to be lonely\n\nIs it just our bodies?\nAre we both losing our minds?\nIs the only reason you're holding me tonight\n'Cause we're scared to be lonely?\n\nScared to be lonely\nScared to be lonely\nEh, eh, scared to be lonely",
+  },
+  {
+    id: 70,
+    titre: "Be The One",
+    artiste: "Dua Lipa",
+    audioUrl: "./audio/Dua-Lipa_Be-The-One.mp3",
+    paroles:
+      "I see the moon, I see the moon, I see the moon\nOh, when you're looking at the sun\nNot a fool, I'm not a fool, not a fool\nNo, you're not fooling anyone\n\nOh, but when you're gone\nWhen you're gone, when you're gone\nOh baby, all the lights go out\nThinking, oh that, baby, I was wrong\nI was wrong, I was wrong\nCome back to me, baby, we can work this out\n\nOh baby, come on, let me get to know you\nJust another chance so that I can show\nThat I won't let you down and run\nNo, I won't let you down and run\nCause I could be the one\nI could be the one\nI could be the one\nI could be the one\n\nI see in blue, I see in blue, I see in blue\nOh, when you see everything in red\nThere is nothing that I wouldn't do for you\nDo for you, do for you\nOh, cause you got inside my head\n\nOh, but when you're gone\nWhen you're gone, when you're gone\nOh baby, all the lights go out\nThinking, oh that, baby, I was wrong\nI was wrong, I was wrong\nCome back to me, baby, we can work this out\n\nOh baby, come on, let me get to know you\nJust another chance so that I can show\nThat I won't let you down and run\nNo, I won't let you down and run\nCause I could be the one\nI could be the one\nI could be the one\n\nBe the one, be the one, be the one\nBe the one, be the one, be the one\nI could be the one\nBe the one, be the one, be the one\nBe the one, be the one, be the one\nI could be the one\nBe the one, be the one, be the one\nBe the one, be the one, be the one\nI could be the one\nBe the one, be the one, be the one\nBe the one, be the one, be the one\nWill you be mine?\n\nOh baby, come on, let me get to know you\nJust another chance so that I can show\nThat I won't let you down and run\nNo, I won't let you down and run\nCause I could be the one\nI could be the one\nI could be the one",
+  },
+  {
+    id: 71,
+    titre: "Without You",
+    artiste: "Mariah Carey",
+    audioUrl: "./audio/WithoutYou.mp3",
+    paroles:
+      "No I can't forget this evening\nOr your face as you were leaving\nBut I guess that's just the way the story goes\nYou always smile but in your eyes your sorrow shows\nYes it shows\n\nNo I can't forget tomorrow\nWhen I think of all my sorrow\nWhen I had you there but then I let you go\nAnd now it's only fair that I should let you know\nWhat you should know\n\nI can't live\nIf living is without you\nI can't live\nI can't give anymore\nCan't live\nIf living is without you\nI can't give\nI can't give anymore\n\nWell I can't forget this evening\nOr your face as you were leaving\nBut I guess that's just the way the story goes\nYou always smile but in your eyes your sorrow shows\nYes it shows\n\nI can't live\nIf living is without you\nI can't live\nI can't give anymore\nCan't live\nIf living is without you\nI can't live\nI can't give anymore\n\nCan't live\nOh I can't live\nNo no no no\n\nI can't live\nOh can't live\nLiving is without you\nOh I can't live\nI can't live\nI can't give anymore\n\nOh can't live\nOh I can't live\nNo no no I",
+  },
+  {
+    id: 72,
+    titre: "Rehab",
+    artiste: "Amy Winehouse",
+    audioUrl: "./audio/Amy-Winehouse_Rehab.mp3",
+    paroles:
+      "They tried to make me go to rehab, but I said 'no, no, no'\nYes, I've been black, but when I come back, you'll know, know, know\nI ain't got the time and if my daddy thinks I'm fine\nHe's tried to make me go to rehab, but I won't go, go, go\n\nI'd rather be at home with Ray\nI ain't got seventy days\n'Cause there's nothing\nThere's nothing you can teach me\nThat I can't learn from Mr. Hathaway\n\nI didn't get a lot in class\nBut I know it don't come in a shot glass\n\nThey tried to make me go to rehab, but I said 'no, no, no'\nYes, I've been black, but when I come back, you'll know, know, know\nI ain't got the time and if my daddy thinks I'm fine\nHe's tried to make me go to rehab, but I won't go, go, go\n\nThe man said 'Why do you think you're here?'\nI said 'I got no idea'\nI'm gonna, I'm gonna lose my Baby\nSo I always keep a bottle near\n\nHe said 'I just think you're depressed'\nThis me 'Yeah, baby, and the rest'\n\nThey tried to make me go to rehab but I said 'no, no, no'\nYes, I've been black, but when I come back, you'll know, know, know..\n\nI don't ever wanna drink again\nI just, ooh, I just need a friend\nI'm not gonna spend ten weeks\nHave everyone think I'm on the mend\n\nIt's not just my pride\nIt's just 'til these tears have dried\n\nThey tried to make me go to rehab, but I said 'no, no, no'\nYes, I've been black, but when I come back, you'll know, know, know\nI ain't got the time and if my daddy thinks I'm fine\nHe's tried to make me go to rehab, but I won't 'go, go, go'",
+  },
+  {
+    id: 73,
+    titre: "Donne-moi ton coeur",
+    artiste: "Louane",
+    audioUrl: "./audio/Donne-moi-ton-cœur.mp3",
+    paroles:
+      "Donne-moi ton cœur\nTa main et le reste\nDonne-moi c'que tu es, c'que tu es\nDis-moi tes peurs\nChagrin et le reste\nDis-moi qui tu es, qui tu es\n\nJ'imagine un monde\nUn monde céleste\nOù personne ne sort, non\nOù personne ne reste\nJ'imagine un cri (J'imagine un cri)\nDes cris dans la nuit (Des cris dans la nuit)\nJ'imagine tellement de choses de toi\nC'est peut-être toi que je suis des fois\n\nJ'imagine un nid de récits, de mots tristes\nJ'imagine un lit, une insomnie complice\nJ'imagine une moi qui se noie dans tes vices\nSans foi, ni loi, dans les mailles je me glisse\nJ'imagine un homme, une femme, une nourrice\nQui ne voit qu'un clone de moi dans mes disques\nUn gros tintamarre dans mon âme novice\nJe vais rentrer tard car j'ne vois plus les risques\n\nS'te plaît donne-moi ton cœur\nDonne-moi c'que tu es, c'que tu es, c'que tu es (C'que tu es)\nDis-moi tes peurs\nDis-moi qui tu es, qui tu es, qui tu es (Qui tu es)\n\nJ'veux revoir le monde de l'autrefois\nCelui que le monde ne connaît pas\nJ'veux revoir l'ombre de l'autre toi\nCelui que le monde ne connaît pas\n\nJ'veux revoir le monde de l'autre fois\nCelui que le monde ne connaît pas\nJ'veux revoir en toi tout c'que j'suis pas\nDis-moi qui tu es mais surtout\n\nS'te plaît donne-moi ton cœur\nDonne-moi c'que tu es, c'que tu es, c'que tu es (C'que tu es)\nDis-moi tes peurs\nDis-moi qui tu es, qui tu es, qui tu es (Qui tu es)\nS'te plaît donne-moi ton cœur\nDonne-moi c'que tu es, c'que tu es\nDis-moi tes peurs\nDis-moi qui tu es, qui tu es",
+  },
+  {
+    id: 74,
+    titre: "Just Give Me a Reason",
+    artiste: "P!nk ft. Nate Ruess",
+    audioUrl: "./audio/P!nk_Just-Give-Me-A-Reason.mp3",
+    paroles:
+      "Right from the start\nYou were a thief\nYou stole my heart\nAnd I your willing victim\nI let you see the parts of me\nThat weren't all that pretty\nAnd with every touch you fixed them\n\nNow you've been talking in your sleep, oh, oh\nThings you never say to me, oh, oh\nTell me that you've had enough\nOf our love, our love\n\nJust give me a reason\nJust a little bit's enough\nJust a second we're not broken just bent\nAnd we can learn to love again\nIt's in the stars\nIt's been written in the scars on our hearts\nWe're not broken just bent\nAnd we can learn to love again\n\nI'm sorry I don't understand\nWhere all of this is coming from\nI thought that we were fine\n(Oh, we had everything)\nYour head is running wild again\nMy dear we still have everythin'\nAnd it's all in your mind\n(Yeah, but this is happenin')\n\nYou've been havin' real bad dreams, oh, oh\nYou used to lie so close to me, oh, oh\nThere's nothing more than empty sheets\nBetween our love, our love\nOh, our love, our love, love\n\nJust give me a reason\nJust a little bit's enough\nJust a second we're not broken just bent\nAnd we can learn to love again\nI never stopped\nYou're still written in the scars on my heart\nYou're not broken just bent\nAnd we can learn to love again\n\nOh, tear ducts and rust\nI'll fix it for us\nWe're collecting dust\nBut our love's enough\nYou're holding it in\nYou're pouring a drink\nNo nothing is as bad as it seems\nWe'll come clean\n\nJust give me a reason\nJust a little bit's enough\nJust a second we're not broken just bent\nAnd we can learn to love again\nIt's in the stars\nIt's been written in the scars on our hearts\nThat we're not broken just bent\nAnd we can learn to love again\n\nJust give me a reason\nJust a little bit's enough\nJust a second we're not broken just bent\nAnd we can learn to love again\nIt's in the stars\nIt's still written in the scars on our hearts\nThat we're not broken just bent\nAnd we can learn to love again\n\nOh-oh, we can learn to love again\nOh-oh, can learn to love again\nOh, oh, that we're not broken just bent\nAnd we can learn to love again",
+  },
+  {
+    id: 75,
+    titre: "Popcorn Salé",
+    artiste: "Santa",
+    audioUrl: "./audio/",
+    paroles:
+      "J'pourrais jouer le faux héros au milieu des flammes\nRepartir à zéro pour un supplément d'âme\nJ'pourrais te regarder dans les yeux\nTe dire que tout ira mieux\nJ'mettrai la musique plus fort pour plus entendre dehors\n\nAllez viens\nJe t'emmène loin regarder le monde s'écrouler\nY'aura du popcorn salé\nY'aura un nouveau monde à nos pieds\n\nJ'pourrais jouer les beaux mots au milieu des femmes\nLe premier domino de ton cœur qui s'emballe\nJ'pourrais te regarder dans les yeux\nTe dire qu'avant c'était mieux\nRemettre la musique plus fort pour plus entendre nos remords\nJ'entendrai les bravos étouffer les flammes\nJ'éteindrai le chaos, tu seras ma femme\nEn on se regardera dans les yeux\nDire que demain sera mieux\nJe chanterai toujours plus fort pour qu'on m'entende dehors\n\nAllez viens\nJe t'emmène loin regarder le monde s'écrouler\nY'aura du popcorn salé\nY'aura un nouveau monde à nos pieds\nAllez viens\nJe t'emmène loin regarder le monde s'écrouler\nY'aura du popcorn salé\nY'aura un nouveau monde à nos pieds\nAllez viens\nJe t'emmène loin regarder le monde s'écrouler\nY'aura du popcorn salé\nY'aura un nouveau monde à nos pieds",
+  },
+  {
+    id: 76,
+    titre: "Au Cœur De Moi",
+    artiste: "Amir",
+    audioUrl: "./audio/Amir.mp3",
+    paroles:
+      "Un jour, je suis prédateur\nUn jour, je suis la proie\nUn jour, j’ai chaud au cœur\nUn jour, j’ai tellement froid\nParfois je ne vois plus clair\nLe miroir me déforme\nJe me lève sans lumière\nEt mes rêves s’endorment\n\nPlonge au cœur de moi\nAu fond de mes abimes, de mes abimes\nDis-moi ce que tu vois\nPlonge au cœur de moi\nEt quand tout me décime, tout me décime\nJe veux renaitre en toi\n\nViens, écris sur ma peau les mots que je n’ose pas\nMême au bord du KO, si je tombe retiens-moi\n\nUn jour, je suis l’acteur qui fait son cinéma\nUn jour, c’est le destin qui tient la caméra\nMon esprit solitaire se perd au fond des bois\nJe vois le monde à l’envers, mes rêves sont à l’étroit\n\nPlonge au cœur de moi\nAu fond de mes racines, de mes racines\nOu personne ne va\nPlonge au cœur de moi\nLe temps nous laisse en ruine, nous laisse en ruine\nJe veux renaitre en toi\n\nViens, écris sur ma peau les mots que je n’ose pas\nMême au bord du KO si je tombe retiens-moi\n\nEt j’entends ton écho, ohohohooo\nC’est la voix d’un jour nouveau\nLe plus beau des flambeaux\n\nViens, écris sur ma peau les mots que je n’ose pas\nMême au bord du KO si je tombe retiens-moi\n\nViens, écris sur ma peau les mots que je n’ose pas\nMême au bord du KO si je tombe retiens-moi",
+  },
+  {
+    id: 77,
+    titre: "Ceux qu'on était",
+    artiste: "Pierre Garnier",
+    audioUrl: "./audio/Pierre-Garnier_Ceux-quon-etait.mp3",
+    paroles:
+      "Je sais c'que tu vas dire, que c'est pas à cause de moi\nMais t'es prête à partir, et tout est rangé déjà\nY a plus qu'des affaires à moi\nJ'vais pas te retenir, j'l'ai déjà fait trop de fois\nEt comme dernier souvenir, je n'veux pas de celui-là\nPas celui où tu t'en vas\n\nJ'aimerais garder le meilleur de ceux qu'on était\nEt je sais qu'ailleurs t'iras chercher\nUn peu de ce que je ne t'ai pas donné\nJe vais garder le meilleur de ceux qu'on était\nEt c'est pas grave si tu vas chercher\nUn peu de ce que je ne t'ai pas donné, pas donné\n\nS'il fallait recommencer, je crois que je n'changerais rien\nDe nous j'ai tout aimé, même quand ça s'passait pas bien\nT'avais de l'or dans les mains\n\nJ'aimerais garder le meilleur de ceux qu'on était\nEt je sais qu'ailleurs t'iras chercher\nUn peu de ce que je ne t'ai pas donné\nJe vais garder le meilleur de ceux qu'on était\nEt c'est pas grave si tu vas chercher\nUn peu de ce que je ne t'ai pas donné\n\nOn se regarde, peut-être pour la dernière fois\nEt sans se parler, c'est comme un dernier au revoir\n\nJ'aimerais garder le meilleur de ceux qu'on était\nEt je sais qu'ailleurs t'iras chercher\nUn peu de ce que je ne t'ai pas donné\nJe vais garder (Je vais garder) le meilleur de ceux qu'on était\nEt c'est pas grave si tu vas chercher (Ailleurs t'iras chercher)\nUn peu de ce que je ne t'ai pas donné, pas donné\n\nLe meilleur de ceux qu'on était\nLe meilleur de ceux qu'on était",
+  },
+  {
+    id: 78,
+    titre: "Stay",
+    artiste: "The Kid LAROI & Justin Bieber",
+    audioUrl: "./audio/STAY-TheKidLAROI.mp3",
+    paroles:
+      "I do the same thing I told you that I never would\nI told you I'd change, even when I knew I never could\nKnow that I can't find nobody else as good as you\nI need you to stay, need you to stay, hey (Oh)\n\nI get drunk, wake up, I'm wasted still\nI realize the time that I wasted here\nI feel like you can't feel the way I feel\nOh, I'll be fucked up if you can't be right here\n\nOh, ooh-whoa (Oh, ooh-whoa, ooh-whoa)\nOh, ooh-whoa (Oh, ooh-whoa, ooh-whoa)\nOh, ooh-whoa (Oh, ooh-whoa, ooh-whoa)\nOh, I'll be fucked up if you can't be right here\n\nI do the same thing I told you that I never would\nI told you I'd change, even when I knew I never could\nKnow that I can't find nobody else as good as you\nI need you to stay, need you to stay, hey\nI do the same thing I told you that I never would\nI told you I'd change, even when I knew I never could\nKnow that I can't find nobody else as good as you\nI need you to stay, need you to stay, hey\n\nWhen I'm away from you, I miss your touch (Ooh)\nYou're the reason I believe in love\nIt's been difficult for me to trust (Ooh)\nAnd I'm afraid that I'ma fuck it up\nAin't no way that I can leave you stranded\n'Cause you ain't never left me empty-handed\nAnd you know that I know that I can't live without you\nSo, baby, stay\n\nOh, ooh-whoa (Oh, ooh-whoa, ooh-whoa)\nOh, ooh-whoa (Oh, ooh-whoa, ooh-whoa)\nOh, ooh-whoa (Oh, ooh-whoa, ooh-whoa)\nI'll be fucked up if you can't be right here\n\nI do the same thing I told you that I never would\nI told you I'd change, even when I knew I never could\nKnow that I can't find nobody else as good as you\nI need you to stay, need you to stay, hey\nI do the same thing I told you that I never would\nI told you I'd change, even when I knew I never could\nKnow that I can't find nobody else as good as you\nI need you to stay, need you to stay, hey\n\nWhoa-oh\nI need you to stay, need you to stay, hey",
+  },
+  {
+    id: 79,
+    titre: "Falling",
+    artiste: "Harry Styles",
+    audioUrl: "./audio/Harry-Styles_Falling.mp3",
+    paroles:
+      "I'm in my bed\nAnd you're not here\nAnd there's no one to blame but the drink and my wandering hands\n\nForget what I said\nIt's not what I meant\nAnd I can't take it back, I can't unpack the baggage you left\n\nWhat am I now?\nWhat am I now?\nWhat if I'm someone I don't want around?\nI'm falling again\nI'm falling again\nI'm falling\n\nWhat if I'm down?\nWhat if I'm out?\nWhat if I'm someone you won't talk about?\nI'm falling again\nI'm falling again\nI'm falling\n\nYou said you cared\nAnd you missed me too\nAnd I'm well aware I write too many songs about you\n\nAnd the coffee's out\nAt the Beachwood Cafe\nAnd it kills me 'cause I know we've run out of things we can say\n\nWhat am I now?\nWhat am I now?\nWhat if I'm someone I don't want around?\nI'm falling again\nI'm falling again\nI'm falling\n\nWhat if I'm down?\nWhat if I'm out?\nWhat if I'm someone you won't talk about?\nI'm falling again\nI'm falling again\nI'm falling\n\nAnd I get the feeling that you'll never need me again\n\nWhat am I now?\nWhat am I now?\nWhat if you're someone I just want around?\nI'm falling again\nI'm falling again\nI'm falling\n\nWhat if I'm down?\nWhat if I'm out?\nWhat if I'm someone you won't talk about?\nI'm falling again\nI'm falling again\nI'm falling",
+  },
+  {
+    id: 80,
+    titre: "Bad Dreams",
+    artiste: "Teddy Swims",
+    audioUrl: "./audio/Teddy-Swims_Bad-Dreams.mp3",
+    paroles:
+      "Sun is going down, time is running out\nNo one else around but me\nSteady losing light\nSteady losing my mind\nMoving shadows and grinding teeth\n\nWithout you, there ain't no place for me to hide\nWithout you, there's no way I can sleep tonight\nWhat I'd do for a little bit of peace and quiet\nWithout you I keep\n\nSlippin' into bad dreams\nWhere there's no you and I\nNo sound when I cry\nI love you and I need you to set me free\nFrom all of these bad dreams\nWaiting on the other side\nNo sound when I cry\nI love you and I need you to set me free\nFrom all of these, all of these\n\n(Ooh) Bad dreams\n(Ooh) All of these, baby, please\n\nCome around\nHelp me settle down\nHellish habits can cloud my head\nWhat you waiting for\nSomething physical\nI can't do this by myself\n\nWithout you, there ain't no place for me to hide\nWithout you, there's no way I can sleep tonight\nWhat I'd do for a little bit of peace and quiet\nWithout you I keep\n\nSlippin' into bad dreams\nWhere there's no you and I\nNo sound when I cry\nI love you and I need you to set me free\nFrom all of these bad dreams\nWaiting on the other side\nNo sound when I cry\nI love you and I need you to set me free\nFrom all of these, all of these\n\n(Ooh) Bad dreams (bad dreams), baby, please\n(Ooh) All of these (baby, please), all of these",
+  },
+  {
+    id: 81,
+    titre: "Emmenez-moi",
+    artiste: "Charles Aznavour",
+    audioUrl: "./audio/Charles-Aznavour_Emmenez-moi.mp3",
+    paroles:
+      "Vers les docks où le poids et l'ennui, me courbent le dos\nIls arrivent le ventre alourdi de fruits, les bateaux\nIls viennent du bout du monde, apportant avec eux, des idées vagabondes, aux reflets de ciels bleus\nDe mirages...\nTraînant un parfum poivré de pays inconnus et d'éternels étés, où l'on vit presque nus\nSur les plages...\nMoi qui n'ai connu toute ma vie que le ciel du nord\nJ'aimerais débarbouiller ce gris, en virant de bord\n\nEmmenez-moi au bout de la terre\nEmmenez-moi au pays des merveilles\nIl me semble que la misère\nSerait moins pénible au soleil\n\nDans les bars à la tombée du jour, avec les marins\nQuand on parle de filles et d'amour, un verre à la main\nJe perds la notion des choses et soudain ma pensée m'enlève et me dépose un merveilleux été\nSur la grève...\nOù je vois tendant les bras l'amour qui, comme un fou, court au devant de moi et je me pends au cou\nDe mon rêve...\nQuand les bars ferment, que les marins rejoignent leur bord\nMoi je rêve encore jusqu'au matin debout sur le port\n\nEmmenez-moi au bout de la terre\nEmmenez-moi au pays des merveilles\nIl me semble que la misère\nSerait moins pénible au soleil\n\nUn beau jour sur un rafiot craquant de la coque au pont\nPour partir je travaillerais dans la soute à charbon\nPrenant la route qui mène à mes rêves d'enfant, sur des îles lointaines où rien n'est important\nQue de vivre...\nOù les filles alanguies vous ravissent le cœur en tressant, m'a-t-on dit, de ces colliers de fleurs\nQui enivrent...\nJe fuirais laissant là mon passé, sans aucun remords\nSans bagage et le cœur libéré, en chantant très fort\n\nEmmenez-moi au bout de la terre\nEmmenez-moi au pays des merveilles\nIl me semble que la misère\nSerait moins pénible au soleil\n\nEmmenez-moi au bout de la terre\nEmmenez-moi au pays des merveilles\nIl me semble que la misère\nSerait moins pénible au soleil",
+  },
+  {
+    id: 82,
+    titre: "Rouge",
+    artiste: "Michel Sardou",
+    audioUrl: "./audio/Michel-Sardou_Rouge.mp3",
+    paroles:
+      "Rouge\nComme un soleil couchant\nDe Méditerranée\nRouge\nComme le vin de Bordeaux\nDans ma tête étoilée\nRouge\nComme le sang de Rimbaud\nCoulant sur un cahier\nRouge\nComme la mer qui recouvre\nLe désert de Judée\n\nRouge\nComme les joues d'un enfant\nQuand il a trop joué\nRouge\nComme la pomme qui te donne\nLe parfum du péché\nRouge\nComme le feu du volcan\nQui va se réveiller\nRouge\nComme cette étoile au cœur\nDe ce dormeur couché\n\nComme un oiseau tué\nPar un chasseur tragique\nComme un acteur blessé\nPar les cris du public\nComme un violon brisé\nQui rejoue l'Héroïque\nComme la vision glacée\nDu dernier Titanic\n\nRouge\nComme le feu des tziganes\nQuand les violons s'affolent\nRouge\nComme un phare de signal\nQuand un avion s'envole\nRouge\nComme les lèvres d'une femme\nQuand l'amour la rend folle\nRouge\nComme le front du menteur\nQui trahit sur parole\n\nComme un oiseau tué\nPar un chasseur tragique\nComme un acteur blessé\nPar les cris du public\nComme un violon brisé\nQui rejoue l'Héroïque\nComme la vision glacée\nDu dernier Titanic\n\nComme le silence qui suit\nLes paroles en musique\nComme une symphonie\nQuand elle est pathétique\n\nRouge\nComme la colère d'un homme\nQuand il voit s'en aller\nRouge\nTout ce qu'il a construit\nTout ce qu'il a aimé\nRouge\nComme le manteau du Christ\nQue les soldats ont joué\nRouge\nComme la couleur du ciel \nQuand il va s'écrouler \n \nComme un oiseau tué \nPar un chasseur tragique \nComme un acteur blessé \nPar les cris du public \nComme un violon brisé \nQui rejoue l'Héroïque \nComme la vision glacée \nDu dernier Titanic \n \nComme le silence qui suit \nLes paroles en musique \nComme une symphonie \nQuand elle est pathétique",
+  },
+  {
+    id: 83,
+    titre: "Tattoo",
+    artiste: "Loreen",
+    audioUrl: "./audio/Loreen-Tattoo.mp3",
+    paroles:
+      "I don't wanna go\nBut baby, we both know\nThis is not our time\nIt's time to say goodbye\nUntil we meet again\n'Cause this is not the end\nIt will come a day\nWhen we will find our way\n\nViolins playing and the angels crying\nWhen the stars align then I'll be there\n\nNo, I don't care about them all\n'Cause all I want is to be loved\nAnd all I care about is you\nYou're stuck on me like a tattoo\nNo, I don't care about the pain\nI'll walk through fire and through rain\nJust to get closer to you\nYou're stuck on me like a tattoo\n\nI'm letting my hair down\nI'm taking it cool\nYou got my heart in your hand\nDon't lose it, my friend\nIt's all that I got\n\nViolins playing and the angels crying\nWhen the stars align then I'll be there\n\nNo, I don't care about them all\n'Cause all I want is to be loved\nAnd all I care about is you\nYou're stuck on me like a tattoo\nNo, I don't care about the pain\nI'll walk through fire and through rain\nJust to get closer to you\nYou're stuck on me like a tattoo\n\nNo, I don't care about them all\n'Cause all I want is to be loved\nAnd all I care about is you\nYou're stuck on me like a tattoo\nNo, I don't care about the pain\nI'll walk through fire and through rain\nJust to get closer to you\nYou're stuck on me like a tattoo\n\nAll I care about is love\nOh, oh, oh\nAll I care about is love\nYou're stuck on me like a tattoo",
+  },
+  {
+    id: 84,
+    titre: "Enjoy of The Silence",
+    artiste: "Depech Mode",
+    audioUrl: "./audio/Depeche-Mode_Enjoy-the-Silence.mp3",
+    paroles:
+      "Words like violence break the silence\nCome crashing in into my little world\nPainful to me, pierce right through me\nCan't you understand? Oh, my little girl\n\nAll I ever wanted\nAll I ever needed is here in my arms\nWords are very unnecessary\nThey can only do harm\n\nVows are spoken to be broken\nFeelings are intense, words are trivial\nPleasures remain, so does the pain\nWords are meaningless and forgettable\n\nAll I ever wanted\nAll I ever needed is here in my arms\nWords are very unnecessary\nThey can only do harm\n\nAll I ever wanted\nAll I ever needed is here in my arms\nWords are very unnecessary\nThey can only do harm\nAll I ever wanted\nAll I ever needed is here in my arms\nWords are very unnecessary\nThey can only do harm\n\nEnjoy the silence",
+  },
+
+  {
+    id: 85,
+    titre: "Because Of You",
+    artiste: "Kelly Clarkson",
+    audioUrl: "./audio/Kelly-Clarkson.mp3",
+    paroles:
+      "I will not make the same mistakes that you did\nI will not let myself\n'Cause my heart so much misery\nI will not break the way you did\nYou fell so hard\nI've learned the hard way\nTo never let it get that far\n\nBecause of you\nI never stray too far from the sidewalk\nBecause of you\nI learned to play on the safe side so I don't get hurt\nBecause of you\nI find it hard to trust not only me, but everyone around me\nBecause of you\nI am afraid\n\nI lose my way\nAnd it's not too long before you point it out\nI cannot cry\nBecause I know that's weakness in your eyes\nI'm forced to fake\nA smile, a laugh every day of my life\nMy heart can't possibly break\nWhen it wasn't even whole to start with\n\nBecause of you\nI never stray too far from the sidewalk\nBecause of you\nI learned to play on the safe side so I don't get hurt\nBecause of you\nI find it hard to trust not only me, but everyone around me\nBecause of you\nI am afraid\n\nI watched you die\nI heard you cry every night in your sleep\n(I watched you die, in your sleep)\nI was so young\nYou should have known better than to lean on me\n(I was too young for you to lean on me)\nYou never thought of anyone else\nYou just saw your pain\n(You never saw me, yeah, yeah)\nAnd now I cry in the middle of the night\nFor the same damn thing\n\nBecause of you\nI never stray too far from the sidewalk\nBecause of you\nI learned to play on the safe side so I don't get hurt\nBecause of you\nI try my hardest just to forget everything\nBecause of you\nI don't know how to let anyone else in\nBecause of you\nI'm ashamed of my life because it's empty\nBecause of you\nI am afraid\n\nBecause of you (Ah-ah, ah, ah)\nBecause of you, mm, ooh",
+  },
+  {
+    id: 86,
+    titre: "Jonas Blue ft. JP Cooper",
+    artiste: "Perfect Strangers",
+    audioUrl: "./audio/Jonas-Blue_Perfect-Strangers.mp3",
+    paroles:
+      "You were looking at me like you wanted to stay\nWhen I saw you yesterday\nI'm not wasting your time, I'm not playing no games\nI see you\n\nWho knows the secret tomorrow will hold?\nWe don't really need to know\n'Cause you're here with me now, I don't want you to go\nYou're here with me now, I don't want you to go\n\nMaybe we're perfect strangers\nMaybe it's not forever\nMaybe the night will change us\nMaybe we'll stay together\nMaybe we'll walk away\nMaybe we'll realize\nWe're only human\nMaybe we don't need no reason\nMaybe we're perfect strangers\nMaybe it's not forever\nMaybe the night will change us\nMaybe we'll stay together\nMaybe we'll walk away\nMaybe we'll realize\nWe're only human\n\nMaybe we don't need no reason why\nCome on, come on, come over\nMaybe we don't need no reason why\nCome on, come on, come over\n\nNo one but you got me feeling this way\nThere's so much we can't explain\nMaybe we're helping each other escape\nI'm with you\n\nWho knows the secret tomorrow will hold?\nWe don't really need to know\n'Cause you're here with me now, I don't want you to go\nYou're here with me now, I don't want you to go\n\nMaybe we're perfect strangers\nMaybe it's not forever\nMaybe the night will change us\nMaybe we'll stay together\nMaybe we'll walk away\nMaybe we'll realize\nWe're only human\nMaybe we don't need no reason\nMaybe we're perfect strangers\nMaybe it's not forever\nMaybe the night will change us\nMaybe we'll stay together\nMaybe we'll walk away\nMaybe we'll realize\nWe're only human\n\nMaybe we don't need no reason why\nCome on, come on, come over\nMaybe we don't need no reason why\nCome on, come on, come over \nCome on, come on, come over \nMaybe we don't need no reason why \nCome on, come on, come over",
+  },
+  {
+    id: 87,
+    titre: "Don't Let Me Down (Illenium Remix)",
+    artiste: "The Chainsmokers ft. Daya",
+    audioUrl: "./audio/The-Chainsmokers_Dont-Let-Me-Down.mp3",
+    paroles:
+      "Crashing, hit a wall\nRight now I need a miracle\nHurry up now, I need a miracle\nStranded, reaching out\nI call your name but you're not around\nI say your name but you're not around\n\nI need you, I need you, I need you right now\nYeah, I need you right now\nSo don't let me, don't let me, don't let me down\nI think I'm losing my mind now\nIt's in my head, darling, I hope\nThat you'll be here when I need you the most\nSo don't let me, don't let me, don't let me down\nD-don't let me down\n\nDon't let me down\nDon't let me down, down, down\nDon't let me down, don't let me down, down, down\n\nRunning out of time\nI really thought you were on my side\nBut now there's nobody by my side\n\nI need you, I need you, I need you right now\nYeah, I need you right now\nSo don't let me, don't let me, don't let me down\nI think I'm losing my mind now\nIt's in my head, darling, I hope\nThat you'll be here when I need you the most\nSo don't let me, don't let me, don't let me down\nD-don't let me down\n\nDon't let me down\nDon't let me down, down, down\nDon't let me down, down, down\nDon't let me down, down, down\nDon't let me down, don't let me down, down, down\n\nOh, I think I'm losing my mind now, yeah\nOh, I think I'm losing my mind now, yeah\n\nI need you, I need you, I need you right now\nYeah, I need you right now\nSo don't let me, don't let me, don't let me down\nI think I'm losing my mind now\nIt's in my head, darling, I hope\nThat you'll be here when I need you the most\nSo don't let me, don't let me, don't let me down\nDon't let me down\n\nYeah, don't let me down\nYeah, don't let me down\nDon't let me down, oh no\nSaid don't let me down \nDon't let me down \nDon't let me down, down, down \nDon't let me down",
+  },
+  {
+    id: 88,
+    titre: "Hall Of Fame",
+    artiste: "The Script ft. Will.i.am",
+    audioUrl: "./audio/The-Script_Hall-Of-Fame.mp3",
+    paroles:
+      "Yeah, you can be the greatest\nYou can be the best\nYou can be the King Kong banging on your chest\n\nYou can beat the world\nYou can beat the war\nYou can talk to God, go banging on his door\n\nYou can throw your hands up\nYou can beat the clock (yeah)\nYou can move a mountain\nYou can break rocks\nYou can be a master\nDon't wait for luck\nDedicate yourself and you gon' find yourself\n\nStanding in the hall of fame (yeah)\nAnd the world's gonna know your name (yeah)\n'Cause you burn with the brightest flame (yeah)\nAnd the world's gonna know your name (yeah)\nAnd you'll be on the walls of the hall of fame\n\nYou can go the distance\nYou can run the mile\nYou can walk straight through hell with a smile\n\nYou can be the hero\nYou can get the gold\nBreaking all the records they thought never could be broke\n\nYeah, do it for your people\nDo it for your pride\nHow are you ever gonna know if you never even try?\n\nDo it for your country\nDo it for your name\n'Cause there's gonna be a day...\n\nWhen you're standing in the hall of fame (yeah)\nAnd the world's gonna know your name (yeah)\n'Cause you burn with the brightest flame (yeah)\nAnd the world's gonna know your name (yeah)\nAnd you'll be on the walls of the hall of fame\n\nBe a champion, be a champion, be a champion, be a champion\nOn the walls of the hall of fame\n\nBe students\nBe teachers\nBe politicians\nBe preachers\n(Yeah)\n\nBe believers\nBe leaders\nBe astronauts\nBe champions\nBe truth seekers\n\nBe students\nBe teachers\nBe politicians\nBe preachers\n(Be preachers)\nBe believers (be believers)\nBe leaders (be leaders)\nBe astronauts (be astronauts)\nBe champions (be champions)\n(Be champions!)\nStanding in the hall of fame (yeah, yeah, yeah)\nAnd the world's gonna know your name (yeah, yeah, yeah)\n'Cause you burn with the brightest flame (yeah, yeah, yeah)\nAnd the world's gonna know your name (yeah, yeah, yeah)\nAnd you'll be on the walls of the hall of fame!\n(Be a champion!)\nYou could be the greatest! You could be the best!\n(Be a champion!)\nYou could be King Kong banging on your chest!\n(Be a champion!)\nYou could beat the world! You could beat the war!\n(Be a champion!)\nYou could talk to God, go banging on his door!\n(Be a champion!)\nYou could throw your hands up!\n(Be a champion!)\nYou could beat the clock! Yeah!\n(Be a champion!)\nMove mountains! Break rocks!!",
+  },
+  {
+    id: 89,
+    titre: "Happier",
+    artiste: "Marshmello X Bastille",
+    audioUrl: "./audio/Marshmello&Bastille_Happier.mp3",
+    paroles:
+      "Lately, I've been, I've been thinking\nI want you to be happier\nI want you to be happier\n\nWhen the morning comes\nWhen we see what we've become\nIn the cold light of day, we're a flame in the wind\nNot the fire that we've begun\nEvery argument, every word we can't take back\n'Cause with all that has happened\nI think that we both know the way that the story ends\n\nThen only for a minute\nI want to change my mind\n'Cause this just don't feel right to me\nI wanna raise your spirits\nI want to see you smile but\nKnow that means I'll have to leave\n\nKnow that means I'll have to leave\nLately, I've been, I've been thinking\nI want you to be happier\nI want you to be happier\n\nWhen the evening falls\nAnd I'm left there with my thoughts\nAnd the image of you being with someone else\nWell, it's eating me up inside\n\nBut we ran our course, we pretended we're OK\nNow if we jump together at least we can swing\nFar away from the wreck we made\n\nThen only for a minute\nI want to change my mind\n'Cause this just don't feel right to me\nI wanna raise your spirits\nI want to see you smile but\nKnow that means I'll have to leave\n\nKnow that means I'll have to leave\nLately, I've been, I've been thinking\nI want you to be happier\nI want you to be happier\n\nSo I'll go, I'll go\nI will go, go, go\nSo I'll go, I'll go\nI will go, go, go\n\nLately, I've been, I've been thinking\nI want you to be happier\nI want you to be happier\nEven though I might not like this\nI think that you'll be happier\nI want you to be happier\n\nThen only for a minute\nI want to change my mind\n'Cause this just don't feel right to me\nI wanna raise your spirits\nI want to see you smile but\nKnow that means I'll have to leave\n\nKnow that means I'll have to leave\nLately, I've been, I've been thinking\nI want you to be happier\nI want you to be happier \n \nSo I'll go, I'll go \nI will go, go, go",
+  },
+  {
+    id: 90,
+    titre: "Chandelier",
+    artiste: "Sia",
+    audioUrl: "./audio/Sia-Chandelier.mp3",
+    paroles:
+      "Party girls don't get hurt\nCan't feel anything, when will I learn\nI push it down, push it down\n\nI'm the one 'for a good time call'\nPhone's blowin' up, ringin' my doorbell\nI feel the love, feel the love\n\n1, 2, 3, 1, 2, 3 drink\n1, 2, 3, 1, 2, 3 drink\n1, 2, 3, 1, 2, 3 drink\nThrow 'em back till I lose count\n\nI'm gonna swing from the chandelier\nFrom the chandelier\nI'm gonna live like tomorrow doesn't exist\nLike it doesn't exist\nI'm gonna fly like a bird through the night\nFeel my tears as they dry\nI'm gonna swing from the chandelier\nFrom the chandelier\n\nBut I'm holding on for dear life\nWon't look down, won't open my eyes\nKeep my glass full until morning light\n'Cause I'm just holding on for tonight\nHelp me, I'm holding on for dear life\nWon't look down, won't open my eyes\nKeep my glass full until morning light\n'Cause I'm just holding on for tonight\nOn for tonight\n\nSun is up, I'm a mess\nGotta get out now, gotta run from this\nHere comes the shame, here comes the shame\n\n1, 2, 3, 1, 2, 3 drink\n1, 2, 3, 1, 2, 3 drink\n1, 2, 3, 1, 2, 3 drink\nThrow 'em back till I lose count\n\nI'm gonna swing from the chandelier\nFrom the chandelier\nI'm gonna live like tomorrow doesn't exist\nLike it doesn't exist\nI'm gonna fly like a bird through the night\nFeel my tears as they dry\nI'm gonna swing from the chandelier\nFrom the chandelier\n\nBut I'm holding on for dear life\nWon't look down, won't open my eyes\nKeep my glass full until morning light\n'Cause I'm just holding on for tonight\nHelp me, I'm holding on for dear life\nWon't look down, won't open my eyes\nKeep my glass full until morning light\n'Cause I'm just holding on for tonight\nOn for tonight \n \nOn for tonight \n'Cause I'm just holding on for tonight \nOh, I'm just holding on for tonight \nOn for tonight \nOn for tonight \n'Cause I'm just holding on for tonight \n'Cause I'm just holding on for tonight \nOh, I'm just holding on for tonight \nOn for tonight \nOn for tonight",
+  },
+  {
+    id: 91,
+    titre: "Gimme Gimme Gimme (A Man After Midnight)",
+    artiste: "ABBA",
+    audioUrl: "./audio/Abba-Gimme.mp3",
+    paroles:
+      "Half past twelve\nAnd I'm watching the late show in my flat all alone\nHow I hate to spend the evening on my own\nAutumn winds\nBlowing outside the window as I look around the room\nAnd it makes me so depressed to see the gloom\n\nThere's not a soul out there\nNo one to hear my prayer\n\nGimme, gimme, gimme a man after midnight\nWon't somebody help me chase the shadows away?\nGimme, gimme, gimme a man after midnight\nTake me through the darkness to the break of the day\n\nMovie stars\nFind the end of the rainbow, with a fortune to win\nIt's so different from the world I'm living in\nTired of T.V.\nI open the window and I gaze into the night\nBut there's nothing there to see, no one in sight\n\nThere's not a soul out there\nNo one to hear my prayer\n\nGimme, gimme, gimme a man after midnight\nWon't somebody help me chase the shadows away?\nGimme, gimme, gimme a man after midnight\nTake me through the darkness to the break of the day\nGimme, gimme, gimme a man after midnight...\nGimme, gimme, gimme a man after midnight...\n\nThere's not a soul out there\nNo one to hear my prayer\n\nGimme, gimme, gimme a man after midnight\nWon't somebody help me chase the shadows away?\nGimme, gimme, gimme a man after midnight\nTake me through the darkness to the break of the day\nGimme, gimme, gimme a man after midnight\nWon't somebody help me chase the shadows away?\nGimme, gimme, gimme a man after midnight\nTake me through the darkness to the break of the day",
+  },
+  {
+    id: 92,
+    titre: "Si j'avais su",
+    artiste: "Claudio Capéo",
+    audioUrl: "./audio/Claudio-Capeo_Si-javais-su.mp3",
+    paroles:
+      "Je t'aurais dit toutes les choses\nQue je ne t'avais jamais dites\nQue ta peau a l'odeur des roses\nQue j'adore le prénom Édith\nJe t'aurais dit toutes les choses\nQu'on ne dit pas assez souvent\nCar souvent dans la vie, on n'ose\nPas dire les choses tant qu'il est temps\n\nJe t'aurais raconté la mer\nQue tu la voies une fois encore\nOn aurait viré l'infirmière\nPuis, on aurait rigolé fort\nJe t'aurais dit que ton visage\nMe fait penser à l'océan\nQue tes rides ressemblent à des vagues\nOù vont se baigner les enfants\n\nSi j'avais su\nEn partant ce soir-là\nSi j'avais su\nQue le temps n'attend pas\nSi j'avais su, si j'avais su\nQue c'était la première fois\nQue j'te voyais pour la dernière fois\n\nJe t'aurais refait ton chignon\nEt toi, tu m'aurais dit ça tire\nMoi, j'aurais fait un peu le con\nJuste pour regarder ton sourire\nJ't'aurais promis d'faire une chanson\nQui racont'rait comme t'étais belle\nQui racont'rait comme on est cons\nD'croire que les gens sont éternels\n\nEt puis j't'aurais serrée si fort\nQu'il y aurait des marques à ton cou\nJe t'aurais regardée encore\nEt puis j't'aurais gardée surtout\nJ't'aurais enfermée dans mes yeux\nJ'aurais capturé ton parfum\nJ't'aurais dit au revoir un peu mieux\nPuis j'aurais menti à demain\n\nSi j'avais su\nEn partant ce soir-là\nSi j'avais su\nQue le temps n'attend pas\nSi j'avais su, si j'avais su\nQue c'était la première fois\nQue j'te voyais pour la dernière fois\n\nJ'me s'rais dépêché de t'aimer\nComme l'on court après la vie\nCar on n'aime jamais assez\nJe t'aurais dit, je t'aime aussi\nLes mots faut pas qu'on les conserve\nFaut les distribuer à la ronde\nSinon les mots à quoi ils servent?\nÀ part à décorer les tombes?\n \nSi j'avais su \nEn partant ce soir-là \nSi j'avais su \nQue le temps n'attend pas \nSi j'avais su, si j'avais su \nMais souvent, on ne sait pas \nQu'on voit quelqu'un pour la dernière fois",
+  },
+  {
+    id: 93,
+    titre: "Dancing In The Flames",
+    artiste: "The Weeknd",
+    audioUrl: "./audio/TheWeeknd_Dancing-In-The-Flames.mp3",
+    paroles:
+      "(Yeah)\n\nTraffic dies while we are racing home\nMelted lights cover the open road\nI hope we make it, 'cause I've been chasin'\nAnother odyssey, oh\n\nI can't wait to see your face\nCrash when we're switchin' lanes\nMy love's beyond the pain\nBut if I miss the brake\nWe're dancin' in the flames\nIt's indescribable\n\nOoh, yeah\n\n'The world can't heal', they say on the radio (Oh, no)\nSo grab the wheel, want you to be in control\nWe're dodgin' headlights and you say, 'Hold tight'\nAnother odyssey, oh (Hey)\n\nI can't wait to see your face\nCrash when we're switchin' lanes\nMy love's beyond the pain\nBut if I miss the brake\nWe're dancin' in the flames\nIt's indescribable\n\nOoh (Indescribable), oh\nOoh\n\nEverything's faded, we barely made it\nThe fire's ragin', but you're still beautiful\nAnd it's amazin', 'cause I can taste it\nOur final odyssey, ooh\n\nI can't (I can't) wait to see your face (Wait, ha)\nCrash when we're switchin' lanes\nMy love's beyond the pain (Hey)\nBut if I miss the brake\nWe're dancin' in the flames (Dancin' in the flames)\nSo, just have faith (Just have faith in me, baby)\nWe'll never be the same (We'll never, we'll never be the same, hey)\nIt's indescribable\n\nOoh (Indescribable)\nOh, hey\nOoh (Indescribable)",
+  },
+  {
+    id: 94,
+    titre: "Le Sud",
+    artiste: "Nino Ferrer",
+    audioUrl: "./audio/Le-Sud.mp3",
+    paroles:
+      "C'est un endroit\nQui ressemble à la Louisiane\nÀ l'Italie\nIl y a du linge\nÉtendu sur la terrasse\nEt c'est joli\n\nOn dirait le Sud\nLe temps dure longtemps\nEt la vie sûrement\nPlus d'un million d'années\nEt toujours en été\n\nY a plein d'enfants\nQui se roulent sur la pelouse\nY a plein de chiens\nY a même un chat\nUne tortue, des poissons rouges\nIl ne manque rien\n\nOn dirait le Sud\nLe temps dure longtemps\nEt la vie sûrement\nPlus d'un million d'années\nEt toujours en été\n\nUn jour ou l'autre\nIl faudra qu'il y ait la guerre\nOn le sait bien\nOn n'aime pas ça\nMais on ne sait pas quoi faire\nOn dit 'c'est le destin'\n\nTant pis pour le Sud\nC'était pourtant bien\nOn aurait pu vivre\nPlus d'un million d'années\nEt toujours en été",
+  },
   // {     id :
   //       titre: "",
   //       artiste: "",
