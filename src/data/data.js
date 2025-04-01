@@ -780,78 +780,86 @@ export const chansons = [
   },
   {
     id: 94,
-    titre: "Le Sud",
-    artiste: "Nino Ferrer",
-    audioUrl: "./audio/Le-Sud.mp3",
+    titre: "La vie est belle",
+    artiste: "Indochine",
+    audioUrl: "./audio/Indochine.mp3",
     paroles:
-      "C'est un endroit\nQui ressemble à la Louisiane\nÀ l'Italie\nIl y a du linge\nÉtendu sur la terrasse\nEt c'est joli\n\nOn dirait le Sud\nLe temps dure longtemps\nEt la vie sûrement\nPlus d'un million d'années\nEt toujours en été\n\nY a plein d'enfants\nQui se roulent sur la pelouse\nY a plein de chiens\nY a même un chat\nUne tortue, des poissons rouges\nIl ne manque rien\n\nOn dirait le Sud\nLe temps dure longtemps\nEt la vie sûrement\nPlus d'un million d'années\nEt toujours en été\n\nUn jour ou l'autre\nIl faudra qu'il y ait la guerre\nOn le sait bien\nOn n'aime pas ça\nMais on ne sait pas quoi faire\nOn dit 'c'est le destin'\n\nTant pis pour le Sud\nC'était pourtant bien\nOn aurait pu vivre\nPlus d'un million d'années\nEt toujours en été",
+      "Moi je suis né ici pour n’être qu’avec toi\nComme quelqu’un qui te sera\nEt dont on parlera\nMoi je suis né ici pour n’être qu’avec toi\nJe serai quelqu’un qui sera tu verras\n\nNous irions faire la vie\nRéussir au moins ça\nNous irions faire la nuit\nAussi loin que tu pourras\nMoi je suis né ici pour n’être qu’avec toi\n\nLa vie est belle et cruelle à la fois\nElle nous ressemble parfois\nMoi je suis né pour n’être qu’avec toi\nLa vie est belle aussi belle que toi\nElle te ressemble parfois\nMoi je suis né pour n’être qu’avec toi\n\nJ’étais pourtant si fier de vivre près de toi\nLa vie va trop vite, ton cancer est le mien\nC’était pourtant si clair de finir avec toi\nTon sang est le mien, on ne fera plus qu’un\nMais nous serions invincible\nRéussir au moins ça\nNous voulions tout est possible\nAussi loin que l’on pourra\n\nLa vie est belle aussi cruelle que ça\nElle nous ressemble parfois\nMoi j’étais né pour n’être qu’avec toi\nNous, on y aurait cru\nSeuls et tristes à la fois\nTout ne finiras pas juste ici\nOn y aurait vu que nos sourires et nos joies\nMoi je suis né ici pour n’être qu’avec toi\n\nLa vie est belle mais cruelle parfois\nElle nous ressemble toi et moi\nLa vie est belle aussi belle que toi\nLa vie est belle mais cruelle parfois\nElle nous ressemble toi et moi\nMoi je suis né pour n’être qu’avec toi\n\nNous, on y aurait cru\nÀ nos sourires à nos joies\nMoi je suis né ici pour n’être qu’avec toi",
   },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
+  {
+    id: 95,
+    titre: "Aimer est plus fort que d'être aimé",
+    artiste: "Daniel Balavoine",
+    audioUrl: "./audio/Daniel-Balavoine.mp3",
+    paroles:
+      "Toi qui sais ce qu'est un rempart\nTu avances sous les regards\nCourroucés\nTu écris mais sur le buvard\nTous les mots se sont inversés\n\nSi tu parles il te faut savoir\nQue ceux qui lancent des regards\nCourroucés\nNe voudront voir dans leur miroir\nQue ce qui peut les arranger\n\nToi qui as brisé la glace\nSais que rien ne remplace\nLa vérité\nEt qu'il n'y a que deux races\nOu les faux ou les vrais\n\nL'amour\nTe porte dans tes efforts\nL'amour\nDe tout délie les secrets\nEt face à tous ceux qui te dévorent\nAimer est plus fort que d'être aimé\n\nToi qui sais ce qu'est le blasphème\nOn ne récolte pas toujours\nCe qu'on sème\nTu connais l'ambition suprême\nDe ceux qui te vouent de la haine\n\nIls voudraient sous la menace\nTe fondre dans la masse\nPour t'étouffer\nMais pour couler le brise-glace\nIl faudrait un rocher\n\nL'amour\nTe porte dans tes efforts\nL'amour\nDe tout délie les secrets\nEt face à tous ceux qui te dévorent\nAimer est plus fort que d'être aimé",
+  },
+  {
+    id: 96,
+    titre: "Ton visage",
+    artiste: "Fréro Delavega",
+    audioUrl: "./audio/Ton-visage_FreroDelavega.mp3",
+    paroles:
+      "Quand en ville, le grain se lève\nVent de nerfs agités\nQue se ternissent les rêves\nDans ma réalité\nJ'veux des ballades sur la grève\nOh, un peu d'humanité\nMoins de béton plus de trêve\nUne vie de qualité\nMoins de béton plus de rêve\nDans ma réalité\n\nQue n'ai-je? Une planche de salut\nLoin du métro, de son raffut\nLes yeux rivés sur le rivage\nOublié ton lointain visage\n\nQue n'ai-je? Une planche de salut\nLoin du métro, de son raffut\nLes yeux rivés sur le rivage\nOublié ton lointain visage\n\nJ'veux des larmes, qui ne coupent pas\nEt moins de peine en 4 par 3\nUn bonheur simple, mais à mon goût\nC'est un peu vrai mais ça fait tout\nJ'veux plus de houle dans mon écume\nEt moins de foule dans mon bitume\nCes petites choses qui n'ont au clair\nDe sens qu'une fois qu'on les perd\nCes petites choses qui n'ont au clair\nDe sens qu'une fois qu'on les perd\n\nQue n'ai-je? Une planche de salut\nLoin du métro, de son raffut\nLes yeux rivés sur le rivage\nOublié ton lointain visage\n\nQue n'ai-je? Une planche de salut\nLoin du métro, de son raffut\nLes yeux rivés sur le rivage\nOublié ton lointain visage\n\nQue n'ai-je alors? Une planche de salut\nPour chevaucher mon vague à l'âme\nBel océan, brise-talus\nPour sécher le sel de mes larmes\n\nQue n'ai-je? Une planche de salut\nLoin du métro, de son raffut\nLes yeux rivés sur le rivage\nOublié ton lointain visage\n\nQue n'ai-je? Une planche de salut\nLoin du métro, de son raffut\nLes yeux rivés sur le rivage\nOublié ton lointain visage \n \nQue n'ai-je? Une planche de salut \nLoin du métro, de son raffut \nLes yeux rivés sur le rivage \nOublié ton lointain visage",
+  },
+  {
+    id: 97,
+    titre: "Ton Combat",
+    artiste: "Arcadian",
+    audioUrl: "./audio/Arcadian_Ton-combat.mp3",
+    paroles:
+      "Allez je ne laisserais pas tes bras blesser plus longtemps\nAllez je ne lâcherais, je ne lâcherais pas tu m'entends\nÇa prendra le temps que ça prendra et ton combat tu m'entends, c'est mon combat\n\nQuand le bonheur s'efface, quand l'amour se casse, quand la vie ne te sourit plus\nLes passants que tu vois sont vivants pendant que toi, tu leur cries que tu n'en peux plus\nPlus rien ne compense ton éternel absence, quand tu ne vois plus que des murs\nPlus de soleil, d'orage, de fous rires ni de rage, quand tu ne vois plus le futur\n\nIl suffirait qu'une main touche la tienne, que ton regard vers demain le comprenne\n\nAllez je ne laisserais pas tes bras blesser plus longtemps\nAllez je ne lâcherais, je ne lâcherais pas tu m'entends\nÇa prendra le temps que ça prendra et ton combat tu m'entends, c'est mon combat\nAllez je ne laisserais pas tes bras blesser plus longtemps\nAllez je ne lâcherais, je ne lâcherais pas tu m'entends\nÇa prendra le temps que ça prendra et ton combat tu m'entends, c'est mon combat\n\nAvant le premier signe, avant que tu t'abîmes, avant que tu ne perdes pied\nOn mettra tout en œuvre, on ira faire ton bonheur, qu'importe ce que ça doit coûter\nJ't'emmènerais dans les coins où ça chante et ça résonne et personne, personne, juste personne\nOn te reconstruira une vie, pas à pas, tu guéris, tu guériras\n\nIl suffirait que ta main touche la mienne, que ton regard vers demain le comprenne\n\nAllez je ne laisserais pas tes bras blesser plus longtemps\nAllez je ne lâcherais, je ne lâcherais pas tu m'entends\nÇa prendra le temps que ça prendra et ton combat tu m'entends, c'est mon combat\nAllez je ne laisserais pas tes bras blesser plus longtemps\nAllez je ne lâcherais, je ne lâcherais pas tu m'entends\nÇa prendra le temps que ça prendra et ton combat tu m'entends, c'est mon combat\nAh Yeah\nAh Yeah Yeah\nAllez je ne laisserais pas tes bras blesser plus longtemps\nAllez je ne lâcherais, je ne lâcherais pas tu m'entends\nÇa prendra le temps que ça prendra et ton combat tu m'entends, c'est mon combat\nAllez je ne laisserais pas tes bras blesser plus longtemps\nAllez je ne lâcherais, je ne lâcherais pas tu m'entends\nÇa prendra le temps que ça prendra et ton combat tu m'entends, c'est mon combat",
+  },
+  {
+    id: 98,
+    titre: "En Apesenteur",
+    artiste: "Calogéro",
+    audioUrl: "./audio/Calogero_En-Apesanteur.mp3",
+    paroles:
+      "J'arrive à me glisser\nJuste avant que les portes ne se referment\nElle me dit : 'Quel étage ?'\nEt sa voix me fait quitter la terre ferme\nAlors\nLes chiffres dansent\nTout se mélange\nJe suis en tête-à-tête avec un ange\n\nEn apesanteur\nPourvu que les secondes soient des heures\nEn apesanteur\nPourvu qu'on soit les seuls\nDans cet ascenseur\n\nElle arrange ses cheveux\nJ'ai le cœur juste au bord des yeux\nEt sans la regarder je sens la chaleur\nD'un autre langage\nAlors\nLes yeux rivés\nSur les étages\nPourvu que rien n'arrête le voyage\n\nEn apesanteur\nPourvu que les secondes soient des heures\nEn apesanteur\nPourvu qu'on soit les seuls\nDans cet ascenseur\n\nDans cet ascenseur\nJ'arrive à me glisser\nJuste avant que les portes ne se referment\n\nEn apesanteur\nPourvu que les secondes soient des heures\nEn apesanteur\nPourvu qu'on soit les seuls\nDans cet ascenseur\n\nEn apesanteur\nPourvu que les secondes soient des heures\nEn apesanteur\nPourvu qu'on soit les seuls\nDans cet ascenseur",
+  },
+  {
+    id: 99,
+    titre: "Toi et moi",
+    artiste: "Céline Dion & Charles Aznavour",
+    audioUrl: "./audio/Dion-Aznavour_ToiEtMoi.mp3",
+    paroles:
+      "Hmm...\n\nToi et moi, deux cœurs qui se confondent\nAu seuil de l'infini, loin du reste du monde\nHaletants et soumis, à bord du lit\nQui tangue et va, sous toi et moi\nToi et moi, libérés des mensonges\nEt sevrés des tabous\nQuand la nuit se prolonge entre râles et remous\nNos songes fous inventent un nous\n\nEntre chien et loup dans nos rêves déserts\nL'amour a su combler les silences\nEt nous, ses enfants nus, vierges de nos hier\nDevenons toi et moi, lavés de nos enfers\nPorte-moi (porte-moi), au delà des angoisses\nÀ l'appel du désir (appel du désir)\nDu cœur de nos fantasmes, aux confins du plaisir\nQue Dieu créa, pour toi et moi\n\nJ'étais sans espoir, tu as changé mon sort\nOffrant à ma vie une autre chance\nLes mots ne sont que mots, les tiens vibraient si fort\nQu'en parlant à ma peau, ils éveillaient mon corps\nAime-moi, fais-moi l'amour encore\nEncore et parle-moi\nPour que jusqu'aux aurores, aux sources de nos joies\nMes jours se noient, dans toi et moi\nDans toi et moi, dans toi et moi\nDans toi et moi, hmm, hmm...",
+  },
+  {
+    id: 100,
+    titre: "Blah Blah Blah",
+    artiste: "Armin van Buuren",
+    audioUrl: "./audio/Blah-Blah-Blah_ArminVanBuuren.mp3",
+    paroles:
+      "All we ever hear from you is blah blah blah\nSo, all we ever do is go ya ya ya\nAnd we don't even care about what they say 'cause it's\nYa ya ya ya\nBlah blah blah blah\n\nAll we ever hear from you is blah blah blah\nSo, all we ever do is go ya ya ya\nAnd we don't even care about what they say 'cause it's\nYa ya ya ya\nBlah blah blah blah\n\nAll we ever hear from you is blah blah blah\nBlah blah blah\nBlah blah blah\nBlah blah blah\nBlah blah blah\nBlah blah blah\nBlah blah blah\n\nAll we ever hear from you is blah blah blah\nSo, all we ever do is go ya ya ya\nAnd we don't even care about what they say 'cause it's\nYa ya ya ya\nBlah blah blah blah\nAll we ever hear from you is blah blah blah\nSo, all we ever do is go ya ya ya\nAnd we don't even care about what they say 'cause it's\nYa ya ya ya\nBlah blah blah blah\n\nAll we ever hear from you is blah blah blah\nSo, all we ever do is go ya ya ya\nAnd we don't even care about what they say 'cause it's\nYa ya ya ya\nBlah blah blah blah\n\nAll we ever hear from you is blah blah blah\nSo, all we ever do is go ya ya ya\nAnd we don't even care about what they say 'cause it's\nYa ya ya ya\nBlah blah blah blah",
+  },
+  {
+    id: 101,
+    titre: "Outside",
+    artiste: "Calvin Harris ft. Ellie Goulding",
+    audioUrl: "./audio/Outside.mp3",
+    paroles:
+      "Look at what you've done\nStand still, falling away from me\nWhen it takes so long\nFire's out, what do you want to be?\n\nNow I'm holdin' on\nMyself was never enough for me\nGotta be so strong\nThere's a power in what you do\nNow, every other day I'll be watching you\n\nI'll show you what it feels like\nNow I'm on the outside\nWe did everything right\nNow I'm on the outside\nI'll show you what it feels like\nNow I'm on the outside\nWe did everything right\nNow I'm on the outside\n\nSo, you give me no reason\nFor me to stay close to you\nTell me what lovers do\nHow are we still breathing?\nIt's never for us to choose\nI'll be the strength in you\n\nNow I'm holding on (I'm holding on)\nMyself was never enough for me\nGotta be so strong\nThere's a power in what you do\nNow, every other day I'll be watching you\n\nI'll show you what it feels like\nNow I'm on the outside\nWe did everything right\nNow I'm on the outside\nI'll show you what it feels like\nNow I'm on the outside\nWe did everything right\nNow I'm on the outside\n\nI'll show you what it feels like\nNow I'm on the outside\nI'll show you what it feels like\nShow you what it feels like\nNow I'm on the outside\nWe did everything right\nNow I'm on the outside",
+  },
+  {
+    id: 102,
+    titre: "Don't Call Me Up",
+    artiste: "Mabel",
+    audioUrl: "./audio/Mabel.mp3",
+    paroles:
+      "When I'm underneath the bright lights\nWhen I'm tryna have a good time\n'Cause I'm good now you ain't mine\nNow, now, now, now, don't call me up\nWhen you're looking at my photos\nGetting hot, losing control\nYou want me more now I let go\nNow, now, now, now\n\nI'm over you and I don't need your lies no more\n'Cause the truth is, without you, boy, I'm stronger\nAnd I know you said that I changed with my cold heart\nBut it was your game that left scars\nOoh, I'm over you\n\nDon't call me up\nI'm going out tonight\nFeeling good now you're outta my life\nDon't wanna talk about us\nGotta leave it behind\nOne drink and you're outta my mind\nNow, now take it up\nBaby, I'm on a high\nYou're alone, going out of your mind\nWhen I'm here up in the club\nAnd I don't wanna talk\nSo don't call me up\n\n'Cause I'm here looking fine, babe\nAnd I got eyes looking my way\nAnd everybody's on my vibe, babe\nNow, now, now, now, don't call me up\nMy friends said you were a bad man\nI should have listened to them back then\nAnd now you're tryna hit me up again\nNow, now, now, now\n\nI'm over you and I don't need your lies no more\n'Cause the truth is, without you, boy, I'm stronger\nAnd I know you said that I changed with my cold heart\nBut it was your game that left scars\nOoh, I'm over you\n\nDon't call me up\nI'm going out tonight\nFeeling good now you're outta my life\nDon't wanna talk about us\nGotta leave it behind\nOne drink and you're outta my mind\nNow, now take it up\nBaby, I'm on a high\nYou're alone, going out of your mind\nWhen I'm here up in the club\nAnd I don't wanna talk\nSo don't call me up \n \nDon't call me up \nSo don't call me up \nDon't call me up \n \nI'm over you and I don't need your lies no more \n'Cause the truth is, without you, boy, I'm stronger \nAnd I know you said that I changed with my cold heart \nBut it was your game that left scars \nOoh, I'm over you \n \nDon't call me up \nI'm going out tonight \nFeeling good now you're outta my life \nDon't wanna talk about us \nGotta leave it behind \nOne drink and you're outta my mind \nNow, now take it up \nBaby, I'm on a high \nYou're alone, going out of your mind \nWhen I'm here up in the club \nAnd I don't wanna talk \nSo don't call me up",
+  },
+  {
+    id: 103,
+    titre: "Whatcha Say",
+    artiste: "Jason Derulo",
+    audioUrl: "./audio/Jason-Derulo.mp3",
+    paroles:
+      "Wha-wha-wha-wha-what did you say?\n(J-J-J-J-J.R.)\n\nMm, whatcha say\nMm, that you only meant well?\nWell, of course you did\nMm, whatcha say (Jason Derulo)\nMm, that it's all for the best?\nOf course, it is\n\nI (I) was so wrong (Wrong) for so long (Long)\nOnly tryna please myself (Myself)\nGirl, I (I) was caught up (Up) in her lust (Lust)\nWhen I don't really want no one else, so no\nI know I should have treated you better (Better)\nBut me and you were meant to last forever (Forever)\nSo let me in (Let me in), give me another chance (Another chance)\nTo really be your man (Oh)\n\n'Cause when the roof caved in and the truth came out\nI just didn't know what to do\nBut when I become a star, we'll be living so large\nI'll do anything for you\nSo tell me, girl\n\nMm, whatcha say\nMm, that you only meant well?\nWell, of course you did\nMm, whatcha say (Whatcha say, whatcha say)\nMm, that it's all for the best?\nOf course it is\nMm, whatcha say\nMm, that you only meant well?\nWell, of course you did\nMm, whatcha say (Whatcha say, whatcha say)\nWha-wha-wha-wha-what did you say?\n\nHow (How) could I live (Live) with myself (Self)\nKnowing that I let our love go? (Love go)\nAnd ooh (Ooh), what I'd do (Do) with one chance (Chance)\nI just gotta let you know\nI know what I did wasn't clever\nBut me and you we're meant to be together\nSo let me in (Let me in), give me another chance (Another chance)\nTo really be your man\n\n'Cause when the roof caved in and the truth came out\nI just didn't know what to do\nBut when I become a star, we'll be living so large\nI'll do anything for you\nSo tell me, girl\n\nMm, whatcha say\nMm, that you only meant well?\nWell of course you did\nMm, whatcha say (Whatcha say, whatcha say)\nMm, that it's all for the best?\nOf course it is\nMm, whatcha say\nMm, that you only meant well?\nWell of course you did\nMm, whatcha say (Whatcha say, whatcha say)\nWha-wha-wha-wha-what did you say?\n\nGirl, tell me what to say, I (Say, I)\nI don't want you to leave me, though you caught me cheating\nTell me, tell me what to say, I (Say, I)\nI really need you in my life 'cause things ain't right, girl\nGirl, tell me what to say, I (Say, I)\nI don't want you to leave me, though you caught me cheating\nTell me, tell me what to say, I (Say, I)\nI really need you in my life 'cause things ain't right\n\n'Cause when the roof caved in and the truth came out\nI just didn't know what to do (I just didn't know what to do)\nBut when I become a star we'll be living so large I'll do anything for you\nSo baby, whatcha say\n\nMm, whatcha say\nMm, that you only meant well? (Well of course I did, baby)\nWell of course you did\nMm, whatcha say (Whatcha say, whatcha say)\nMm, that it's all for the best?\nOf course it is",
+  },
+  { id: 104, titre: "", artiste: "", audioUrl: "./audio/", paroles: "" },
+  { id: 105, titre: "", artiste: "", audioUrl: "./audio/", paroles: "" },
   // {     id :
   //       titre: "",
   //       artiste: "",

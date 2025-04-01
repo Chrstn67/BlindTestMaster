@@ -131,9 +131,22 @@ const Jeu = () => {
     const chansonsJoueesDansManche = chansonsJoueesParManche[mancheActuelle];
 
     if (chansonsJoueesDansManche.length >= MAX_SONGS_PER_ROUND) {
+      // Réinitialiser les états avant de changer de manche
+      setIsPlaying(false);
+      setAfficherReponse(false);
+      setAfficherParoles(false);
+      setPlayTriggered(false);
+      setAudioEffectApplied(false);
+      setReversedBuffer(null);
+      setMonstreBuffer(null);
+      audioPositionRef.current = 0;
+      nettoyerConnexionsAudio();
+      reinitialiserChrono();
+
       // Passer à la manche suivante
       const prochaineManche = mancheActuelle < 3 ? mancheActuelle + 1 : 1;
       setMancheActuelle(prochaineManche);
+
       return true;
     }
 
@@ -663,6 +676,7 @@ const Jeu = () => {
     }
   };
 
+  // Modifier la fonction chansonSuivante pour supprimer la logique de vérification
   const chansonSuivante = () => {
     if (chansonActuelle) {
       // Mémoriser l'ID de la chanson actuelle comme dernière jouée
@@ -958,6 +972,9 @@ const Jeu = () => {
       originalBuffer.sampleRate
     );
 
+    // Déclarer pitchShiftedData ici
+    const pitchShiftedData = new Float32Array(originalBuffer.length);
+
     // Appliquer des effets monstrueux aux données audio
     for (
       let channel = 0;
@@ -967,9 +984,7 @@ const Jeu = () => {
       const channelData = originalBuffer.getChannelData(channel);
       const monstreData = newBuffer.getChannelData(channel);
 
-      // Appliquer un pitch shifting pour rendre la voix plus grave
-      const pitchShiftedData = new Float32Array(channelData.length);
-
+      // Appliquer des effets monstrueux aux données audio
       for (let i = 0; i < channelData.length; i++) {
         // Effet wah-wah (filtre passe-bande modulé) - plus léger
         const wahModulation =
@@ -1146,6 +1161,22 @@ const Jeu = () => {
     setAfficherReponse(false);
     setAfficherParoles(false);
     setPlayTriggered(false);
+
+    // Réinitialiser les buffers audio et la position
+    setAudioEffectApplied(false);
+    setReversedBuffer(null);
+    setMonstreBuffer(null);
+    audioPositionRef.current = 0;
+
+    // Nettoyer les connexions audio
+    nettoyerConnexionsAudio();
+
+    // Réinitialiser le chronomètre
+    reinitialiserChrono();
+
+    // Sélectionner une nouvelle chanson qui n'est pas la dernière jouée
+    const nouvelleChanson = obtenirChansonAleatoire();
+    setChansonActuelle(nouvelleChanson);
   };
 
   // Fonction pour ajouter une équipe - corrigée pour éviter [object Object]
@@ -1354,26 +1385,19 @@ const Jeu = () => {
 
             <div className="guess-mode">
               {afficherReponse ? (
-                <>
-                  <AffichageChanson
-                    chanson={chansonActuelle}
-                    afficherTitre={true}
-                    afficherArtiste={true}
-                    afficherParoles={afficherParoles}
-                  />
-
-                  {/* Lecteur audio normal pour les manches 2 et 3 quand la réponse est révélée */}
-                  {(mancheActuelle === 2 || mancheActuelle === 3) && (
-                    <div className="normal-audio-player">
-                      <h4>Version normale:</h4>
-                      <audio
-                        src={chansonActuelle.audioUrl}
-                        controls
-                        className="normal-audio-controls"
-                      />
-                    </div>
-                  )}
-                </>
+                <AffichageChanson
+                  chanson={chansonActuelle}
+                  afficherTitre={true}
+                  afficherArtiste={true}
+                  afficherParoles={afficherParoles}
+                  mancheActuelle={mancheActuelle}
+                  isModifiedAudio={mancheActuelle === 2 || mancheActuelle === 3}
+                  onVerify={() => {
+                    // Cette fonction peut être utilisée pour notifier Jeu.jsx qu'une vérification a eu lieu
+                    console.log("Chanson vérifiée:", chansonActuelle?.titre);
+                    // Vous pouvez ajouter ici d'autres actions à effectuer lors de la vérification
+                  }}
+                />
               ) : (
                 <div className="hidden-answer">
                   <p>?????</p>
