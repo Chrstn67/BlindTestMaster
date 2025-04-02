@@ -858,86 +858,98 @@ export const chansons = [
     paroles:
       "Wha-wha-wha-wha-what did you say?\n(J-J-J-J-J.R.)\n\nMm, whatcha say\nMm, that you only meant well?\nWell, of course you did\nMm, whatcha say (Jason Derulo)\nMm, that it's all for the best?\nOf course, it is\n\nI (I) was so wrong (Wrong) for so long (Long)\nOnly tryna please myself (Myself)\nGirl, I (I) was caught up (Up) in her lust (Lust)\nWhen I don't really want no one else, so no\nI know I should have treated you better (Better)\nBut me and you were meant to last forever (Forever)\nSo let me in (Let me in), give me another chance (Another chance)\nTo really be your man (Oh)\n\n'Cause when the roof caved in and the truth came out\nI just didn't know what to do\nBut when I become a star, we'll be living so large\nI'll do anything for you\nSo tell me, girl\n\nMm, whatcha say\nMm, that you only meant well?\nWell, of course you did\nMm, whatcha say (Whatcha say, whatcha say)\nMm, that it's all for the best?\nOf course it is\nMm, whatcha say\nMm, that you only meant well?\nWell, of course you did\nMm, whatcha say (Whatcha say, whatcha say)\nWha-wha-wha-wha-what did you say?\n\nHow (How) could I live (Live) with myself (Self)\nKnowing that I let our love go? (Love go)\nAnd ooh (Ooh), what I'd do (Do) with one chance (Chance)\nI just gotta let you know\nI know what I did wasn't clever\nBut me and you we're meant to be together\nSo let me in (Let me in), give me another chance (Another chance)\nTo really be your man\n\n'Cause when the roof caved in and the truth came out\nI just didn't know what to do\nBut when I become a star, we'll be living so large\nI'll do anything for you\nSo tell me, girl\n\nMm, whatcha say\nMm, that you only meant well?\nWell of course you did\nMm, whatcha say (Whatcha say, whatcha say)\nMm, that it's all for the best?\nOf course it is\nMm, whatcha say\nMm, that you only meant well?\nWell of course you did\nMm, whatcha say (Whatcha say, whatcha say)\nWha-wha-wha-wha-what did you say?\n\nGirl, tell me what to say, I (Say, I)\nI don't want you to leave me, though you caught me cheating\nTell me, tell me what to say, I (Say, I)\nI really need you in my life 'cause things ain't right, girl\nGirl, tell me what to say, I (Say, I)\nI don't want you to leave me, though you caught me cheating\nTell me, tell me what to say, I (Say, I)\nI really need you in my life 'cause things ain't right\n\n'Cause when the roof caved in and the truth came out\nI just didn't know what to do (I just didn't know what to do)\nBut when I become a star we'll be living so large I'll do anything for you\nSo baby, whatcha say\n\nMm, whatcha say\nMm, that you only meant well? (Well of course I did, baby)\nWell of course you did\nMm, whatcha say (Whatcha say, whatcha say)\nMm, that it's all for the best?\nOf course it is",
   },
-  { id: 104, titre: "", artiste: "", audioUrl: "./audio/", paroles: "" },
-  { id: 105, titre: "", artiste: "", audioUrl: "./audio/", paroles: "" },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
+  {
+    id: 104,
+    titre: "Remedy",
+    artiste: "Leony",
+    audioUrl: "./audio/Leony.mp3",
+    paroles:
+      "Got me higher than life, you're like my remedy\nAnd your touch's like ecstasy\nI know that I can't fight the chemistry\nI'm falling into you\n\nI'm scared of letting you go\nI'm scared that I might be losing control\nI feel like nobody knows\nI was hiding behind the shadows\n\nHolding on\n'Cause there's no one better than you\nI am holding on\n'Cause I can't go on without you\n\nGot me higher than life, you're like my remedy\nAnd your touch's like ecstasy\nI know that I can't fight the chemistry\nI'm falling into you\n\nGot me higher than life, you're like the harmony\nTo every single melody\nI know that I can't fight the chemistry\nI'm falling into you\n\nIt's like you turned on the lights\nIt's like you brought all the colors to life\nNo longer lonely at night (Night)\nYou make me shine like the stars in the sky\n\nHolding on\n'Cause there's no one better than you\nI am holding on\n'Cause I can't go on without you\n\nGot me higher than life, you're like my remedy\nAnd your touch's like ecstasy\nI know that I can't fight the chemistry\nI'm falling into you\n\nGot me higher than life, you're like the harmony\nTo every single melody\nI know that I can't fight the chemistry\nI'm falling into you\n\nGot me higher than life, you're like my remedy\nAnd your touch's like ecstasy\nI know that I can't fight the chemistry\nI'm falling into you\n\nGot me higher than life, you're like the harmony\nTo every single melody\nI know that I can't fight the chemistry\nI'm falling into you\n\nOoh ooh\nOoh ooh\nFalling into you\n\nI'm falling into you",
+  },
+  {
+    id: 105,
+    titre: "Dear Darlin'",
+    artiste: "Olly Murs",
+    audioUrl: "./audio/Olly-Murs.mp3",
+    paroles:
+      "Dear darlin’, please excuse my writing\nI can’t stop my hands from shaking\n'Cause I’m cold and alone tonight\n\nI miss you and nothing hurts like no you\nAnd no one understands what we went through\nIt was short. It was sweet. We tried\n\nAnd if my words break through the wall\nAnd meet you at your door\nAll I can say is 'Girl, I mean them all'\n\nDear darlin’, please excuse my writing\nI can’t stop my hands from shaking\n'Cause I’m cold and alone tonight\n\nI miss you and nothing hurts like no you\nAnd no one understands what we went through\nIt was short. It was sweet. We tried. We tried\n\n[Woman:] I understand where he's coming from\n\nBeen thinking about the bar we drank in\nFeeling like the sofa was sinking\nI was warm in the hold of your eyes\n\nSo if my words break through the wall\nTo meet you at your door\nAll I can say is 'Girl, I mean them all'\n\nDear darlin’, please excuse my writing\nI can’t stop my hands from shaking\n'Cause I’m cold and alone tonight\n\nI miss you and nothing hurts like no you\nAnd no one understands what we went through\nIt was short. It was sweet. We tried\n\nOh I can't cope. These arms are yours to hold\n\nAnd I miss you and nothing hurts like no you\nAnd no one understands what we went through\nIt was short. It was sweet. We tried\nWe tried",
+  },
+  {
+    id: 106,
+    titre: "Forget Me",
+    artiste: "Lewis Capaldi",
+    audioUrl: "./audio/LewisCapaldi_Forget-Me.mp3",
+    paroles:
+      "Days ache and nights are long\nTwo years and still, you're not gone\nGuess I'm still holding on\n\nDrag my name through the dirt\nSomehow it doesn't hurt though\nGuess you're still holding on\nYou told your friends you want me dead\nAnd said that I did everything wrong\nAnd you're not wrong\n\nWell, I'll take all the vitriol\nBut not the thought of you moving on\n\n'Cause I'm not ready\nTo find out you know how to forget me\nI'd rather hear how much you regret me\nAnd pray to God that you never met me\nThan forget me\nOh, I hate to know I made you cry\nBut love to know I cross your mind, babe, oh, I\nEven after all, it still wrecks me\nTo find out you knew how to forget me\nEven after all this time\n\nDays ache and nights are grey\nMy heart is still your place, babe\nGuess I still feel the same\nKnow you can't stand my face\nSome scars you can't erase, babe\nGuess you still feel the same\n\nWell, I'll take all the vitriol\nBut not the thought of you moving on\n\n'Cause I'm not ready\nTo find out you know how to forget me\nI'd rather hear how much you regret me\nAnd pray to God that you never met me\nThan forget me\nOh, I hate to know I made you cry\nBut love to know I cross your mind, babe, oh, I\nEven after all, it still wrecks me\nTo find out you knew how to forget me\nEven after all this time\n\nI'm not ready to let you forget me, to let you forget me, to let you for—, oh\nI'm not ready to let you forget me, to let you forget me, to let you for—, oh (Even after all this time)\nI'm not ready to let you forget me, to let you forget me, to let you for—, oh\nI'm not ready to let you forget me, to let you forget me, to let you for—, oh\n\n'Cause I'm not ready\nTo find out you know how to forget me\nI'd rather hear how much you regret me\nAnd pray to God that you never met me\nThan forget me\nOh, I hate to know I made you cry\nBut love to know I cross your mind, babe, oh, I\nEven after all, it still wrecks me\nTo find out you knew how to forget me\nEven after all this time",
+  },
+  {
+    id: 107,
+    titre: "Et Bam",
+    artiste: "Mentissa",
+    audioUrl: "./audio/Mentissa.mp3",
+    paroles:
+      "Gare du Nord en novembre\nLes cheveux en pagaille\nComme une boule au ventre\nQui me tend, qui me tord\nEt Paris qui s'étale\n\nTout à coup, me voilà\nLes jambes fébriles\nQu'elle est grande pour moi\nCette scène imposante\nOù tout devient fragile\n\nEt bam, et bam\nDans la poitrine\nMaman, je l'ai fait pour ça\nJe veux pas, je veux pas l'Amérique\n\nJe veux ce cœur qui bat\nEt bam, et bam\nSur la musique\nMaman, je l'ai fait pour toi\nJe veux pas, je veux pas l'Amérique\n\nEnvolée mon enfance\nMais jamais rien n'efface\nLes rêves ou la violence\nAh, oui, ça vous glace\nMais c'est pour ça qu'on chante\n\nDonnez-moi d'échouer\nEt que vienne la pluie\nOn ne m'ôtera jamais\nQue j'ai déjà gagné\nDe nouveaux amis\n\nEt bam, et bam\nDans la poitrine\nMaman, je l'ai fait pour ça\nJe veux pas, je veux pas l'Amérique\n\nJe veux ce cœur qui bat\nEt bam, et bam\nSur la musique\nMaman, je l'ai fait pour toi\nJe veux pas, je veux pas l'Amérique\n\nEt plus fort que ma voix\nJe l'entends frapper\nCe cœur qui bat\nDéballer mes larmes\nEt mes « pourquoi »\n\nEt bam, et bam\nDans la poitrine\nMaman, je l'ai fait pour ça\nJe veux pas, je veux pas l'Amérique\n\nJe veux ce cœur qui bat\nEt bam, et bam\nSur la musique\nMessieurs, mesdames, me voilà\nJe veux pas, je veux pas l'Amérique\n\n(Je veux ce cœur qui bat, et bam, et bam)\nOh, oh, oh, oh (Et bam, et bam)\nOh, oh, oh, oh (Et bam, et bam)\nOh, oh, oh, oh\nJe veux ce cœur qui bat",
+  },
+  {
+    id: 108,
+    titre: "Laisser couler",
+    artiste: "Ridsa",
+    audioUrl: "./audio/Ridsa.mp3",
+    paroles:
+      "Faut parler tu fais le sourd\nEt tu pleures quand faut rire\nJ'suis perdu dans les amis\nChaqu'un sa vie\n\nSi personne te relève\nPourquoi tu restes assis\nTu te voile sla face\nEn faite tu fuis\n\nTout ira bien, oublie, avance Sans bruit\nHier c'est loin, maintenant faut faire ta vie\nTout ira bien, oublie, avance Sans bruit\nRegarde au loin, tu peux, souris\n\nFaut laisser couler, faut laisser couler\nFaut laisser couler, faut laisser couler\nCouler couler\n\nNe retiens pas les gens vaut mieux les laisser s'en aller (s'en aller)\nSi j'en suis pas ton genre tu n'devrai même pas m'calculer (m'calculer)\nLe temps finira par dire si t'es bien accompagné (accompagné)\nT'as assez donné maintenant laisse couler (couler)\n\nTout ira bien, oublie, avance Sans bruit\nHier c'est loin, maintenant faut faire ta vie\nTout ira bien, oublie, avance Sans bruit\nRegarde au loin, tu peux, souris\nFaut laisser couler, faut laisser couler\nFaut laisser couler, faut laisser couler\nCouler couler\n\nAller respire un peu\nC'est dure qu'es ce que on y peut\nQui dit qu'ailleurs c'est mieux, c'est mieux, c'est mieux\nOn aura pas besoin d'eux\nLes soucis les envieux\nPense à toi juste un peu\n\nFaut laisser couler, faut laisser couler\nFaut laisser couler, faut laisser couler\nCouler couler\nFaut laisser couler, faut laisser couler\nFaut laisser couler, faut laisser couler\nCouler couler\n\nAller Aller Oh, Aller Aller Oh\nAller Aller Oh, Aller Aller Oh\nAller Aller Oh, Aller Aller Oh\nAller Aller Oh, Aller Aller Oh",
+  },
+  {
+    id: 109,
+    titre: "Quand La Musique Est Bonne",
+    artiste: "Jean-Jacques Goldman",
+    audioUrl: "./audio/Quand-la-musique-est-bonne.mp3",
+    paroles:
+      "J'ai trop saigné sur les Gibson\nJ'ai trop rôdé dans les Tobacco road\nY'a plus que les caisses qui me résonnent\nEt quand je me casse, je voyage toujours en fraude\n\nDes champs de coton dans ma mémoire\nTrois notes de blues c'est un peu d'amour noir\nQuand je suis trop court, quand je suis trop tard\nC'est un recours pour une autre histoire\n\nQuand la musique est bonne\nQuand la musique donne\nQuand la musique sonne, sonne, sonne\nQuand elle ne triche pas\n\nQuand la musique est bonne\nQuand la musique donne\nQuand la musique sonne, sonne, sonne\nQuand elle guide mes pas\n\nJ'ai plus d'amour, j'ai pas le temps\nJ'ai plus d'humour, j'sais plus d'où vient le vent\nJ'ai plus qu'un clou, une étincelle\nDes trucs en plomb qui me brisent les ailes\n\nUn peu de swing, un peu du King\nPas mal de feeling et de décibels\nC'est pas l'usine, c'est pas la mine\nMais ça suffit pour se faire la belle\n\nQuand la musique est bonne\nQuand la musique donne\nQuand la musique sonne, sonne, sonne\nQuand elle ne triche pas\n\nQuand la musique est bonne\nQuand la musique donne\nQuand la musique sonne, sonne, sonne\nQuand elle guide mes pas\n\nQuand la musique est bonne\nQuand la musique donne\nQuand la musique sonne, sonne, sonne\nQuand elle ne triche pas\n\nQuand la musique est bonne\nQuand la musique donne\nQuand la musique sonne, sonne, sonne\nQuand elle guide mes pas\n\nQuand la musique est bonne\nQuand la musique donne\nQuand la musique sonne, sonne, sonne\nQuand elle ne triche pas\n\nQuand la musique est bonne\nQuand la musique donne",
+  },
+  {
+    id: 110,
+    titre: "La ballade de Jim",
+    artiste: "Alain Souchon",
+    audioUrl: "./audio/La-ballade-de-Jim.mp3",
+    paroles:
+      "Comme elle est partie, Jim a les nerfs\nJimmy boit du gin dans sa Chrysler\nLa presqu'île, le boulevard de la mer est con\nComme elle est partie, attention: Jimmy tourne en rond\n\nHier soir encore, son héroïne\nLe serrait si fort en disant \"Jim\"\nElle était son calmant, son alcool profond\nComme elle est partie, attention: Jimmy tourne pas rond\n\nJimmy, t'es fort, mais tu pleures\nSur le cuir de ta Chrysler\nLà-bas le soleil s'écroule dans la mer\nJimmy, les filles pour le cœur\nComme l'alcool et les revolvers\nC'est sauter en l'air\nTomber par terre\nBoum!\n\nDepuis deux ans, sûr, Jim bossait fort\nPour que sa starlette bronze en hors-bord\nAvec elle, il voulait un bébé, sans rire\nComme elle est partie, attention: Jimmy veut mourir\n\nJimmy, t'es fort, mais tu pleures\nSur le cuir de ta Chrysler\nLà-bas le soleil s'écroule dans la mer\nJimmy, les filles pour le cœur\nComme l'alcool et les revolvers\nC'est sauter en l'air\nTomber par terre\nBoum!\n\nJimmy va trop vite, Jimmy pleurniche\nIl sent son parfum sur la corniche\nLes lacets, le gravier, et, dans l'air du soir\nLa Chrysler s'envole dans les fougères et les nénuphars\n\nJimmy s'éveille dans l'air idéal\nLe paradis clair d'une chambre d'hôpital\nL'infirmière est un ange et ses yeux sont verts\nComme elle lui sourit, attention: Jimmy veut lui plaire",
+  },
+  {
+    id: 111,
+    titre: "Parle à ta tête",
+    artiste: "Indila",
+    audioUrl: "./audio/Indila_Parle-a-ta-tete.mp3",
+    paroles:
+      "Je veux qu'on m'écoute, oui, je veux qu'on m'comprenne\nJe veux aimer savoir pourquoi je suis là, dis-moi pourquoi je suis là\nEt je marche seule cachée sous mon ombrelle\nS'te plaît, ne te moques pas de moi, j'vais au pôle emploi\nLe moral à plat\n\nEt je fais le mariole, parfois j'fais des marmites\nJ'en ai marre d'aller très vite, j'peux démarrer de suite\nDites moi c'que vous en dites\nOh, dites moi c'que vous en dites\n\nParle p-p-p-p-p, parle à, parle à ta tête\nParle à, parle à ta tête, parle à, parle à ta tête\nParle à tê-tê-tê-tête, parle à, parle à ta tête\nParle à, parle à ta tête, parle à, parle à ta tête\n\nJ'suis en mode burn out, est-ce qu'il faut qu'j'te l'répète ?\nÇa brûle, ça pique et ça monte à la tête, j'deviens encore plus bête\nJ'garde le sourire, paraît qu'la vie est belle\nS'te plaît non, non ne me ment pas, oui j'ai dit ne ment pas\nC'est bien trop pour moi\n\nParle p-p-p-p-p, parle à, parle à ta tête\nParle à, parle à ta tête, parle à, parle à ta tête (c'est bien trop pour moi)\nParle à tê-tê-tê-tête, parle à, parle à ta tête\nParle à, parle à ta tête, parle à, parle à ta tête\n\nToutes ces belles lumières et ce tumulte autour de moi\nM’embrument et m’enivre , d'amour et j'y crois\nJe donnerai tout, sans rien garder sauf ta réalité\nJe mourrai comme j'ai vécu une fois l'rideau tombé\nL'idéal, auquel je rêve, il n'a rien d'anormal\nPar delà, le bien, le mal le temps m'emportera\nComme une rose en cristal vacille et perd tous ces pétales\nJ'veux faire briller ma vie comme l'éclat d'une étoile\nPardonne-moi le jour où je ne pourrai plus te parler\nPardonne-moi chaque moment où je n't'ai pas regardé\nOh, pardonne-moi tout le temps que je ne t'ai pas donné\nEt chaque lendemain qui s'ra un jour de moins\n\nMoi, je veux vivre que mon cœur brûle, j'veux m'sentir exister\nSouffrir, pleurer, danser, aimer à en crever\nParis, Athènes, Venise, Harlem, Moscou à tes cotés\nLe temps ne vaut qu'du jour où il nous est compté\n\nParle p-p-p-p-p, parle à, parle à ta tête\nParle à, parle à ta tête, parle à, parle à ta tête\nParle à tê-tê-tê-tête, parle à, parle à ta tête\nParle à, parle à ta tête, parle à, parle à ta tête",
+  },
+  {
+    id: 112,
+    titre: "On Écrit Sur Les Murs",
+    artiste: "Demis Roussos",
+    audioUrl: "./audio/On-ecrit-sur-les-murs.mp3",
+    paroles:
+      "Partout autour de nous,\nY'a des signes d'espoir dans les regards\nDonnons leurs écrits car dans la nuit\nTout s'efface même leur trace\nOn écrit sur les murs le nom de ceux qu'on aime\n\nDes messages pour les jours à venir\nOn écrit sur les murs à l'encre de nos veines\nOn dessine tout ce que l'on voudrait dire\nOn écrit sur les murs la force de nos rêves\n\nNos espoirs en forme de graffiti\nOn écrit sur les murs pour que l'amour se lève\nUn beau jour sur le monde endormi\nDes mots seulement gravés pour ne pas oublier pour tout changer\n\nMélangeons demain dans un refrain nos visages, métissages\nOn écrit sur les murs le nom de ceux qu'on aime\nDes messages pour les jours à venir\nOn écrit sur les murs à l'encre de nos veines\nOn dessine tout ce que l'on voudrait dire\n\nOn écrit sur les murs la force de nos rêves\nNos espoirs en forme de graffiti\nOn écrit sur les murs pour que l'amour se lève\nUn beau jour sur le monde endormi\n\nOn écrit sur les murs le nom de ceux qu'on aime\nDes messages pour les jours à venir\nOn écrit sur les murs à l'encre de nos veines\nOn dessine tout ce que l'on voudrait dire\n\nOn écrit sur les murs la force de nos rêves\nNos espoirs en forme de graffiti\nOn écrit sur les murs pour que l'amour se lève\nUn beau jour sur le monde endormi",
+  },
+  {
+    id: 113,
+    titre: "Derrière le brouillard",
+    artiste: "Grand Corps Malade ft. Louane",
+    audioUrl: "./audio/Grand-Corps-Malade_Louane.mp3",
+    paroles:
+      "Et dans le noir, derrière le brouillard, j'entends ce piano chanter\nChanter l'espoir, l'envie de croire, qu'on peut tout réinventer\nAlors je joins ma voix encore une fois pour tenir dans l'orage\nJe joins ma voix encore une fois pour trouver le courage\n\nIl n'y a pas d'recette, pour supporter les épreuves\nRemonter les cours des fleuves, quand les tragédies pleuvent\nIl n'y a pas de recette, pour encaisser les drames\nFranchir les mers à la rame, quand le rêve te fait du charme\nIl n'y a pas de recette, quand t'en avais pas non plus\nPersonne ne t'avait prévenu, tu t'es battu comme t'as pu\nIl n'y a pas de recette, quand l'enfer te sers la main\nAbandonner c'est humain, l'avenir c'est loin\nMais tu t'es mise à chanter, même pas par choix\nComme à chaque chute, à chaque fois, ça c'est imposé en toi\nChanter, comme un enfant surpris, comme un instinct d'survie, comme un instant d'furie\nChanter pour accepter, exprimer, résister, avancer, progresser, exister\nChanter comme une résilience, une délivrance\nChanter comme une évidence\n\nEt dans le noir, derrière le brouillard, j'entends ce piano chanter\nChanter l'espoir, l'envie de croire, qu'on peut tout réinventer\nAlors je joins ma voix encore une fois pour tenir dans l'orage\nJe joins ma voix encore une fois pour trouver le courage\n\nÀ quel moment, tu comprends que c'est ton truc ?\nQue la musique revient te relever de chaque chute\nÀ quel moment, tu sais qu'elle est ta boussole ?\nQuand la vie te punis, la musique te console\nÀ quel moment, ce piano a chanté ?\nSes accords t'ont hanté, au choyé ta santé\nÀ quel moment, il est ta respiration ?\nEt à quel moment, on en fait une chanson ?\n\nSi je me sens comme une enfant, j'ai déjà eu plusieurs vies\nJe peux regarder devant, en chantant ce qu'on m'a pris\nMoi aussi, j'ai connu une sorte brouillard et j'ai entendu ce piano au loin\nEt moi aussi, sans vraiment le prévoir, naturellement ma voix la rejoint\nOn a pas du tout les mêmes histoires, mais finalement quelques points communs\nComme un air de force oratoire, j'écris, tu chantes, le brouillard est bien loin\n\nEt dans le noir, derrière le brouillard, j'entends ce piano chanter\nChanter l'espoir, l'envie de croire, qu'on peut tout réinventer\nAlors je joins ma voix encore une fois pour tenir dans l'orage\nJe joins ma voix encore une fois pour trouver le courage",
+  },
+  {
+    id: 114,
+    titre: "De l'or",
+    artiste: "Vitaa & Slimane",
+    audioUrl: "./audio/Vitaa-Slimane_De-l-or.mp3",
+    paroles:
+      "Le temps pourrait finir par nous vider\nLe monde entier pourrait bien essayer\nOn a ce qu'ils ont du mal à trouver\nÇa vaut de l'or (ça vaut de l'or)\n\nQuand tu parles, ma tête se met à trembler\nEt dans tes larmes, j'pourrais me noyer\nCe que tu fais même quand c'est pas assez\nÇa vaut de l'or (ça vaut de l'or)\n\nDétruis-moi, sers-toi de moi, j'peux tenir encore\nEt ça, ça vaut de l'or\nPrends mon cœur, garde-le, mon cœur, j'peux tenir encore\nEt ça, ça vaut de l'or\nSi tu tombes, moi, je tombe, j'peux encaisser\nJe peux tenir encore\nSi tu tombes, moi, je tombe, rien n'a changé\nJe t'aime, et alors ?\nDétruis-moi, sers-toi de moi, j'peux tenir encore\nEt ça, ça vaut de l'or\n\nJ'veux commencer, recommencer, partir de zéro\nQuand moi, je m'amuse de tes défauts\nJe suis touché par tous les mots bateaux\nMais ça vaut de l'or (mais ça vaut de l'or)\n\nMmh, mmh\n\nDétruis-moi, sers-toi de moi, j'peux tenir encore\nEt ça, ça vaut de l'or\nPrends mon cœur, garde-le, mon cœur, j'peux tenir encore\nEt ça, ça vaut de l'or\nSi tu tombes, moi, je tombe, j'peux encaisser\nJe peux tenir encore\nSi tu tombes, moi, je tombe, rien n'a changé\nJe t'aime, et alors ?\nDétruis-moi, sers-toi de moi, j'peux tenir encore\nEt ça, ça vaut de l'or\n\nNon, non, on en est là\nEst-ce qu'on sait quand c'est là ?\nQu'y a-t-il au-delà ?\nNon, non, on en est là\nEst-ce qu'on sait quand c'est là ?\nQu'y a-t-il au-delà ?\n\nDétruis-moi, sers-toi de moi, j'peux tenir encore\nEt ça, ça vaut de l'or\nPrends mon cœur, garde-le, mon cœur, j'peux tenir encore\nEt ça, ça vaut de l'or\nSi tu tombes, moi, je tombe, j'peux encaisser\nJe peux tenir encore\nSi tu tombes, moi, je tombe, rien n'a changé\nJe t'aime, et alors ?\nDétruis-moi, sers-toi de moi, j'peux tenir encore\nEt ça, ça vaut de l'or\n\nNon, non, on en est là\nEst-ce qu'on sait quand c'est là ?\nQu'y a-t-il au-delà ?\nNon, non, on en est là\nEst-ce qu'on sait quand c'est là ?\nQu'y a-t-il au-delà ?",
+  },
+  { id: 115, titre: "", artiste: "", audioUrl: "./audio/", paroles: "" },
+  { id: 116, titre: "", artiste: "", audioUrl: "./audio/", paroles: "" },
+  { id: 117, titre: "", artiste: "", audioUrl: "./audio/", paroles: "" },
+  { id: 118, titre: "", artiste: "", audioUrl: "./audio/", paroles: "" },
   // {     id :
   //       titre: "",
   //       artiste: "",
