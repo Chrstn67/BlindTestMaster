@@ -71,8 +71,9 @@ const ReglesDuJeu = () => {
                   <p>
                     <i>BlindTest Master</i> est un jeu musical où les joueurs
                     doivent deviner le titre et/ou l'artiste d'une chanson
-                    jouée. Le jeu se déroule en plusieurs manches avec
-                    différents niveaux de difficulté.
+                    jouée. Le jeu se déroule en plusieurs manches avec 3
+                    variantes correspondant à 3 différents niveaux de
+                    difficulté.
                   </p>
 
                   <h3>Objectif</h3>
@@ -88,12 +89,18 @@ const ReglesDuJeu = () => {
                     </div>
                     <div className="buzzer-content">
                       <h3>Règle du micro-buzzer</h3>
+                      <p className="points-note">
+                        {" "}
+                        S'il n'y a pas de buzzer, nous utiliserons un faux micro
+                        qu'il faut attraper le plus rapidement possible.
+                      </p>
                       <p>
-                        Pour répondre, une équipe doit d'abord attraper le
-                        micro-buzzer. La première équipe qui s'empare du micro a
-                        le droit de proposer sa réponse. Si la réponse est
-                        incorrecte, les autres équipes peuvent alors tenter leur
-                        chance.
+                        Pour répondre, une équipe doit d'abord, et le plus
+                        rapidement possible, appuyer sur le buzzer ou attraper
+                        le micro-buzzer. <br /> La première équipe qui buzz ou
+                        s'empare du micro a le droit de proposer sa réponse. Si
+                        la réponse est incorrecte, les autres équipes peuvent
+                        alors tenter leur chance.
                       </p>
                     </div>
                   </div>
@@ -181,7 +188,7 @@ const ReglesDuJeu = () => {
                       </li>
                       <li>
                         <strong>-2 points</strong> : Règles non-respectées (ex:
-                        répondre sans avoir le micro-buzzer)
+                        répondre sans avoir buzzé)
                       </li>
                     </ul>
                   </div>
@@ -201,8 +208,7 @@ const ReglesDuJeu = () => {
                   <p>
                     Crée autant d'équipes que tu le souhaites en cliquant sur le
                     bouton <i>"Équipes & Scores"</i>. Donne un nom à chaque
-                    équipe. Chaque équipe recevra automatiquement une couleur
-                    distinctive.
+                    équipe.
                   </p>
 
                   <h4>Nombre de joueurs</h4>
@@ -237,17 +243,18 @@ const ReglesDuJeu = () => {
 
                   <h4>Temps de réponse</h4>
                   <p>
-                    Après avoir attrapé le micro-buzzer, l'équipe dispose de 5
-                    secondes pour donner sa réponse. Si elle ne répond pas
-                    correctement, le micro-buzzer est remis en jeu pour les
-                    autres équipes.
+                    Après avoir attrapé buzzé, l'équipe dispose de 5 secondes
+                    pour donner sa réponse. <br /> Lors de l'utilisation d'un
+                    micro-buzzer, si elle ne répond pas correctement, le
+                    micro-buzzer est remis en jeu pour les autres équipes.
                   </p>
 
                   <div className="time-warning">
                     <p>
                       <strong>Astuce :</strong> Pour rendre le jeu plus
                       dynamique, tu peux arrêter la musique dès qu'une équipe
-                      attrape le micro-buzzer, augmentant ainsi la difficulté.
+                      buzz ou attrape le micro-buzzer, augmentant ainsi la
+                      difficulté.
                     </p>
                   </div>
                 </div>

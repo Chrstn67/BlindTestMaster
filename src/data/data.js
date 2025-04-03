@@ -291,7 +291,7 @@ export const chansons = [
   {
     id: 33,
     titre: "Girl on Fire",
-    artiste: "AliciaKeys",
+    artiste: "Alicia Keys",
     audioUrl: "./audio/Alicia-Keys_Girl-on-Fire.mp3",
     paroles:
       "She's just a girl and she's on fire\nHotter than a fantasy, lonely like a highway\nShe's living in a world and it's on fire\nFilled with catastrophe, but she knows she can fly away\n\nOhhhh oh oh oh oh\nShe got both feet on the ground\nAnd she's burning it down\nOhhhh oh oh oh oh\nShe got her head in the clouds\nAnd she's not backing down\n\nThis girl is on fire...\nThis girl is on fire...\nShe's walking on fire...\nThis girl is on fire...\n\nLooks like a girl, but she's a flame\nSo bright, she can burn your eyes\nBetter look the other way\nYou can try but you'll never forget her name\nShe's on top of the world\nHottest of the hottest girls say\n\nOhhhh oh oh oh oh\nWe got our feet on the ground\nAnd we're burning it down\nOhhhh oh oh oh oh\nGot our head in the clouds\nAnd we're not coming down\n\nThis girl is on fire...\nThis girl is on fire...\nShe's walking on fire...\nThis girl is on fire...\n\nEverybody stares, as she goes by\n'Cause they can see the flame that's in her eyes\nWatch her when she's lighting up the night\nNobody knows that she's a lonely girl\nAnd it's a lonely world\nBut she gon' let it burn, baby, burn, baby\n\nThis girl is on fire...\nThis girl is on fire...\nShe's walking on fire...\nThis girl is on fire...\n\nThis girl is on fire...\nThis girl is on fire...\nShe's walking on fire...\nThis girl is on fire...\nThis girl is on fire",
@@ -627,11 +627,11 @@ export const chansons = [
   },
   {
     id: 75,
-    titre: "Popcorn Salé",
-    artiste: "Santa",
-    audioUrl: "./audio/",
+    titre: "Just need your love",
+    artiste: "Hyphen Hyphen",
+    audioUrl: "./audio/Hyphen-Hyphen.mp3",
     paroles:
-      "J'pourrais jouer le faux héros au milieu des flammes\nRepartir à zéro pour un supplément d'âme\nJ'pourrais te regarder dans les yeux\nTe dire que tout ira mieux\nJ'mettrai la musique plus fort pour plus entendre dehors\n\nAllez viens\nJe t'emmène loin regarder le monde s'écrouler\nY'aura du popcorn salé\nY'aura un nouveau monde à nos pieds\n\nJ'pourrais jouer les beaux mots au milieu des femmes\nLe premier domino de ton cœur qui s'emballe\nJ'pourrais te regarder dans les yeux\nTe dire qu'avant c'était mieux\nRemettre la musique plus fort pour plus entendre nos remords\nJ'entendrai les bravos étouffer les flammes\nJ'éteindrai le chaos, tu seras ma femme\nEn on se regardera dans les yeux\nDire que demain sera mieux\nJe chanterai toujours plus fort pour qu'on m'entende dehors\n\nAllez viens\nJe t'emmène loin regarder le monde s'écrouler\nY'aura du popcorn salé\nY'aura un nouveau monde à nos pieds\nAllez viens\nJe t'emmène loin regarder le monde s'écrouler\nY'aura du popcorn salé\nY'aura un nouveau monde à nos pieds\nAllez viens\nJe t'emmène loin regarder le monde s'écrouler\nY'aura du popcorn salé\nY'aura un nouveau monde à nos pieds",
+      "Call looking for someone\nLook down, maybe she's the best\nBaby, you can always be mine\nCome, let's get obsessed\nWe're looking in the dark\n'Cause we're always mean\nBeen here so long and my life like a second skin\nCan't you give a sight of your brightest side?\nCan't you show me the dark, 'cause you always liked to?\nCan you explain to me what you're looking for?\nYou're looking for something, for someone more\nYou're always so near\nWe're always far\nWe come from the dust\nWhere we hopelessly rise\nYou're run into fever\nDesire's so fine\nYou come from the fire\nYou're always mine\nYou're always so near\nWe're always far\nYou come from this fight and\nYou're always round\nMaybe you're candle like you...\nOooh, oh\nYou're looking for\nAnd I just need your love\nAnd I just need it\nAnd I just need your love\nAnd I just need it\nAnd I just need your love\nAnd I just need it\nAnd I just need your love\nAnd I just need it\nIf you're looking for someone other way\nCome on, be my guest\nBaby, I will always be blind\nCome, let's get obsessed\nFire starts from a spark\n'Cause you're on my scene\nBeen here so long and my life like a second skin\nYou're always so near\nWe're always so far\nWe come from the dust\nWhere we hopelessly rise\nYou're run into fever\nDesire's so fine\nYou come from the fire\nYou're always mine\nYou're always so near\nWe're always far\nYou come from this fight and\nYou're always round\nMaybe you're candle like you...\nOooh, oh\nYou're looking for\nAnd I just need your love\nAnd I just need it\nAnd I just need your love\nAnd I just need it",
   },
   {
     id: 76,
@@ -716,8 +716,8 @@ export const chansons = [
   },
   {
     id: 86,
-    titre: "Jonas Blue ft. JP Cooper",
-    artiste: "Perfect Strangers",
+    titre: "Perfect Strangers",
+    artiste: "Jonas Blue ft. JP Cooper",
     audioUrl: "./audio/Jonas-Blue_Perfect-Strangers.mp3",
     paroles:
       "You were looking at me like you wanted to stay\nWhen I saw you yesterday\nI'm not wasting your time, I'm not playing no games\nI see you\n\nWho knows the secret tomorrow will hold?\nWe don't really need to know\n'Cause you're here with me now, I don't want you to go\nYou're here with me now, I don't want you to go\n\nMaybe we're perfect strangers\nMaybe it's not forever\nMaybe the night will change us\nMaybe we'll stay together\nMaybe we'll walk away\nMaybe we'll realize\nWe're only human\nMaybe we don't need no reason\nMaybe we're perfect strangers\nMaybe it's not forever\nMaybe the night will change us\nMaybe we'll stay together\nMaybe we'll walk away\nMaybe we'll realize\nWe're only human\n\nMaybe we don't need no reason why\nCome on, come on, come over\nMaybe we don't need no reason why\nCome on, come on, come over\n\nNo one but you got me feeling this way\nThere's so much we can't explain\nMaybe we're helping each other escape\nI'm with you\n\nWho knows the secret tomorrow will hold?\nWe don't really need to know\n'Cause you're here with me now, I don't want you to go\nYou're here with me now, I don't want you to go\n\nMaybe we're perfect strangers\nMaybe it's not forever\nMaybe the night will change us\nMaybe we'll stay together\nMaybe we'll walk away\nMaybe we'll realize\nWe're only human\nMaybe we don't need no reason\nMaybe we're perfect strangers\nMaybe it's not forever\nMaybe the night will change us\nMaybe we'll stay together\nMaybe we'll walk away\nMaybe we'll realize\nWe're only human\n\nMaybe we don't need no reason why\nCome on, come on, come over\nMaybe we don't need no reason why\nCome on, come on, come over \nCome on, come on, come over \nMaybe we don't need no reason why \nCome on, come on, come over",
@@ -946,130 +946,191 @@ export const chansons = [
     paroles:
       "Le temps pourrait finir par nous vider\nLe monde entier pourrait bien essayer\nOn a ce qu'ils ont du mal à trouver\nÇa vaut de l'or (ça vaut de l'or)\n\nQuand tu parles, ma tête se met à trembler\nEt dans tes larmes, j'pourrais me noyer\nCe que tu fais même quand c'est pas assez\nÇa vaut de l'or (ça vaut de l'or)\n\nDétruis-moi, sers-toi de moi, j'peux tenir encore\nEt ça, ça vaut de l'or\nPrends mon cœur, garde-le, mon cœur, j'peux tenir encore\nEt ça, ça vaut de l'or\nSi tu tombes, moi, je tombe, j'peux encaisser\nJe peux tenir encore\nSi tu tombes, moi, je tombe, rien n'a changé\nJe t'aime, et alors ?\nDétruis-moi, sers-toi de moi, j'peux tenir encore\nEt ça, ça vaut de l'or\n\nJ'veux commencer, recommencer, partir de zéro\nQuand moi, je m'amuse de tes défauts\nJe suis touché par tous les mots bateaux\nMais ça vaut de l'or (mais ça vaut de l'or)\n\nMmh, mmh\n\nDétruis-moi, sers-toi de moi, j'peux tenir encore\nEt ça, ça vaut de l'or\nPrends mon cœur, garde-le, mon cœur, j'peux tenir encore\nEt ça, ça vaut de l'or\nSi tu tombes, moi, je tombe, j'peux encaisser\nJe peux tenir encore\nSi tu tombes, moi, je tombe, rien n'a changé\nJe t'aime, et alors ?\nDétruis-moi, sers-toi de moi, j'peux tenir encore\nEt ça, ça vaut de l'or\n\nNon, non, on en est là\nEst-ce qu'on sait quand c'est là ?\nQu'y a-t-il au-delà ?\nNon, non, on en est là\nEst-ce qu'on sait quand c'est là ?\nQu'y a-t-il au-delà ?\n\nDétruis-moi, sers-toi de moi, j'peux tenir encore\nEt ça, ça vaut de l'or\nPrends mon cœur, garde-le, mon cœur, j'peux tenir encore\nEt ça, ça vaut de l'or\nSi tu tombes, moi, je tombe, j'peux encaisser\nJe peux tenir encore\nSi tu tombes, moi, je tombe, rien n'a changé\nJe t'aime, et alors ?\nDétruis-moi, sers-toi de moi, j'peux tenir encore\nEt ça, ça vaut de l'or\n\nNon, non, on en est là\nEst-ce qu'on sait quand c'est là ?\nQu'y a-t-il au-delà ?\nNon, non, on en est là\nEst-ce qu'on sait quand c'est là ?\nQu'y a-t-il au-delà ?",
   },
-  { id: 115, titre: "", artiste: "", audioUrl: "./audio/", paroles: "" },
-  { id: 116, titre: "", artiste: "", audioUrl: "./audio/", paroles: "" },
-  { id: 117, titre: "", artiste: "", audioUrl: "./audio/", paroles: "" },
-  { id: 118, titre: "", artiste: "", audioUrl: "./audio/", paroles: "" },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
-  // {     id :
-  //       titre: "",
-  //       artiste: "",
-  //       audioUrl: "./audio/",
-  //       paroles: ""
-  //     },
+  {
+    id: 115,
+    titre: "Everytime We Touch",
+    artiste: "Cascada",
+    audioUrl: "./audio/Cascada.mp3",
+    paroles:
+      "I still hear your voice, when you sleep next to me.\nI still feel your touch in my dream.\n(in my dream)\nForgive me my weakness, but I don't know why,\nWithout you, it's hard to survive.\n\n'Cause every time we touch, I get this feeling.\nAnd every time we kiss, I swear I could fly.\nCan't you feel my heart beat fast?\nI want this to last.\nNeed you by my side.\n\n'Cause every time we touch, I feel the static.\nAnd every time we kiss, I reach for the sky.\nCan't you hear my heart beat so?\nI can't let you go.\nWant you in my life.\n\nYour arms are my castle, your heart is my sky.\nThey wipe away tears that I cry.\n(that I cry)\nThe good and the bad times: we've been through them all.\nYou make me rise when I fall.\n\n'Cause every time we touch, I get this feeling.\nAnd every time we kiss, I swear I could fly.\nCan't you feel my heart beat fast?\nI want this to last.\nNeed you by my side.\n\n'Cause every time we touch, I feel the static.\nAnd every time we kiss, I reach for the sky.\nCan't you hear my heart beat so?\nI can't let you go.\nWant you in my life.\n\n'Cause every time we touch, I get this feeling.\nAnd every time we kiss, I swear I could fly.\nCan't you feel my heart beat fast?\nI want this to last.\nNeed you by my side.",
+  },
+  {
+    id: 116,
+    titre: "Summertime Sadness",
+    artiste: "Lana Del Rey",
+    audioUrl: "./audio/Lana-Del-Rey_Summertime-Sadness.mp3",
+    paroles:
+      "Kiss me hard before you go\nSummertime sadness\nI just wanted you to know\nThat, baby, you're the best\n\nI got my red dress on tonight\nDancing in the dark in the pale moonlight\nDone my hair up real big beauty queen style\nHigh heels off, I'm feeling alive\n\nOh, my God, I feel it in the air\nTelephone wires above are sizzling like a snare\nHoney, I'm on fire, I feel it everywhere\nNothing scares me anymore\n\n(1, 2, 3, 4)\n\nKiss me hard before you go\nSummertime sadness\nI just wanted you to know\nThat, baby, you're the best\n\nI got that summertime, summertime sadness\nS-s-summertime, summertime sadness\nGot that summertime, summertime sadness\nOh, oh, oh, oh, oh\n\nI'm feeling electric tonight\nCruising down the coast going 'bout 99\nGot my bad baby by my heavenly side\nI know if I go, I'll die happy tonight\n\nOh, my God, I feel it in the air\nTelephone wires above are sizzling like a snare\nHoney, I'm on fire, I feel it everywhere\nNothing scares me anymore\n\n(1, 2, 3, 4)\n\nKiss me hard before you go\nSummertime sadness\nI just wanted you to know\nThat, baby, you're the best\n\nI got that summertime, summertime sadness\nS-s-summertime, summertime sadness\nGot that summertime, summertime sadness\nOh, oh, oh, oh, oh\n\nThink I'll miss you forever\nLike the stars miss the sun in the morning sky\nLater's better than never\nEven if you're gone I'm gonna drive (drive, drive)\n\nI got that summertime, summertime sadness\nS-s-summertime, summertime sadness\nGot that summertime, summertime sadness\nOh, oh, oh, oh, oh\n\nKiss me hard before you go\nSummertime sadness\nI just wanted you to know\nThat, baby, you're the best\n\nI got that summertime, summertime sadness\nS-s-summertime, summertime sadness\nGot that summertime, summertime sadness\nOh, oh, oh, oh, oh",
+  },
+  {
+    id: 117,
+    titre: "M'envoler",
+    artiste: "Jeck & Carla Lazzari",
+    audioUrl: "./audio/M-envoler_Jeck&Carla-Lazzari.mp3",
+    paroles:
+      "Encore un soir, encore une heure\nToujours ce désert dans mon coeur\nJe broie du noir, là, j'suis pas d'humeur\nDis-moi, il est où le bonheur ?\nDix ans plus tard et autant d'erreurs\nToujours ce parfum, cette odeur\nJ'veux nous revoir ici ou ailleurs\n\nJ'veux m'envoler\nGraver ton nom sur la Tour Eiffel\nChanter du matin au soir pour t'aimer\nBraver les vents, les marées, les tempêtes\nS'il le fallait, j'veux m'envoler\nQue le ciel s'assombrisse et nous arrose\nJ'inonderais ton cœur de mille et une roses\nEt on prendra la vie comme elle viendra\nRien qu'toi et moi, j'veux m'envoler\nM'envoler, m'envoler\n\nDernier regard, dernières fleurs\nL'eau a coulé, les larmes meurent\nEt notre histoire, un nous meilleur\nS'abandonner, faire fuir nos peurs\nQue nos mémoires effacent ces heures\nPassées à torturer nos cœurs\nUne dernière danse pour deux âmes soeurs\n\nJ'veux m'envoler\nGraver ton nom sur la Tour Eiffel\nChanter du matin au soir pour t'aimer\nBraver les vents, les marées, les tempêtes\nS'il le fallait, j'veux m'envoler\nQue le ciel s'assombrisse et nous arrose\nJ'inonderais ton cœur de mille et une roses\nEt on prendra la vie comme elle viendra\nRien qu'toi et moi, j'veux m'envoler\nM'envoler, m'envoler\nJ'veux m'envoler\nM'envoler, m'envoler\nEnvole-toi\nEnvole-moi\nNos lendemains comme autrefois\n\nJ'veux m'envoler\nGraver ton nom sur la Tour Eiffel\nChanter du matin au soir pour t'aimer\nBraver les vents, les marées, les tempêtes\nS'il le fallait, j'veux m'envoler\nQue le ciel s'assombrisse et nous arrose\nJ'inonderais ton cœur de mille et une roses\nEt on prendra la vie comme elle viendra\nRien qu'toi et moi, j'veux m'envoler\nM'envoler, m'envoler\nJ'veux m'envoler\nM'envoler, m'envoler",
+  },
+  {
+    id: 118,
+    titre: "Don't Be So Shy",
+    artiste: "Imany",
+    audioUrl: "./audio/Imany.mp3",
+    paroles:
+      "Take a breath\nRest your head\nClose your eyes\nYou alright\nJust lay down\nTo my side\nDo you feel my heat\nOn your skin?\n\nTake off your clothes\nBlow out the fire\nDon't be so shy\nYou're alright, you're alright\n\nTake off my clothes\nOh, bless me, father\nDon't ask me why\nYou're alright, you're alright\n\nHold my stare\nI'm in command\nCan you feel my hips\nIn your hands?\nAnd I'm laying down\nBy your side\nI taste the sweet\nOf your skin\n\nTake off your clothes\nBlow out the fire\nDon't be so shy\nYou're alright, you're alright\n\nTake off my clothes\nOh, bless me, father\nDon't ask me why\nYou're alright, you're alright\n\nAnd my heart does race so much faster\nI drown myself in your holy water\nAnd both my eyes just got so much brighter\nAnd I saw God, oh yeah, so much closer\n\nIn the dark\nI see your smile\nDo you feel my heat\nOn my skin?\n\nTake off your clothes\nBlow out the fire\nDon't be so shy\nYou're alright, you're alright\n\nTake off my clothes\nOh, bless me, father\nDon't ask me why\nYou're alright, you're alright\n\nTake off my clothes\nBlow out the fire\nDon't be so shy\nYou're alright, you're alright\n\nTake off my clothes\nAnd bless me further\nDon't ask me why\nDon't ask me why, don't ask me why",
+  },
+  {
+    id: 119,
+    titre: "Mon Beau-frère",
+    artiste: "Black M",
+    audioUrl: "./audio/BlackM-MonBeauFrere.mp3",
+    paroles:
+      "Mon beau-frère (hahaha)\n\nÀ la base, personne ne touche à ma sœur, tu sais\nMême avec un bouquet d'fleurs\nT'as bien raison d'avoir des gouttes de sueur\nQuarante de nos cousins débarquent tout à l'heure\n\nFélicitations\nTu t'es engagé à vie, t'as dit \" oui \", sans hésitation\nJ'te comprends, ma sœur est belle (Belle), et intelligente\nQuand je vois tes mocassins, j'ai du mal à la comprendre\n\nViens avec moi, j'vais te présenter ma bande\nBois un verre à la nôtre, faut te détendre\nOn a tellement de choses à échanger (Hein, hein)\nJ'espère que tu t'es vraiment rangé\n\nElle nous a beaucoup parlé d'toi, elle nous a dit qu't'étais le bon\nSi tu merdes, y a pas le choix, on va devoir t'jeter d'un pont\nDoucement avec ma sœur, le mariage c'est pas de l'eau\nEn entrant dans sa vie, tu es rentré dans la nôtre\n\nBienvenue, mon frère\nMais attention quand même\nBienvenue, mon frère\nFais attention à elle\nBienvenue, mon frère\nMais attention quand même\nBienvenue, mon frère\nTant que tu l'aimes, on t'aime\n\nBienvenue\nYeah, yeah, yeah, yeah, yeah\nYeah, yeah, yeah, yeah\nYeah, yeah, yeah, yeah, yeah\nYeah, yeah, yeah, yeah\n\nBienvenue\nYeah, yeah, yeah, yeah, yeah\nYeah, yeah, yeah, yeah\nBienvenue\nYeah, yeah, yeah, yeah, yeah\nTant que tu l'aimes, on t'aime\n\nÀ la base, personne ne touche à ma sœur, tu sais\nOù tu peux te foutre ta fleur (Oups)\nT'as de la chance que maman t'apprécie fort\nMais t'es mort le jour où ça va parler divorce\n\nJ'ai enquêté sur toi, monsieur l'gendre idéal, j'ai des petits dossiers\nAprès, c'est toi qui vois, si tu veux pas que j'parle, va falloir négocier\n\nJe sais qu'tu m'aimes\nLa meilleure façon de s'intégrer, c'est d'être soi-même\nT'es arrivé dans la famille comme un rayon d'soleil\nIl ne faut pas nous en vouloir si parfois on s'protège\n\nEt j'avoue que\nJ'aimerais voir le mélange de vous deux (Eh)\nMais pas touche\nElle est pas encore à toi, attends un peu\n\nBienvenue, mon frère\nMais attention quand même\nBienvenue, mon frère\nFais attention à elle\nBienvenue, mon frère\nMais attention quand même\nBienvenue, mon frère\nTant que tu l'aimes, on t'aime\n\nBienvenue\nYeah, yeah, yeah, yeah, yeah\nYeah, yeah, yeah, yeah\nYeah, yeah, yeah, yeah, yeah\nYeah, yeah, yeah, yeah\n\nBienvenue\nYeah, yeah, yeah, yeah, yeah\nYeah, yeah, yeah, yeah\nBienvenue\nYeah, yeah, yeah, yeah, yeah\nTant que tu l'aimes, on t'aime, bienvenue\n\nEh approchez-vous, approchez-vous\nFaites un cercle autour de lui là, on va rigoler un p'tit peu\nMontre-nous c'que tu sais faire, frérot\n\nTout l'monde, tout l'monde\nLe beau-reuf, le beau-reuf, le beau-reuf, le beau-reuf\nLe beau-reuf, le beau-reuf, le beau-reuf, le beau-reuf\n\nBienvenue, mon frère\nMais attention quand même\nBienvenue, mon frère\nFais attention à elle\n\nBienvenue, mon frère\nMais attention quand même\nBienvenue, mon frère\nTant que tu l'aimes, on t'aime\n\nBienvenue\nYeah, yeah, yeah, yeah, yeah\nYeah, yeah, yeah, yeah\n\nBienvenue\nYeah, yeah, yeah, yeah, yeah\nYeah, yeah, yeah, yeah\n\nBienvenue\nYeah, yeah, yeah, yeah, yeah\nYeah, yeah, yeah, yeah\n\nBienvenue\nYeah, yeah, yeah, yeah, yeah\nTant que tu l'aimes, on t'aime\n\nBienvenue\nYeah, yeah, yeah, yeah, yeah (Le beau-reuf, le beau-reuf)\nYeah, yeah, yeah, yeah (Le beau-reuf, le beau-reuf)\nYeah, yeah, yeah, yeah, yeah (Le beau-reuf, le beau-reuf)\nYeah, yeah, yeah, yeah (Le beau-reuf, le beau-reuf)\nBienvenue\nYeah, yeah, yeah, yeah, yeah (Le beau-reuf, le beau-reuf)\nYeah, yeah, yeah, yeah, yeah (Le beau-reuf, le beau-reuf)\nBienvenue\nYeah, yeah, yeah, yeah, yeah (Le beau-reuf, le beau-reuf)\nTant que tu l'aimes, on t'aime, bienvenue",
+  },
+  {
+    id: 120,
+    titre: "Can You Feel The Love Tonight",
+    artiste: "Elton John",
+    audioUrl: "./audio/Elton-John_Can-You-Feel.mp3",
+    paroles:
+      "There's a calm surrender to the rush of day\nWhen the heat of a rolling wind can be turned away\nAn enchanted moment, and it sees me through\nIt's enough for this restless warrior just to be with you\n\nCan you feel the love tonight?\nIt is where we are\nIt's enough for this wide-eyed wanderer\nThat we've got this far\n\nAnd can you feel the love tonight?\nHow it's laid to rest?\nOh, it's enough to make kings and vagabonds\nBelieve the very best\n\nThere's a time for everyone if they only learn\nThat the twisting kaleidoscope moves us all in turn\nThere's a rhyme and reason to the wild outdoors\nWhen the heart of this star-crossed voyager beats in time with yours\n\nCan you feel the love tonight?\nIt is where we are\nIt's enough for this wide-eyed wanderer\nThat we've got this far\n\nCan you feel the love tonight?\nHow it's laid to rest?\nOh, it's enough to make kings and vagabonds\nBelieve the very best\n\nOh, it's enough to make kings and vagabonds\nBelieve the very best",
+  },
+  {
+    id: 121,
+    titre: "Spirit ('The King Lion') ",
+    artiste: "Beyoncé",
+    audioUrl: "./audio/Beyonce-SPIRIT.mp3",
+    paroles:
+      'Uishi kwa muda mrefu mfalme\n(Uishi kwa uishi kwa)\nUishi kwa muda mrefu mfalme\n(Uishi kwa, uishi kwa)\n\nYeah, yeah, and the wind is talking\nYeah, yeah, for the very first time\nWith a melody that pulls you towards it\nPainting pictures of paradise\n\nSaying rise up\nTo the light in the sky, yeah\nWatch the light lift your heart up\nBurn your flame through the night, whoa\n\nSpirit, watch the heavens open (Open)\nYeah\nSpirit, can you hear it calling? (Calling)\nYeah\n\nYeah, yeah, and the water\'s crashing\nTrying to keep your head up high\nWhile you\'re trembling, that\'s when the magic happens\nAnd the stars gather by, by your side\n\nSaying rise up\nTo the light in the sky, yeah\nLet the light lift your heart up\nBurn your flame through the night, yeah\n\nSpirit, watch the heavens open (Open)\nYeah\nSpirit, can you hear it calling? (Calling)\nYeah\n\nYour destiny is coming close\nStand up and fight\nSo go into that far off land\nAnd be one with the great "I Am", "I Am"\nA boy becomes a man, whoa\n\nSpirit, watch the heavens open (Open)\nYeah\nSpirit, can you hear it calling? (Calling)\nYeah\nSpirit, yeah, watch the heavens open, open\nYeah\nSpirit, spirit, can you hear it calling? (Calling)\nYeah\nYour destiny is coming close\nStand up and fight\nSo go into a far off land\nAnd be one with the great "I Am"',
+  },
+  {
+    id: 122,
+    titre: "Power Over Me",
+    artiste: "Dermot Kennedy",
+    audioUrl: "./audio/Dermot-Kennedy.mp3",
+    paroles:
+      "I wanna be king in your story\nI wanna know who you are\nI want your heart to beat for me\nOh I\n\nWant you to sing to me softly\nYou can stand, I'm outrunning the dark\nThat's all that love ever taught me\nOh I\n\nCall and I'll rush out\nAll out of breath now\n\nYou got that power over me, my my\nEverything I hold dear resides in those eyes\nYou got that power over me, my my\nThe only one I know, the only one on my mind\n\nYou got that power over me (my my)\nYou got that power over me (my my)\nYou got that power over me\n\nRemember the lake in the moonlight?\nRemember you shivered and shone\nI'll never forget what you looked like\nOn that night\n\nI know that time's gonna take me\nI know that day's gonna come\nI just want the devil to hate me\nOh I\n\nCall and I'll rush out\nAll out of breath now\n\nYou got that power over me, my my\nEverything I hold dear resides in those eyes\nYou got that power over me, my my\nThe only one I know, the only one on my mind\n\nYou got that power over me (my love)\nYou got that power over me (my love)\nYou got that power over me\n\nIt was all in doubt\nThey were all around\n\nSo we hide away and never tell\nYou decide that darkness knows you well\nThat lesson of love, all that it was\nI need you to see\n\nYou got that power over me, my my\nEverything I hold dear resides in those eyes\nYou got that power over me, my my\nThe only one I know, the only one on my mind\nYou got that power over me, woo!\n\nI know that you let her down, no\nLet her down low\n\nYou got that power over me, my my\nEverything I hold dear resides in those eyes\nYou got that power over me, my my\nThe only one I know, the only one on my mind\nYou got that power over me\n\nMmm-mmm\nMmm-mmm",
+  },
+  {
+    id: 123,
+    titre: "Évidemment",
+    artiste: "La Zarra",
+    audioUrl: "./audio/LaZarra.mp3",
+    paroles:
+      "Mon cœur, mes mains, mes yeux, mes reins\nPlus rien ne m'appartient\nJ'me fais du mal pour faire du bien\nJ'oublie comme si c'n'était rien\n\nDans mon jardin d'enfer poussent des fleurs\nQue j'arrose de mes rêves, de mes pleurs\nOn a beau être sur le toit du monde\nOn ne peut toucher le ciel du doigt\n\nÉvidemment\nToutes ces belles promesses que j'entends\nC'n'est que du vent\nÉvidemment\nCar après l'beau temps vient la pluie\nC'est c'qu'on oublie\nC'est toujours trop beau pour être vrai\nMais c'n'est jamais trop laid pour être faux\nÉvidemment\nElle ne s'ra plus jamais la même\nCette fille d'avant\n\nJe vends demain, j'rachète hier\nLe temps est assassin\nJe cherche l'amour, je n'trouve rien\nComme dans mon sac à main\n\nDans ma tête c'n'est pas tant évident\nJe recherche la vérité, tout en l'évitant\nOn a beau être sur le toit du monde\nOn ne peut toucher le ciel du doigt\n\nÉvidemment\nToutes ces belles promesses que j'entends\nC'n'est que du vent\nÉvidemment\nElle ne s'ra plus jamais la même\nCette fille d'avant\n\nCar moi je chante\nMa vie, la vôtre, et un peu de romance\nJe suis nue devant vous\nDonnez-moi donc une chance\nDe vous à moi, de moi à vous\nAi-je réussi à chanter\nÀ chanter la Grande France ?\n\nC'est toujours trop beau pour être vrai\nMais c'n'est jamais trop laid pour être faux\nÉvidemment\nElle ne s'ra plus jamais la même\nCette fille d'avant\nÉvidemment",
+  },
+  {
+    id: 124,
+    titre: "Beau",
+    artiste: "Joseph Kamel ft. Julien Doré",
+    audioUrl: "./audio/JKamel-JDoré_Beau.mp3",
+    paroles:
+      "Assis sur le trottoir la soirée n'est pas belle\nIl est sûrement trop tard pour qu'elle prenne mon appel\nJe laisserai un message pour avoir des nouvelles\nElle l'écoutera tout bas et le gardera pour elle\nCette nuit j'suis dans ma vie, elle en est tellement loin\nSes yeux rivés sur lui et sa peau sous ses mains\nAssis sur le trottoir c'est plus du tout pareil\nCe soir j'envie celui qui veillera son réveil\n\nSi tu savais comme c'est beau (oh oh, oh oh)\nSi tu voyais comme c'est beau (oh oh, oh oh)\nJ'ai vu son reflet dans l'eau (oh oh, oh oh)\nSi tu savais comme c'est beau (oh oh, oh oh)\n\nAssise en face de moi elle me regarde à peine\nQuelque chose dans sa voix sonne comme un cœur qui saigne\nElle reçoit ce message qui soudain la rend belle\nLa lumière de l'écran, le sourire qu'il révèle\nCette nuit elle pense à lui elle dit qu'elle n'y peut rien\nJ'me bats contre un souvenir en lui tenant la main\nAssise en face de moi c'est plus du tout pareil\nCe soir j'envie celui qui lui manque au réveil\n\nSi tu savais comme c'est beau (oh oh, oh oh)\nSi tu voyais comme c'est beau (oh oh, oh oh)\nJ'ai vu son reflet dans l'eau (oh oh, oh oh)\nSi tu savais comme c'est beau (oh oh, oh oh)\n\nElle a laissé son cœur entre nous\nEntre nous et le reste\nElle a laissé son cœur à genoux\nSur le sol, des promesses\nElle a laissé son cœur entre nous\nElle nous laisse le pire et le reste elle s'en fout\nSi tu savais comme c'est beau (si tu savais comme c'est beau, oh oh, oh oh)\nSi tu voyais comme c'est beau (si tu voyais comme c'est beau, oh oh, oh oh)\nJ'ai vu son reflet dans l'eau (oh oh, oh oh)\nSi tu savais comme c'est beau (oh oh, oh oh)\nSi tu savais comme c'est beau\nSi tu voyais comme c'est beau",
+  },
+  {
+    id: 125,
+    titre: "LOVE'N'TENDRESSE",
+    artiste: "Eddy de Pretto",
+    audioUrl: "./audio/Eddy-de-Pretto.mp3",
+    paroles:
+      "C'était l'début des années 20\nLe début de la fin sûrement\nToi, tu courais toujours en vain\nOuais tu aimais gagner ton temps\nDans les trop-tard de tes trente ans\nOuais, tu étais déjà sous l'eau\nEt tout l'apnée de ton dedans\nSemblait te lancer des signaux\nTu changeais d'appartement\nPour une dixième fois peut-être\nTu te lavais dans les fêtes\nEntre bureau et tristesse\nC'était peut-être ça la vie\nT'en étais persuadé aussi\nJusqu'à c'qu'enfin tu découvres\nQu'il existait l'amour\n\nUn peu de love et de tendresse\nFinalement, c'est c'qu'il nous reste\nQue de l'amour, que de beaux gestes\nPour essuyer le temps qui blesse\nUn peu de love et de tendresse\nFinalement, c'est c'qu'il nous faut\nQue de beaux jours, que de beaux gestes\nPour attraper le temps qui presse\n\nMhhh\nUn peu de love et de tendresse, un peu de love et de tendresse\nUn peu de love, un peu de love\nUn peu de love et de tendresse\nUn peu de love et de tendresse, un peu de love et de tendresse\nUn peu de love, un peu de love, un peu de love et de tendresse\n\nFermé sans sentiments\nTu as tenu longtemps comme ça\nA faire des petits bâtons d'sang\nSur les murs de ton célibat\nPuis si tu vois, ce que tu rates\nTu n'auras pas mon amour mille fois\nAlors que le taf sans relâche\nTu pourras y revenir sans moi\n\nUn peu de love et de tendresse\nFinalement, c'est c'qu'il nous reste\nQue de l'amour, que de beaux gestes\nPour essuyer le temps qui blesse\nUn peu de love et de tendresse\nFinalement, c'est c'qu'il nous faut\nQue de beaux jours, que de beaux gestes\nPour attraper le temps qui presse\n\nMhhh\nUn peu de love et de tendresse, un peu de love et de tendresse\nUn peu de love, un peu de love\nUn peu de love et de tendresse\nUn peu de love et de tendresse, un peu de love et de tendresse\nUn peu de love, un peu de love, un peu de love et de tendresse",
+  },
+  {
+    id: 126,
+    titre: "A nos actes manquées",
+    artiste: "Matt Pokora",
+    audioUrl: "./audio/Pokora_ANosActesManques.mp3",
+    paroles:
+      "À tous mes loupés, mes ratés, mes vrais soleils\nTous les chemins qui me sont passés à côté\nÀ tous mes bateaux manqués, mes mauvais sommeils\nÀ tous ceux que je n'ai pas été\n\nAux malentendus, aux mensonges, à nos silences\nÀ tous ces moments que j'avais cru partager\nAux phrases qu'on dit trop vite et sans qu'on les pense\nÀ celles que je n'ai pas osées\n\nÀ nos actes manqués\n\nAux années perdues à tenter de ressembler\nÀ tous les murs que je n'aurais pas su briser\nÀ tout c'que j'ai pas vu tout près, juste à côté\nTout c'que j'aurais mieux fait d'ignorer\n\nAu monde, à ses douleurs qui ne me touchent plus\nAux notes, aux solos que je n'ai pas inventés\nTous ces mots que d'autres ont fait rimer qui me tuent\nComme autant d'enfants jamais portés\n\nÀ nos actes manqués\n\nAux amours échoués de s'être trop aimé\nVisages et dentelles croisés juste frôlés\nAux trahisons que j'ai pas vraiment regrettées\nAux vivants qu'il aurait fallu tuer\n\nÀ tout ce qui nous arrive enfin, mais trop tard\nÀ tous les masques qu'il aura fallu porter\nÀ nos faiblesses, à nos oublis, nos désespoirs\nAux peurs impossibles à échanger\n\nÀ nos actes manqués",
+  },
+  {
+    id: 127,
+    titre: "Le lien",
+    artiste: "Grégory Lemarchal",
+    audioUrl: "./audio/Gregory-Lemarchal_Le-lien.mp3",
+    paroles:
+      "Elle regarde ma main\nElle s'accorde une pause\nJ'appelle à mon destin\nMon cœur lourd se repose\nJe ne sens que le bien\nEt le mal se suppose, le lien\nElle remonte trop loin\nLes souvenirs s'essoufflent\nJe trouve un peu de moi\nDans cette vie sur ces routes\nC'est comme aux bords d'un rien\nQue le lien me revient, enfin\n\nRacontez-moi\nQuel est ce lien qui me tient vivant dans ce monde\nRassurez-moi\nSi les douleurs nous rendaient meilleurs\nRacontez-moi\nÀ ceux qui rêvent sans fin\nQui s'accordent un repos\nComme ceux qui meurent pour rien\nSi loin sans une rose\nJe me dis que soudain\nMes peurs ce n'est pas grand-chose, pas grand-chose\n\nRacontez-moi\nQuel est ce lien qui me tient vivant dans ce monde\nRassurez-moi\nSi les douleurs nous rendaient meilleurs\nRacontez-moi\nQuel est ce lien qui nous tient vivant dans ce monde\nRassurez-moi\nSi les douleurs nous rendaient meilleurs\nLe pendu me foudroie\nMais la lune s'interpose\nLa lutte se fait sans foi\nLe jugement explose\nL'ermite est au soleil\nL'impératrice, le monde, pour moi\nJe serre encore les poings et je crie pour demain,\nEt je crie pour demain, ouh, ouh\nLe lien, ouh, ouh, le lien\nRacontez-moi\nQuel est ce lien qui me tient vivant dans ce monde\nRassurez-moi\nSi les douleurs nous rendaient meilleurs\nRacontez-moi\nQuel est ce lien qui nous tient vivant dans ce monde\nRassurez-moi\nSi les douleurs nous rendaient meilleurs, nous rendaient meilleurs, ouh, ouh",
+  },
+  {
+    id: 128,
+    titre: "Nice To Meet You",
+    artiste: "Myles Smith",
+    audioUrl: "./audio/Myles-Smith.mp3",
+    paroles:
+      'Lonely in this crowd, I see the low, oh-oh\nOne more drink away from letting home, home\n\nOh-oh-oh-oh-oh, I could feel the night slipping by\nOh-oh-oh-oh, away from me\nAnd oh-oh-oh-oh, she caught my eye through the light\nThen she came right up to me\n\nShe said, "Oh, hi, nice to meet you\nTonight, maybe we could\nGo dance, get up off our feet"\nShe said, "This life ain\'t forever\nOne song, here together\nThen let\'s play it on repeat"\nWe could dance, we could dance all night\nWe could dance till the morning light\nLet\'s forget about our worries and the wild world outside\nShe said, "Oh, hi, nice to meet you\nTonight, maybe we could\nGo dance, get up off our feet"\nWe could dance, we could dance all night\n\nShe took my hand and led me through the dark, oh-oh\nShe said, "Feel the beat, forget that broken heart", oh-oh\n\nAnd oh-oh-oh-oh-oh, I could feel the night slipping by\nOh-oh-oh-oh, away from me\nAnd oh-oh-oh-oh, I saw the light in her eyes\nGlad she came right up to me\n\nShe said, "Oh, hi, nice to meet you\nTonight, maybe we could\nGo dance, get up off our feet"\nShe said, "This life ain\'t forever\nOne song, here together\nThen let\'s play it on repeat"\nWe could dance, we could dance all night\nWe could dance till the morning light\nLet\'s forget about our worries and the wild world outside\nShe said, "Oh, hi, nice to meet you\nTonight, maybe we could\nGo dance, get up off our feet"\nWe could dance, we could dance all night\nWe could dance all night',
+  },
+  {
+    id: 129,
+    titre: "Le jeu",
+    artiste: "Julien Lieb",
+    audioUrl: "./audio/Julien-Lieb.mp3",
+    paroles:
+      "J'ai juste besoin de tes yeux\nDe leur éclat dans la nuit\nTu sais j'finirai p't'être pas vieux\nMais ensemble on fera du bruit\nOn criera tous les deux\nÀ l'ombre de la pluie\nMais avant faut que je poste ma story ce soir avant minuit\nJ'laisse filer la folie\n\nPour toi je sillonne le monde\nÀ la poursuite de tes \"bravos\"\nEn me demandant toutes les secondes\nSi il est trop tard ou bien trop tôt\nPour toi je sillonne le monde\nÀ la poursuite de tes \"bravos\"\nEn me demandant toutes les secondes\nEst-ce que ça me mène en bateau?\n\nTu vois si je joue le jeu\nC'est pour que tes yeux baissent les armes\nLe temps de rallumer la flamme\nSi je joue le jeu\nC'est pour que tes yeux sèchent leurs larmes\nQuitte à le payer de mon âme\n\nSi je joue le jeu\nMoi de quoi j'ai l'air? Le soir j'en ai assez\nPrendre la lumière, des néons fatigués\nJ'en ai rien à faire, si je dois m'y brûler\nJ'prendrai la lumière\n(Si je joue le jeu)\nMoi de quoi j'ai l'air? Le soir j'en ai assez\nPrendre la lumière, des néons fatigués\nJ'en ai rien à faire, si je dois m'y brûler\nJ'prendrai la lumière\n(Si je joue le jeu)\nMoi j'ai tout ce qu'il me faut\nL'amour des miens, le soleil dans la peau\nEt quand tournent les chiens\nMoi je leur tourne le dos\nDerrière mon sourire y'a tes mots\nC'est pour toi que j'tends la main\nQuand tu crie ça me tient chaud\nFaut pas que j'brûle avant la fin\nPour toi je sillonne le monde\nÀ la poursuite de tes \"bravos\"\nEn me demandant toutes les secondes\nSi il est trop tard ou bien trop tôt\nPour toi je sillonne le monde\nÀ la poursuite de tes \"bravos\"\nEn me demandant toutes les secondes\nEst ce que ça me mène en bateau?\nTu vois si je joue le jeu C'est pour que tes yeux baissent les armes Le temps de rallumer la flamme Si je joue le jeu C'est pour que tes yeux sèchent leurs larmes Quitte à le payer de mon âme Si je joue le jeu Moi de quoi j'ai l'air? Le soir j'en ai assez Prendre la lumière, des néons fatigués J'en ai rien à faire, si je dois m'y brûler J'prendrai la lumière (Si je joue le jeu) Moi de quoi j'ai l'air? Le soir j'en ai assez Prendre la lumière, des néons fatigués J'en ai rien à faire, si je dois m'y brûler J'prendrai la lumière (Si je joue le jeu)",
+  },
+  {
+    id: 130,
+    titre: "Je pense à vous",
+    artiste: "Linh",
+    audioUrl: "./audio/Linh.mp3",
+    paroles:
+      "Je ne m'y attendais pas, au grand départ\nFermez la porte sans revenir\nJe sais, vous ne comprenez pas\nMa vie mes choix et l'envie de toucher à l'avenir\nNon, je ne vous oublie pas, j'le dirai pas\nMais quand j'y pense, danse ma poitrine\nAlors, pardonnez-moi pour tous ces soirs où\nJ'ai prié qu'on me laisse tranquille\n\nC'est la même photo\nQue je regarde quand mon ciel est pas beau\nChez moi, ça me manque, c'est pas nouveau\nJe sais qu'on se reverra bientôt\nMême à des kilomètres, quand le temps, tout s'arrête\nJe pense à vous encore\nÇa souffle dans ma tête, souvenirs en tempête\nEt je pense à vous plus fort\nMalgré les kilomètres et Paris qui fait la fête\nMoi, je pense à vous encore\nÇa tourne dans ma tête, quand le temps, tout s'arrête\nJe pense à vous plus fort\n\nComment ça va? Je ne sais pas\nJe vis la vie dont j'avais envie\nMais ne vous méprenez pas, mes rêves ont raison de moi\nMon cœur, lui, voudrait quitter la ville\nJ'vous mens pas, cette fois, c'est la dernière fois\nQue je me lance, non plus, dans le vide\nSi vous saviez comme j'y crois\nMalgré les peines, les faux pas\nÀ ce rêve immense qui m'anime\n\nC'est la même photo\nQue je regarde quand mon ciel est pas beau\nChez moi, ça me manque, c'est pas nouveau\nJe sais qu'on se reverra bientôt\nMême à des kilomètres, quand le temps, tout s'arrête\nJe pense à vous encore\nÇa souffle dans ma tête, souvenirs en tempête\nEt je pense à vous plus fort\nMalgré les kilomètres et Paris qui fait la fête\nMoi, je pense à vous encore\nÇa tourne dans ma tête, quand le temps, tout s'arrête\nJe pense à vous plus fort",
+  },
+  {
+    id: 131,
+    titre: "Je te promets",
+    artiste: "Johnny Halliday",
+    audioUrl: "./audio/Je-te-promets.mp3",
+    paroles:
+      "Je te promets le sel au baiser de ma bouche\nJe te promets le miel à ma main qui te touche\nJe te promets le ciel au dessus de ta couche\nDes fleurs et des dentelles pour que tes nuits soient douces\n\nJe te promets la clé des secrets de mon âme\nJe te promets ma vie de mes rires à mes larmes\nJe te promets le feu à la place des armes\nPlus jamais des adieux rien que des au revoirs\n\nJ'y crois comme à la Terre, j'y crois comme au soleil\nJ'y crois comme un enfant, comme on peut croire au ciel\nJ'y crois comme à ta peau, à tes bras qui me serrent\nJ'te promets une histoire différente des autres\nJ'ai tant besoin d'y croire encore\n\nJe te promets des jours tout bleus comme tes veines\nJe te promets des nuits rouges comme tes rêves\nDes heures incandescentes et des minutes blanches\nDes secondes insouciantes au rythme de tes hanches\n\nJe te promets mes bras pour porter tes angoisses\nJe te promets mes mains pour que tu les embrasses\nJe te promets mes yeux si tu ne peux plus voir\nJ'te promets d'être heureux si tu n'as plus d'espoir\n\nJ'y crois comme à la terre, j'y crois comme au soleil\nJ'y crois comme un enfant, comme on peut croire au ciel\nJ'y crois comme à ta peau, à tes bras qui me serrent\nJ'te promets une histoire différente des autres\nSi tu m'aides à y croire encore\n\nEt même si c'est pas vrai, si on te l'a trop fait\nSi les mots sont usés, comme écrits à la craie\nOn fait bien des grands feux en frottant des cailloux\nPeut-être avec le temps à la force d'y croire\nOn peut juste essayer pour voir\n\nEt même si c'est pas vrai, même si je mens\nSi les mots sont usés, légers comme du vent\nEt même si notre histoire se termine au matin\nJ'te promets un moment de fièvre et de douceur\nPas toute le nuit mais quelques heures",
+  },
+  {
+    id: 132,
+    titre: "Je vis pour elle (Vivo per lei)",
+    artiste: "Andrea Bocelli & Kendji Girac",
+    audioUrl: "./audio/Je-vis-pour-elle.mp3",
+    paroles:
+      "Vivo per lei da quando sai\nLa prima volta l'ho incontrata\nNon mi ricordo come ma\nMi é entrata dentro e c'é restata\nVivo per lei perché mi fa\nVibrare forte l'anima\nVivo per lei e non è un peso\n\nJe vis pour elle depuis toujours\nQu'elle me déchire ou qu'elle soit tendre\nElle nous dessine après l'amour\nUn arc-en-ciel dans notre chambre\nElle est musique et certains jours\nQuand notre cœur se fait trop lourd\nElle est la seule à pouvoir nous porter secours\n\nE' una musa che ci invita\nElle vivra toujours en moi\nAttraverso un pianoforte la morte è\nLontana io vivo per lei\n\nJe vis pour elle jour après jour\nQuand ses accords en moi se fondent\nC'est ma plus belle histoire d'amour\nE un pugno che non fa mai male\nVivo per lei lo so mi fa\nGirare di città in città\nSoffrire un po ma almeno io vivo\nJe serais perdue sans elle\nVivo per lei dentro gli hotels\nJe suis triste et je l'appelle\nVivo per lei nel vortice\nAttraverso la mia voce\nSi espande e amore produce\nVivo per lei nient'altro ho\nE quanti altri incontrerò\nChe come me hanno scritto in viso \"Io vivo per lei\"\nIo vivo per lei, Io vivo per lei.\nSopra un palco o contro ad un muro (Elle nous ressemble encore tu vois)\nAnche in un domani duro (J'existe encore je sais pourquoi)\nOgni giorno una conquista, La protagonista sarà sempre lei.\nOh, oh, oh.\nVivo per lei perchè oramai, Io non ha altra via d'uscita.\nPerchè la musica lo sai, Davvero non l'ho mai tradita.\nElle est musique, elle a des ailes, Elle m'a donné la clé du ciel.\nQui m'ouvre enfin les portes du soleil, J'existe par elle.\nVivo per lei la musica (J'existe pour elle).\nVivo per lei è unica (Elle est toi et moi).\nIo vivo per lei. Io vivo per lei.",
+  },
+  {
+    id: 133,
+    titre: "Il avait les mots",
+    artiste: "Sheryfa Luna",
+    audioUrl: "./audio/Sheryfa-Luna.mp3",
+    paroles:
+      "Il était vraiment plus âgé que moi\nJe suis tout bêtement tombée dans ses bras\nPar lui, j'ai découvert ce que je ne connaissais pas\nIl semblait sincère, je l'aimais pour ça\nCe qui m'a toujours dérangé, est que rarement\nLe soir je pouvais le capter\nMais dès qu'il me parlait, je la fermais\n\nRefrain :\nIl avait les mots, m'a rendue accro\nJe voyais déjà l'avenir dans ses bras\nIl avait les mots, m'a rendue accro\nJe ne savais pas que je ne le connaissais pas\nIl avait les mots\n\nJe n'avais plus de vie. Je ne pensais qu'à lui\nMême si j'ai cramé que souvent il mentait\nIl se perdait dans ce qu'il me racontait\nSe trompait de nom quand il disait qu'il m'aimait\nEt je supportais, je pardonnais\nDans sa caisse, j'ai trouvé des jouets\nJ'ai grillé que son ex continuait à l'appeler\nMais qu'est-ce qu'il cachait ?\nJe le découvrais\n\nRefrain :\nIl avait les mots, m'a rendue accro\nJe voyais déjà l'avenir dans ses bras\nIl avait les mots, m'a rendue accro\nJe ne savais pas que je ne le connaissais pas\nIl avait les mots\n\nJe l'ai suivi chez lui, bête de jardin et chien de compagnie\nPutain de maison, on s'imagine tout de suite la vie de famille\nPendant tout ce temps, j'étais dans le faux, j'étais dans le faux\nSa femme m'a surprise, elle est tout de suite venue m'avouer\nQue je n'étais pas la première conne avec qui il s'amusait,\nPendant tout ce temps, j'étais dans le faux, j'étais dans le faux\nCe qui m'a toujours dérangé, est que rarement\nLe soir je pouvais le capter\nMais dès qu'il me parlait, je la fermais",
+  },
+  {
+    id: 134,
+    titre: "Comme un fils",
+    artiste: "Corneille",
+    audioUrl: "./audio/Corneille.mp3",
+    paroles:
+      "Donne-moi tout même quand il reste plus rien\nRends-moi soûl de toi quand rien n'est bien\nFais demain quand le présent est chien\nCar j'en ferai autant\nLis mes peines avant que je les dise\nOublie mes hontes sans que je précise\nCache-le moi si un jour tu me méprises\nCar j'en ferai autant\n\nEt je sais, que c'est un peu trop\nQue je demande plus qu'il faut\nMais je te donne plus que des mots\nComme un fils, fais-moi croire quand tout finit\nEt comme un fils, fais-moi voir quand tout est nuit\nEt comme un fils, je t'aimerai qu'importe le prix\nComme un fils, je te devrai toujours la vie\nSi tu m'aimes comme un fils\n\nDis-le moi si tout autour de moi\nM'est hostile et que je ne le vois pas\nTiens ma main quand tout me pointe du doigt\nCar j'en ferai autant\nEt si je prends pour acquis mes chances\nFais-moi peur, que plus jamais j'y pense\nPrends ma tête quand elle fait plus de sens\nCar j'en ferai autant\n\nEt je sais, que c'est un peu trop\nQue je demande plus que je vaux\nMais je promets plus que des mots\nComme un fils, fais-moi croire quand tout finit\nEt comme un fils, fais-moi voir quand tout est nuit\nEt comme un fils, je t'aimerai, qu'importe le prix\nComme un fils, je te devrai toujours la vie\nSi tu m'aimes comme un fils\n\nEt si leurs yeux se croisent, dis que c'est toi\nOn s'en voudrait à vie si on se manquait\nEt si tu es passé, reviens-moi\nCar je ne passerai pas toute ma vie à t'écrire, ni à t'imaginer\nComme un fils, fais-moi croire quand tout finit\nEt comme un fils, fais-moi voir quand tout est nuit\nComme un fils, je t'aimerai qu'importe le prix\nComme un fils, je te devrai toujours la vie.\nSi tu m'aimes comme un fils",
+  },
+  {
+    id: 135,
+    titre: "Ne parle pas de tes projets",
+    artiste: "SMARTY ft. Korka Dieng",
+    audioUrl: "./audio/SMARTY.mp3",
+    paroles:
+      "Ne parle pas de tes projets, garde-les dans le secret\nEn silence se construit, et ta réussite fera du bruit\n\nNe parle pas de tes projets, avance dans le silence\nNe vois-tu pas tous les dangers, tiens la langue loin de la confiance\nTu parles trop de tes envies, t'expose tes ambitions\nLe lionceau qui fait trop de bruit devient une proie pour le faucon\nDonc silence sur tes ouvrages, silence sur tes voyages\nSans rien dire, fais tes bagages vers le succès et ses ombrages\nProtège-toi de tes paroles, elles n'attirent que des problèmes\nTu ne joueras pas de grand rôle si tu crois que tout le monde t'aime\n\nRefrain :\nNe parle pas de tes projets (bou kéne kham finga dieum)\nGarde-les dans le secret (wakh touti liguéye lou beurry)\nEn silence se construit (kouy yoote dou seukeute)\nEt ta réussite fera du bruit (bo tékkiiwé amal nieup ndieurigne)\n\nOn n'aime pas les ambitieux, les personnes qui se projettent\nLes battantes et les courageux sont les miroirs que l'on rejette\nLes sourires sont mesquins, quand tu parles de tes défis\nTu ne seras jamais quelqu'un aux yeux de l'envie et du mépris\nDonc tais-toi sur tes promesses, c'est comme ça que les gros naissent\nSois discrète sur tes prouesses, seul le silence est la noblesse\nLes grandes choses ne font pas de bruit, les grands hommes sont muets\nTa vision sera accomplie, si tu parles moins, je te promets\n\nRefrain :\nNe parle pas de tes projets (bou kéne kham finga dieum)\nGarde-les dans le secret (wakh touti liguéye lou beurry)\nEn silence se construit (kouy yoote dou seukeute)\nEt ta réussite fera du bruit (bo tékkiiwé amal nieup ndieurigne)\n\nLe silence est d'or, le silence est magique (ah-ah-ah, mon ami)\nConstruis tes projets, sois toujours discret\nUn jour ton étoile va briller, oh-oh\n\nRefrain :\nNe parle pas de tes projets (bou kéne kham finga dieum)\nGarde-les dans le secret (wakh touti liguéye lou beurry)\nEn silence se construit (kouy yoote dou seukeute)\nEt ta réussite fera du bruit (bo tékkiiwé amal nieup ndieurigne)",
+  },
+  {
+    id: 136,
+    titre: "Mignon Mignon",
+    artiste: "René La Taupe",
+    audioUrl: "./audio/Rene-La-Taupe.mp3",
+    paroles:
+      "Ce qui me plaît chez toi\nC'est ton petit bidon\nTes petites poignées d'amour\nJe trouve ça trop mignon\nMême si les autres dans la rue\nTe trouvent un peu trop gras\nPour moi c'est confortable\nQuand tu me prends dans tes bras\n\nT'es si mignon mignon mignon mignon\nMais gros gros gros\nMignon mignon mignon mignon\nMais gros gros gros\nEn été tu fais de l'ombre\nEt en hiver tu te tiens chaud\nEt quand t'as fini de bouffer\nTu nous lâches un gros pet\n\nJ'aime bien tes petits bourrelets\nEt tes mollets bien potelés\nQuand on commence à manger\nPlus rien ne peut nous arrêter\nJ'ai vraiment très très faim\nEt j'ai envie de te manger\nEt rien qu'en pensant à toi\nJe commence à saliver\nDans le chocolat il y a beaucoup de vitamines\nPour être en bonne santé toi t'arrêtes pas d'en manger\nTu te moques des gens trop maigres et tu te trouves le plus beau\nEt aujourd'hui t'es fier d'avoir des calories en trop\n\nT'es si mignon mignon mignon mignon\nMais gros gros gros\nMignon mignon mignon mignon\nMais gros gros gros\nEn été tu fais de l'ombre\nEt en hiver tu te tiens chaud\nEt quand t'as fini de bouffer\nTu nous lâches un gros pet",
+  },
+  {
+    id: 137,
+    titre: "Je ne suis pas bien portant",
+    artiste: "Gaston Ouvrard",
+    audioUrl: "./audio/GastonOuvrard.mp3",
+    paroles:
+      "Depuis que je suis militaire\nCe n'est pas rigolo entre nous\nJe suis d'une santé précaire\nEt je m'fais un mauvais sang fou\nJ'ai beau vouloir me remonter\nJe souffre de tous les côtés\n\nJ'ai la rate qui s'dilate\nJ'ai le foie qu'est pas droit\nJ'ai le ventre qui se rentre\nJ'ai l'pylore qui s'colore\nJ'ai l'gosier anémié\nL'estomac bien trop bas\nEt les côtes bien trop hautes\nJ'ai les hanches qui s'démanchent\nL'épigastre qui s'encastre\nL'abdomen qui s'démène\nJ'ai l'thorax qui s'désaxe\nLa poitrine qui s'débine\nLes épaules qui se frôlent\nJ'ai les reins bien trop fins\nLes boyaux bien trop gros\nJ'ai l'sternum qui s'dégomme\nEt l'sacrum c'est tout comme\nJ'ai l'nombril tout en vrille\nEt l'coccyx qui s'dévisse\nAh, bon Dieu, qu'c'est embêtant\nD'être toujours patraque\nAh, bon Dieu, qu'c'est embêtant\nJe n'suis pas bien portant\n\nAfin de guérir au plus vite\nUn matin tout dernièrement\nJe suis allé à la visite\nVoir le major du régiment.\n\"D'où souffrez-vous ?\" qu'il m'a demandé.\n\"C'est bien simple !\" que j'lui ai répliqué.\nJ'ai la rate qui s'dilate,\nJ'ai le foie qu'est pas droit,\nEt puis j'ai ajouté :\nVoyez-vous ce n'est pas tout.\nJ'ai les genoux qui sont mous,\nJ'ai l'fémur qu'est trop dur,\nJ'ai les cuisses qui s'raidissent,\nLes guiboles qui flageolent,\nJ'ai les chevilles qui s'tortillent,\nLes rotules qui ondulent,\nLes tibias raplapla,\nLes mollets trop épais,\nLes orteils pas pareils,\nJ'ai le cœur en largeur,\nLes poumons tout en long,\nL'occiput qui chahute,\nJ'ai les coudes qui se dessoudent,\nJ'ai les seins sous l'bassin,\nEt l'bassin qu'est pas sain.\nAh, bon Dieu, qu'c'est embêtant\nD'être toujours patraque.\nAh, bon Dieu, qu'c'est embêtant.\nJe n'suis pas bien portant.\n\nAvec une charmante demoiselle,\nJ'devais me marier par amour.\nMais un soir comme j'étais près d'elle,\nEn train de lui faire la cour,\nMe voyant troublé, elle me dit :\n\"Qu'avez-vous ?\"\nMoi j'lui répondis :\nJ'ai la rate qui s'dilate,\nJ'ai le foie qu'est pas droit,\nJ'ai le ventre qui se rentre,\nJ'ai l'pylore qui s'colore.\nJ'ai l'gosier anémié,\nL'estomac bien trop bas,\nEt les côtes bien trop hautes.\nJ'ai les hanches qui s'démanchent,\nL'épigastre qui s'encastre,\nL'abdomen qui s'démène.\nJ'ai l'thorax qui s'désaxe,\nLa poitrine qui s'débine,\nLes épaules qui se frôlent.\nJ'ai les reins bien trop fins,\nLes boyaux bien trop gros.\nJ'ai l'sternum qui s'dégomme,\nEt l'sacrum c'est tout comme.\nJ'ai l'nombril tout en vrille,\nEt l'coccyx qui s'dévisse.\nEt puis j'ai ajouté :\nVoyez-vous ce n'est pas tout !\nJ'ai les genoux qui sont mous,\nJ'ai l'fémur qu'est trop dur.\nJ'ai les cuisses qui s'raidissent,\nLes guiboles qui flageolent.\nJ'ai les chevilles qui s'tortillent,\nLes rotules qui ondulent.\nLes tibias raplapla,\nLes mollets trop épais.\nLes orteils pas pareils !\nJ'ai le cœur en largeur !\nLes poumons tout en long !\nl'occiput qui chahute !\nl'nez tout bouché !\net du coup voyez-vous je suis gêné pour parler !\nc'est vexant car maintenant je suis forcé de m'arrêter !",
+  },
+  // { id: 138, titre: "", artiste: "", audioUrl: "./audio/", paroles: "" },
   // {     id :
   //       titre: "",
   //       artiste: "",
