@@ -107,16 +107,17 @@ const ReglesDuJeu = () => {
 
                   <h3>Déroulement</h3>
                   <p>
-                    1. Formez des équipes et donnez-leur un nom
+                    1. Forme des équipes et donne-leur un nom
                     <br />
-                    2. Jouez les chansons une par une
+                    2. Joue les chansons une par une
                     <br />
                     3. L'équipe qui attrape le micro-buzzer en premier peut
                     répondre
                     <br />
-                    4. Les équipes qui devinent correctement gagnent des points
+                    4. L' équipe qui donne la réponse en premier et correctement
+                    gagne les points en jeu
                     <br />
-                    5. Passez à travers les différentes manches
+                    5. Passe à travers les différentes manches
                     <br />
                     6. L'équipe avec le plus de points à la fin gagne
                   </p>
@@ -166,9 +167,10 @@ const ReglesDuJeu = () => {
                       <h4>X-trem BlindTest</h4>
                     </div>
                     <p>
-                      Les chansons sont déformées avec des effets audio. C'est
-                      la manche la plus difficile où il faut vraiment avoir une
-                      sacrée bonne oreille...
+                      Les chansons sont déformées avec des effets audio qui
+                      changent toutes les 5 secondes. C'est la manche la plus
+                      difficile où il faut vraiment avoir une sacrée bonne
+                      oreille...
                     </p>
                     <div className="points-info">
                       <strong>Points :</strong> +4 pour le titre, +4 pour
@@ -184,7 +186,8 @@ const ReglesDuJeu = () => {
                         après le temps
                       </li>
                       <li>
-                        <strong>-1 point</strong> : Réponse incorrecte
+                        <strong>-1 point</strong> : Un élément de réponse
+                        incorrecte
                       </li>
                       <li>
                         <strong>-2 points</strong> : Règles non-respectées (ex:
@@ -238,7 +241,7 @@ const ReglesDuJeu = () => {
                   <p>
                     Chaque chanson peut être écoutée pendant un maximum de 25
                     secondes. La réponse doit être donnée durant ce temps
-                    imparti.
+                    imparti pour obtenir tous les points possibles.
                   </p>
 
                   <h4>Temps de réponse</h4>
