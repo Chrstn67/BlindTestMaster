@@ -119,7 +119,10 @@ const ReglesDuJeu = () => {
                     <br />
                     5. Passe à travers les différentes manches
                     <br />
-                    6. L'équipe avec le plus de points à la fin gagne
+                    6. L'équipe avec le plus de points à la fin gagne. <br />
+                    7. Pendant l’écoute d’une chanson, les équipes doivent
+                    rester silencieuses pour ne pas aider les autres. <br />
+                    8. L’extrait n’est joué qu’une seule fois.
                   </p>
                 </div>
               )}
@@ -186,12 +189,12 @@ const ReglesDuJeu = () => {
                         après le temps
                       </li>
                       <li>
-                        <strong>-1 point</strong> : Un élément de réponse
-                        incorrecte
+                        <strong>-1 point</strong> : Par élément de réponse
+                        incorrecte (Titre + Artiste faux = -2 points)
                       </li>
                       <li>
-                        <strong>-2 points</strong> : Règles non-respectées (ex:
-                        répondre sans avoir buzzé)
+                        <strong>-2 points</strong> : Règles non-respectées (Ex :
+                        répondre sans avoir buzzé, etc...)
                       </li>
                     </ul>
                   </div>
@@ -241,7 +244,9 @@ const ReglesDuJeu = () => {
                   <p>
                     Chaque chanson peut être écoutée pendant un maximum de 25
                     secondes. La réponse doit être donnée durant ce temps
-                    imparti pour obtenir tous les points possibles.
+                    imparti pour obtenir tous les points possibles. <br />
+                    Si une équipe donne la réponse en dehors du temps imparti,
+                    et que la réponse est juste, elle gagnera 1 point.
                   </p>
 
                   <h4>Temps de réponse</h4>
