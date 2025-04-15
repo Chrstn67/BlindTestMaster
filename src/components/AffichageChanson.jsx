@@ -9,6 +9,10 @@ import {
   Download,
   Music,
   Info,
+  X,
+  FileText,
+  Rewind,
+  FastForward,
 } from "lucide-react";
 import "../styles/AffichageChanson.css";
 
@@ -19,6 +23,8 @@ const AffichageChanson = ({
   afficherParoles,
   mancheActuelle,
   isModifiedAudio,
+  isOpen = true, // Default to true for backward compatibility
+  onClose = () => {}, // Default empty function
   onVerify = () => {}, // Fonction par défaut vide si non fournie
 }) => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -27,9 +33,15 @@ const AffichageChanson = ({
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const [isVerified, setIsVerified] = useState(false);
+  const [showParoles, setShowParoles] = useState(afficherParoles);
   const audioRef = useRef(null);
   const normalAudioRef = useRef(null);
   const progressBarRef = useRef(null);
+
+  // Mettre à jour l'état local quand la prop change
+  useEffect(() => {
+    setShowParoles(afficherParoles);
+  }, [afficherParoles]);
 
   useEffect(() => {
     if (chanson) {
@@ -185,6 +197,26 @@ const AffichageChanson = ({
     document.addEventListener("mouseup", handleMouseUp);
   };
 
+  // Fonction pour avancer de 10 secondes
+  const forwardAudio = () => {
+    if (audioRef.current) {
+      audioRef.current.currentTime = Math.min(
+        audioRef.current.duration,
+        audioRef.current.currentTime + 10
+      );
+    }
+  };
+
+  // Fonction pour reculer de 10 secondes
+  const rewindAudio = () => {
+    if (audioRef.current) {
+      audioRef.current.currentTime = Math.max(
+        0,
+        audioRef.current.currentTime - 10
+      );
+    }
+  };
+
   // Fonction pour vérifier la chanson (remplace la logique dans Jeu.jsx)
   const verifierChanson = () => {
     setIsVerified(true);
@@ -214,121 +246,134 @@ const AffichageChanson = ({
     }
   };
 
+  // Toggle pour afficher/masquer les paroles
+  const toggleParoles = () => {
+    setShowParoles(!showParoles);
+  };
+
   return (
-    <div className="affichage-chanson">
-      <audio
-        ref={audioRef}
-        src={chanson.audioUrl}
-        onEnded={() => setIsPlaying(false)}
-      />
+    <div className={`affichage-chanson ${isOpen ? "modal-open" : ""}`}>
+      <div className="modal-overlay" onClick={onClose}></div>
+      <div className="modal-content">
+        <button className="modal-close-btn" onClick={onClose}>
+          <X size={18} />
+        </button>
 
-      <div className="chanson-info">
-        {afficherTitre && <h2 className="chanson-titre">{chanson.titre}</h2>}
-        {afficherArtiste && (
-          <h3 className="chanson-artiste">{chanson.artiste}</h3>
-        )}
+        <audio
+          ref={audioRef}
+          src={chanson.audioUrl}
+          onEnded={() => setIsPlaying(false)}
+        />
 
-        <div className="chanson-player">
-          {isModifiedAudio && (
-            <div className="player-badge">{getMancheTitle()}</div>
+        <div className="chanson-info">
+          {afficherTitre && <h2 className="chanson-titre">{chanson.titre}</h2>}
+          {afficherArtiste && (
+            <h3 className="chanson-artiste">{chanson.artiste}</h3>
           )}
-          <div className="player-controls">
-            <button
-              className="control-button play-pause"
-              onClick={togglePlay}
-              aria-label={isPlaying ? "Pause" : "Lecture"}
-            >
-              {isPlaying ? <Pause size={20} /> : <Play size={20} />}
-            </button>
 
-            <div className="progress-container">
-              <div className="time current-time">{formatTime(currentTime)}</div>
-              <div
-                className="progress-bar"
-                ref={progressBarRef}
-                onClick={handleProgressBarClick}
-                onMouseDown={handleMouseDown}
-              >
-                <div
-                  className="progress-fill"
-                  style={{
-                    width: `${duration ? (currentTime / duration) * 100 : 0}%`,
-                  }}
-                ></div>
-              </div>
-              <div className="time duration">{formatTime(duration)}</div>
-            </div>
-
-            <button
-              className="control-button mute"
-              onClick={toggleMute}
-              aria-label={isMuted ? "Activer le son" : "Couper le son"}
-            >
-              {isMuted ? <VolumeX size={20} /> : <Volume2 size={20} />}
-            </button>
-
-            <button
-              className="control-button download"
-              onClick={handleDownload}
-              aria-label="Télécharger"
-            >
-              <Download size={20} />
-            </button>
-          </div>
-        </div>
-      </div>
-
-      {/* Lecteur de la version normale pour les manches 2 et 3 */}
-      {isModifiedAudio && (
-        <div className="normal-audio-player">
-          <div className="normal-player-header">
-            <h4>Version normale</h4>
-            <div className="normal-player-actions">
+          <div className="chanson-player">
+            {isModifiedAudio && (
+              <div className="player-badge">{getMancheTitle()}</div>
+            )}
+            <div className="player-controls">
               <button
-                className={`normal-play-button ${
-                  isNormalPlaying ? "playing" : ""
-                }`}
-                onClick={toggleNormalPlay}
+                className="control-button rewind"
+                onClick={rewindAudio}
+                aria-label="Reculer de 10 secondes"
               >
-                {isNormalPlaying ? <Pause size={16} /> : <Play size={16} />}
-                <span>{isNormalPlaying ? "Pause" : "Écouter"}</span>
+                <Rewind size={20} />
               </button>
 
-              {!isVerified && (
-                <button className="verify-button" onClick={verifierChanson}>
-                  <Info size={16} />
-                  <span>Vérifier</span>
-                </button>
-              )}
+              <button
+                className="control-button play-pause"
+                onClick={togglePlay}
+                aria-label={isPlaying ? "Pause" : "Lecture"}
+              >
+                {isPlaying ? <Pause size={20} /> : <Play size={20} />}
+              </button>
+
+              <button
+                className="control-button forward"
+                onClick={forwardAudio}
+                aria-label="Avancer de 10 secondes"
+              >
+                <FastForward size={20} />
+              </button>
+
+              <div className="progress-container">
+                <div className="time current-time">
+                  {formatTime(currentTime)}
+                </div>
+                <div
+                  className="progress-bar"
+                  ref={progressBarRef}
+                  onClick={handleProgressBarClick}
+                  onMouseDown={handleMouseDown}
+                >
+                  <div
+                    className="progress-fill"
+                    style={{
+                      width: `${
+                        duration ? (currentTime / duration) * 100 : 0
+                      }%`,
+                    }}
+                  ></div>
+                </div>
+                <div className="time duration">{formatTime(duration)}</div>
+              </div>
+
+              <button
+                className="control-button mute"
+                onClick={toggleMute}
+                aria-label={isMuted ? "Activer le son" : "Couper le son"}
+              >
+                {isMuted ? <VolumeX size={20} /> : <Volume2 size={20} />}
+              </button>
+
+              <button
+                className="control-button download"
+                onClick={handleDownload}
+                aria-label="Télécharger"
+              >
+                <Download size={20} />
+              </button>
             </div>
           </div>
-          <audio
-            ref={normalAudioRef}
-            src={chanson.audioUrl}
-            onEnded={() => setIsNormalPlaying(false)}
-            className="hidden-audio"
-          />
-          <div className="normal-audio-info">
-            <Music size={20} />
-            <span>
-              {isVerified
-                ? `Titre: ${chanson.titre} - Artiste: ${chanson.artiste}`
-                : "Écoutez la version originale pour comparer"}
-            </span>
-          </div>
         </div>
-      )}
 
-      {afficherParoles && chanson.paroles && (
-        <div className="chanson-paroles">
-          <h4>Paroles</h4>
-          <div className="paroles-content">
-            {chanson.paroles.split("\n").map((line, index) => (
-              <p key={index}>{line || <br />}</p>
-            ))}
-          </div>
+        {/* Boutons d'action pour télécharger et afficher les paroles */}
+        <div className="modal-actions">
+          <button
+            className="modal-action-btn download"
+            onClick={handleDownload}
+          >
+            <Download size={18} />
+            <span>Télécharger la chanson</span>
+          </button>
+
+          <button className="modal-action-btn lyrics" onClick={toggleParoles}>
+            <FileText size={18} />
+            <span>
+              {showParoles ? "Masquer les paroles" : "Afficher les paroles"}
+            </span>
+          </button>
         </div>
-      )}
+
+        {/* Section des paroles */}
+        {showParoles && chanson.paroles && (
+          <div className="chanson-paroles">
+            <h4>
+              <FileText size={18} />
+              Paroles
+            </h4>
+            <div className="paroles-content">
+              {chanson.paroles.split("\n").map((line, index) => (
+                <p key={index}>{line || <br />}</p>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 };

@@ -75,6 +75,9 @@ const Jeu = () => {
     dernierTemps: Date.now(), // Ajout d'un timestamp pour calculer le temps écoulé
   });
 
+  // Add a new state for modal visibility
+  const [modalOpen, setModalOpen] = useState(false);
+
   const audioRef = useRef(null);
   const audioContextRef = useRef(null);
   const sourceNodeRef = useRef(null);
@@ -1384,7 +1387,7 @@ const Jeu = () => {
             </div>
 
             <div className="guess-mode">
-              {afficherReponse ? (
+              <>
                 <AffichageChanson
                   chanson={chansonActuelle}
                   afficherTitre={true}
@@ -1392,36 +1395,34 @@ const Jeu = () => {
                   afficherParoles={afficherParoles}
                   mancheActuelle={mancheActuelle}
                   isModifiedAudio={mancheActuelle === 2 || mancheActuelle === 3}
+                  isOpen={modalOpen}
+                  onClose={() => {
+                    setModalOpen(false);
+                    setAfficherReponse(false);
+                  }}
                   onVerify={() => {
-                    // Cette fonction peut être utilisée pour notifier Jeu.jsx qu'une vérification a eu lieu
                     console.log("Chanson vérifiée:", chansonActuelle?.titre);
-                    // Vous pouvez ajouter ici d'autres actions à effectuer lors de la vérification
                   }}
                 />
-              ) : (
-                <div className="hidden-answer">
-                  <p>?????</p>
-                </div>
-              )}
+              </>
+
               <div className="action-buttons">
                 <button
                   className="answer-toggle"
-                  onClick={() => setAfficherReponse(!afficherReponse)}
+                  onClick={() => {
+                    if (!afficherReponse) {
+                      setAfficherReponse(true);
+                      setModalOpen(true);
+                    } else {
+                      setAfficherReponse(false);
+                      setModalOpen(false);
+                    }
+                  }}
                 >
                   {afficherReponse
                     ? "Masquer la réponse"
                     : "Révéler la réponse"}
                 </button>
-                {afficherReponse && (
-                  <button
-                    className="lyrics-toggle"
-                    onClick={() => setAfficherParoles(!afficherParoles)}
-                  >
-                    {afficherParoles
-                      ? "Masquer les paroles"
-                      : "Afficher les paroles"}
-                  </button>
-                )}
               </div>
             </div>
           </>

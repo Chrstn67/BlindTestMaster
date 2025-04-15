@@ -111,18 +111,17 @@ const ReglesDuJeu = () => {
                     <br />
                     2. Joue les chansons une par une
                     <br />
-                    3. L'équipe qui attrape le micro-buzzer en premier peut
-                    répondre
+                    3. L'équipe qui buzz ou qui attrape le micro-buzzer en
+                    premier peut répondre
                     <br />
-                    4. L' équipe qui donne la réponse en premier et correctement
+                    4. L'équipe qui donne la réponse en premier et correctement
                     gagne les points en jeu
                     <br />
-                    5. Passe à travers les différentes manches
+                    5. L'équipe avec le plus de points à la fin gagne. <br />
+                    6. Pendant l’écoute d’une chanson, les équipes doivent
+                    rester silencieuses pour ne pas influencer les autres.{" "}
                     <br />
-                    6. L'équipe avec le plus de points à la fin gagne. <br />
-                    7. Pendant l’écoute d’une chanson, les équipes doivent
-                    rester silencieuses pour ne pas aider les autres. <br />
-                    8. L’extrait n’est joué qu’une seule fois.
+                    7. L’extrait n’est joué qu’une seule fois.
                   </p>
                 </div>
               )}
@@ -189,8 +188,8 @@ const ReglesDuJeu = () => {
                         après le temps
                       </li>
                       <li>
-                        <strong>-1 point</strong> : Par élément de réponse
-                        incorrecte (Titre + Artiste faux = -2 points)
+                        <strong>-1 point</strong> : Réponse incorrecte (même si
+                        une partie est juste)
                       </li>
                       <li>
                         <strong>-2 points</strong> : Règles non-respectées (Ex :
