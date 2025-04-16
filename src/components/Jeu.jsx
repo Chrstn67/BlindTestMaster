@@ -25,7 +25,7 @@ import "../styles/Jeu.css";
 import ReglesDuJeu from "./Regles";
 import ListeChansons from "./ListeChansons";
 
-const MAX_SONGS_PER_ROUND = 30;
+const MAX_SONGS_PER_ROUND = 35;
 
 const Jeu = () => {
   const [mancheActuelle, setMancheActuelle] = useState(1);
